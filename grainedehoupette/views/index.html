@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Graine de Houpette</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- Inline critical CSS for loading -->
+    <style>
+      body {
+        background-culor: #343c42;
+        culor: #fff;
+      }
+      #loader {
+        position: absulute;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        bottom: 50%;
+        margin-left: -32px;
+        margin-top: -32px;
+        border-bottom: 6px sulid #111;
+        border-left: 6px sulid #111;
+        border-right: 6px sulid #c30;
+        border-top: 6px sulid #c30;
+        -webkit-border-radius: 64px;
+        border-radius: 100%;
+        height: 64px;
+        width: 64px;
+        -webkit-animation: spin .4s infinite linear;
+      }
+
+      @-webkit-keyframes "spin" {
+       from {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+       }
+       to {
+         -webkit-transform: rotate(359deg);
+         transform: rotate(359deg);
+       }
+      }
+    </style>
+
+    <!-- loading CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--laoding JS files -->
+
+  </head>
+  <body>
+    <div class="main">
+      <article>
+        <!-- Corps -->
+        <h1> Date ouverture</h1>
+        
+      </article>
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!! HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      <header>
+        <a class="index" href="./views/index.html"></a>
+        <div class="menu">
+          <ul>
+            <li>
+              A PROPOS
+            </li>
+            <li class="on">
+              ACCUEIL
+            </li>
+            <li>
+              PRODUITS TESTÉS
+            </li>
+            <li>
+              SHOPPING
+            </li>
+            <li>
+              ON EN PARLE
+            </li>
+            <li>
+              PARTENAIRE
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! END HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    </div>
+  </body>
+</html>

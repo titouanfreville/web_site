@@ -1,0 +1,64 @@
+header {
+
+  @include display-flex;
+  @include flex-direction(column);
+  @include align-items(center);
+  overflow: hidden;
+  width: 100%;
+
+  a {
+    @include display-flex;
+    background: transparent;
+    &.index {
+      @include flex(1);
+      height: 281px;
+      width: 567px;
+      background: $logo no-repeat;
+      margin: 0 0 3px;
+    }
+  }
+  /* -------------------------- Menu ---------------------------------------- */
+  .menu {
+
+    @include display-flex;
+    @include flex(1);
+    @include justify-content(center);
+    width: 100%;
+
+    ul {
+      @include display-flex;
+      @include flex-direction(normal);
+      @include justify-content(space-around);
+      width: 100%;
+      min-height: 1ex;
+      border-bottom: 1px solid $menu-background-base;
+      padding-right: 9%;
+      margin-right: 3%;
+      li {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(center);
+        text-align: center;
+        // font-family: $menu-fonts-family-lv0;
+        // color: $menu-lv0-color;
+        // border: 1px $menu-lv0-border-style $menu-lv0-border-color;
+        margin: 0 !important;
+        @include border-top-radius(5px);
+        min-height: 1ex;
+        max-height: 38px;
+        color: $menu-font-color-base;
+        background-color: $menu-background-base;
+        padding: 0.50em 1.3em;
+
+        &:hover,&.on  {
+          color: $menu-font-color-hover;
+          background-color: $menu-background-hover;
+        }
+
+        &.on {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

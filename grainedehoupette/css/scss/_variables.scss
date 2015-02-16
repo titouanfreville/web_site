@@ -1,0 +1,19 @@
+// fonts initialisation
+
+@font-face {
+  font-family: 'julius';
+  src: url('../fonts/juliussansone.ttf') format('truetype');
+}
+
+
+// Body ----------------------
+$background-img:              url(../images/background.png);
+$background-color:            #000;
+$base-fonts:                   'julius', sans-serif;
+
+// Menu ----------------------
+$menu-background-base:        lightgrey;
+$menu-background-hover:       grey;
+$menu-font-color-base:        #666;
+$menu-font-color-hover:       #fff;
+$logo:                        url(../images/logo.jpg);

@@ -1,0 +1,75 @@
+.main  {
+  .text {
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    text-align: center;
+    span {
+      text-align: justify;
+      margin: 1em 0;
+      font-style: italic;
+    }
+
+    table {
+      @include align-self(center);
+      border: medium solid #000;
+      text-align: center;
+      border-collapse: separate;
+      border-spacing: 2px;
+      th {
+        @include align-items(center);
+        text-align: center;
+        background-color: #9ca2b0;
+        color: #fff;
+        margin: 10px;
+        padding: 5px;
+        width: 33%;
+        font-size: 1.2rem;
+      }
+
+      td {
+        background-color: #eaeaea;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+    }
+
+    .donate {
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include align-items(center);
+      text-align: center;
+      font-size: small;
+      font-weight: 700;
+      font-variant: small-caps;
+      margin: 7% 0 4%;
+      .image {
+        @include display-flex;
+        width:200px;
+        height: 54px;
+        background: url(https://www.paypal.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif) center center no-repeat;
+        background-size: contain;
+        margin: 10px;
+      }
+    }
+
+    footer {
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(flex-end);
+      @include align-self(flex-end);
+      text-align: right;
+      font-size: small;
+      h4 {
+        text-decoration: underline
+      }
+      span {
+        text-align: inherit;
+        font-style: normal;
+        margin: 5px 0;
+      }
+    }
+  }
+}

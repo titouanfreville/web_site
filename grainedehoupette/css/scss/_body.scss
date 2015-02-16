@@ -1,0 +1,23 @@
+body {
+  // frozen properties -------------------
+  @include font-smoothing(antialiased);
+  @include text-size-adjust();
+  @include tap-highlight-transparent();
+  @include user-select(none);
+  @include display-flex;
+  @include flex();
+  @include flex-direction(column);
+  @include align-items(center);
+  word-wrap: break-word;
+  line-height: 20px;
+  -webkit-backface-visibility: hidden;
+  -webkit-user-drag: none;
+  padding: 0;
+  margin: 0;
+  // configurable properties -------------
+  background-color: $background-color;
+  background: $background-img;
+  font-family: $base-fonts;
+  font-size: 100%;
+  color: black;
+}
