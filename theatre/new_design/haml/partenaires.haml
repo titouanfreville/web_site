@@ -41,9 +41,13 @@
       %header
         %span <p>les </p> partenaires
       %span.friends Ils nous soutiennent
-      %section.slideshow
-        .container
-          .c_slider
+      %section
+        %span#pa_play.pacommand &nbsp;
+        %span#pa_pause.pacommand &nbsp;  
+        .slideshow
+          %a.play_commands.pause{:href => "#pa_pause", :title => "pause"} pause
+          %a.play_commands.play{:href=>"#pa_play", :title => "play"} play
+          .container
             .slider.animate
               %figure<
                 %img{:src=>"images/stvalery_defile.png", :class=>"anim"}
@@ -89,7 +93,6 @@
                 %img{:src=>"images/bateau_baie_desomme_defile.png", :class=>"anim"}
               %figure>
                 %img{:src=>"images/nora_defile.png", :class=>"anim"}
-      %span.timeline
       .mention
         %a(href="mentionslegales.html") Mentions Légales
         | Copyright © Théâtre en Festival. Tous droits réservés

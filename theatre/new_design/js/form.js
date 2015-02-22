@@ -86,9 +86,9 @@ function validate(f) {
 }
 
 function valid_n133374(f) {
-    if (f.n133374.value == '' || emptyField(f.n133374)) {
+    if (f.sendern.value == '' || emptyField(f.sendern)) {
         alert("Merci de renseigner le champ Votre nom") ;
-   f.n133374.focus() ;
+   f.sendern.focus() ;
    return false ;
     }
 
@@ -96,9 +96,9 @@ function valid_n133374(f) {
 }
 
 function valid_n133375(f) {
-    if (f.n133375.value == '' || emptyField(f.n133375)) {
+    if (f.senderp.value == '' || emptyField(f.senderp)) {
         alert("Merci de renseigner le champ Votre prénom") ;
-   f.n133375.focus() ;
+   f.senderp.focus() ;
    return false ;
     }
 
@@ -112,9 +112,9 @@ function valid_n133377(f) {
    return false ;
     }
 
-   if (!(valid_email(f.n133377))) {
+   if (!(valid_email(f.senderEmail))) {
        alert("Cette adresse e-mail n'est pas correcte") ;
-       f.n133377.focus() ;
+       f.senderEmail.focus() ;
        return false ;
    }
 
@@ -122,9 +122,9 @@ function valid_n133377(f) {
 }
 
 function valid_n133376(f) {
-    if (f.n133376.value == '' || emptyField(f.n133376)) {
+    if (f.message.value == '' || emptyField(f.message)) {
         alert("Merci de renseigner le champ Votre message") ;
-   f.n133376.focus() ;
+   f.message.focus() ;
    return false ;
     }
 

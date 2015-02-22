@@ -445,6 +445,15 @@
   display: flex;
 }
 
+@mixin display-flex-imp {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -moz-box !important;
+  display: -moz-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 @mixin dislay-inline-flex {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;

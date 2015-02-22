@@ -5,7 +5,7 @@
     @include flex-direction(column);
     @include justify-content(center);
     @include align-self(center);
-    font-size: large;
+    font-size: normal;
     .important {
       font-family: $prog_font;
       color: red;
@@ -22,7 +22,7 @@
       font-family: $prog_font;
       width: 85%;
       min-height: 200px;
-      margin: 20px 0;
+      margin: 2em 0;
       h1,h2,h3 {
         font-family: inherit;
         font-style: italic;
@@ -91,8 +91,11 @@
         }
       }
       .petitnavire{
-        height: 200px;
-        background-image: url(../images/petitnavire.jpg);
+        height: 220px;
+        background-image: url(../images/petitnavire.png); 
+        h1{
+          color: #3C91A6;
+        }
       }
       .enfantillages{
         background-image: url(../images/enfantillages.jpg);
@@ -132,7 +135,7 @@
       }
       .amac{
         background-image: url(../images/amac.jpg);
-        height: 350px;
+        height: 340px;
         h1{
           color: #CB8114;
           line-height: 2.5ex;
@@ -171,7 +174,7 @@
       h1 {
         margin: 0;
       }
-      .band {
+      .bband {
         @include display-flex;
         @include flex-direction(row);
         width: 100%;
@@ -200,24 +203,6 @@
       .horaire{
         font-size: 1.2rem;
         color: #28425D;
-      }
-    }
-   .petitnavire{
-      .col {
-        @include display-flex;
-        @include flex-direction(column);
-        @include flex(1);
-      }
-      .txt{
-        color: black;
-        @include justify-content(space-between);
-        h1,h3,span {
-          @include display-flex;
-          text-align: center;
-        }
-      }
-      h1{
-        color: #3C91A6;
       }
     }
     .band {
@@ -292,13 +277,20 @@
             font-style: italic;
             font-weight: bold;
             border-left: 2px solid red;
+            min-width: 380px;
           }
           .date, .heure{
             @include display-flex;
             @include flex(1);
+            text-align: center;
+            @include justify-content(center);
+          }
+          .date{
+            min-width:100px;
           }
           .heure {
             border-right: 2px solid red;
+            min-width:140px;
           }
           &:first-child {
             .name, .date, .heure {

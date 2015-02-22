@@ -191,3 +191,70 @@
     font-size: medium;
   }
 }
+
+.overlay {
+  .ocontent{
+    pointer-events: none;
+    position: fixed;
+    z-index: 300;
+    top: 180px;
+    background: transparent;
+    height: calc(100% - 180px);
+    width: 100%;
+
+    a {
+      pointer-events: auto;
+    }
+  }
+  .visibility {
+    display: none !important;
+  }
+}
+
+label{
+  position: fixed;
+  z-index: 300;
+  top: 180px;
+  height: 100%;
+  width: 100%;
+}
+
+[type=radio] {
+  display: none;
+}
+[type=radio]:checked {
+  ~ label {
+    display: none;
+  }
+  ~ .overlay {
+    .ocontent{
+      display: none;
+    }
+    .visibility {
+      @include display-flex-imp; 
+    }
+  }
+}
+
+a.nodisp {
+  position: fixed;
+  z-index: -1000;
+}
+
+a:visited.nodisp {
+  position: fixed;
+  height: 10px;
+  width: 10px;
+  display: block;
+  background-color: red;
+  top: 0;
+  left: 0;
+  ~ .overlay {
+    .ocontent {
+      display : none;
+    }
+    .visility {
+      @include display-flex-imp;
+    }
+  }
+}

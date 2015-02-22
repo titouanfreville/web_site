@@ -1,1 +1,453 @@
-stylesheets/style.css
+@charset "UTF-8";
+/** Resets -------------------------------------------------- Additional resets */
+/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+html { line-height: 1; }
+
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+ol, ul { list-style: none; }
+
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+q, blockquote { quotes: none; }
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+a img { border: none; }
+
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.1.0.alpha.2/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/* line 8, ../scss/_reset.scss */
+button, input, select { outline: 0; }
+
+@font-face { font-family: 'calibri'; src: url("../../fonts/calibri.ttf") format("truetype"); }
+/* 1600 - 1200 - 800 - 600 */
+/* line 1, ../scss/_menu.scss */
+.header { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; overflow: hidden; overflow: none; left: 0; top: 0; margin: 0; padding: 10px 0; width: 100%; height: 440px; background: transparent; z-index: 30; }
+/* line 17, ../scss/_menu.scss */
+.header .bandeau { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; background: url(../images/bandeau_site.jpg) center center no-repeat; background-size: contain; height: 400px; width: 1000px; }
+/* line 25, ../scss/_menu.scss */
+.header .menu { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-arround; -ms-flex-pack: space-arround; -webkit-justify-content: space-arround; -moz-justify-content: space-arround; justify-content: space-arround; overflow: hidden; overflow: none; left: 0; top: 390px; width: 1000px; height: 35px; margin: 0; padding: 0; }
+/* line 38, ../scss/_menu.scss */
+.header .menu ul { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; width: 1000px; background-color: #4B1E22; height: 35px; }
+/* line 47, ../scss/_menu.scss */
+.header .menu ul li { font-size: 11pt; }
+/* line 51, ../scss/_menu.scss */
+.header .menu ul a { color: white; }
+/* line 54, ../scss/_menu.scss */
+.header .menu ul a:hover { color: #F7CA79; }
+/* line 60, ../scss/_menu.scss */
+.header.fixed { position: fixed; height: 40px; background: url(../images/background-xl.png) white fixed no-repeat; background-size: inherit; }
+/* line 65, ../scss/_menu.scss */
+.header.fixed .bandeau { display: none; }
+
+/* line 1, ../scss/_body.scss */
+body { -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; text-size-adjust: none; -webkit-tap-highlight-color: transparent; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; word-wrap: break-word; line-height: 20px; -webkit-backface-visibility: hidden; -webkit-user-drag: none; padding: 0; margin: 0; background-color: #000; background: url(../images/background-xl.png) fixed no-repeat; background-size: cover; font-family: Calibri, "calibri", Arial, Helvetica, sans-serif; font-size: medium; text-align: justify; color: black; }
+
+/* line 3, ../scss/_list.scss */
+ul li .description { margin: 0.5em 0; padding-left: 1.7em; font-size: 1.1rem; }
+/* line 7, ../scss/_list.scss */
+ul li .description ul { margin: 5px; padding-left: 1.5em; font-style: oblique; }
+/* line 15, ../scss/_list.scss */
+ul h1 { font-size: 1.5rem; font-style: normal; font-weight: 700; margin: 0.2rem 0 0.4rem 5px; padding: 0 0 10px 0; text-align: left; }
+/* line 24, ../scss/_list.scss */
+ul h2 { font-size: 1.3rem; font-style: italic; font-weight: 500; margin: 0.1rem 0 0.2rem 5px; padding: 0 0 0 0.5em; }
+
+/* line 1, ../scss/_utilities.scss */
+h1 { font-size: 1.7rem; font-family: Calibri, "calibri", Arial, Helvetica, sans-serif; font-weight: bold; text-align: center; font-weight: bold; color: #C60800; margin: 5px; padding: 0.4rem 0 0.4rem 0; }
+
+/* line 12, ../scss/_utilities.scss */
+a { min-height: 1.5ex; text-decoration: none; color: inherit; }
+/* line 17, ../scss/_utilities.scss */
+a:visited { color: inherit; text-decoration: none; }
+
+/* line 23, ../scss/_utilities.scss */
+.nobackground { background-color: transparent !important; background-image: none; }
+
+/* line 28, ../scss/_utilities.scss */
+.cache { background-color: #fff; }
+
+/* line 32, ../scss/_utilities.scss */
+sup { vertical-align: super; font-size: smaller; }
+
+/* line 37, ../scss/_utilities.scss */
+sep { margin-top: 3em; }
+
+/* line 41, ../scss/_utilities.scss */
+strong { font-weight: bold; }
+
+/* line 45, ../scss/_utilities.scss */
+i { font-style: italic; }
+
+/* line 49, ../scss/_utilities.scss */
+.waiting { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; text-align: center; font-size: 2rem; margin: 40px 0; }
+
+/* fonction d'animation, n'oubliez pas de prefixer ! */
+@-moz-keyframes slider { 0%, 8%, 100% { left: 0; }
+  10%, 18%, 90%,98% { left: -100%; }
+  20%, 28%, 80% , 88% { left: -200%; }
+  30%, 38%, 70%, 78% { left: -300%; }
+  40%, 48%, 60%, 68% { left: -400%; }
+  50%, 58% { left: -500%; } }
+@-webkit-keyframes slider { 0%, 8%, 100% { left: 0; }
+  10%, 18%, 90%,98% { left: -100%; }
+  20%, 28%, 80% , 88% { left: -200%; }
+  30%, 38%, 70%, 78% { left: -300%; }
+  40%, 48%, 60%, 68% { left: -400%; }
+  50%, 58% { left: -500%; } }
+@keyframes slider { 0%, 8%, 100% { left: 0; }
+  10%, 18%, 90%,98% { left: -100%; }
+  20%, 28%, 80% , 88% { left: -200%; }
+  30%, 38%, 70%, 78% { left: -300%; }
+  40%, 48%, 60%, 68% { left: -400%; }
+  50%, 58% { left: -500%; } }
+/* line 11, ../scss/_animations.scss */
+.slideshow { position: relative; width: 1067px; height: 800px; padding: 15px; margin: 0 auto 2em; border: 1px solid #ddd; background: #FFF; /* CSS3 effects */ background: linear-gradient(#ffffff, #ffffff 20%, #eeeeee 80%, #dddddd); border-radius: 2px 2px 2px 2px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); /* avanced box-shadow  tutorial @  http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow  
+*/ /* gestion des dimensions et débordement du conteneur */ /* on prévoit un petit espace gris pour la timeline */ /*   le conteneur des slides  en largeur il fait 100% x le nombre de slides 
+*/ /* annulation des marges sur figure */ /* styles de nos légendes */ }
+@media (max-height: 1000px) { /* line 11, ../scss/_animations.scss */
+  .slideshow { width: 413px; height: 310px; } }
+@media (max-height: 500px) { /* line 11, ../scss/_animations.scss */
+  .slideshow { width: 133px; height: 100px; } }
+/* line 32, ../scss/_animations.scss */
+.slideshow img { width: 1067px; height: 800px; }
+@media (max-height: 1000px) { /* line 32, ../scss/_animations.scss */
+  .slideshow img { width: 413px; height: 310px; } }
+@media (max-height: 500px) { /* line 32, ../scss/_animations.scss */
+  .slideshow img { width: 133px; height: 100px; } }
+/* line 50, ../scss/_animations.scss */
+.slideshow:before, .slideshow:after { position: absolute; bottom: 16px; z-index: -10; width: 50%; height: 20px; content: " "; background: rgba(0, 0, 0, 0.1); border-radius: 50%; box-shadow: 0 0 3px rgba(0, 0, 0, 0.4), 0 20px 10px rgba(0, 0, 0, 0.7); }
+/* line 62, ../scss/_animations.scss */
+.slideshow:before { left: 0; -webkit-transform: rotate(-4deg); -moz-transform: rotate(-4deg); transform: rotate(-4deg); }
+/* line 66, ../scss/_animations.scss */
+.slideshow:after { right: 0; -webkit-transform: rotate(4deg); -moz-transform: rotate(4deg); transform: rotate(4deg); }
+/* line 72, ../scss/_animations.scss */
+.slideshow .container { position: relative; width: 1067px; height: 800px; overflow: hidden; }
+@media (max-height: 1000px) { /* line 72, ../scss/_animations.scss */
+  .slideshow .container { width: 413px; height: 310px; } }
+@media (max-height: 500px) { /* line 72, ../scss/_animations.scss */
+  .slideshow .container { width: 133px; height: 100px; } }
+/* line 89, ../scss/_animations.scss */
+.slideshow .container:after { position: absolute; bottom: 0; left: 0; content: " "; width: 100%; height: 1px; background: #999; }
+/* line 101, ../scss/_animations.scss */
+.slideshow .slider { position: absolute; left: 0; top: 0; width: 600%; height: 310px; }
+/* line 109, ../scss/_animations.scss */
+.slideshow figure { position: relative; display: inline-block; padding: 0; margin: 0; /* petit effet de vignette sur les images */ }
+/* line 114, ../scss/_animations.scss */
+.slideshow figure:after { position: absolute; display: block; content: " "; top: 0; left: 0; width: 100%; height: 100%; box-shadow: 0 0 65px rgba(0, 0, 0, 0.5) inset; }
+/* line 125, ../scss/_animations.scss */
+.slideshow figcaption { position: absolute; left: 0; right: 0; bottom: 5px; padding: 20px; margin: 0; border-top: 1px solid #e1e1e1; text-align: center; letter-spacing: 0.05em; word-spacing: 0.05em; font-family: Georgia, Times, serif; background: #fff; background: rgba(255, 255, 255, 0.7); color: #555; text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3); }
+/* line 141, ../scss/_animations.scss */
+.slideshow .animate { /* ... avec la propriété animation */ -webkit-animation: slider 96s infinite; -moz-animation: slider 96s infinite; animation: slider 96s infinite; }
+
+/* line 1, ../scss/_header.scss */
+header { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; text-align: right; padding: 10px; text-transform: uppercase; width: 90%; font-size: xx-large; }
+/* line 10, ../scss/_header.scss */
+header span { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; }
+/* line 14, ../scss/_header.scss */
+header span p { color: #83A52B; margin-right: 1ex; }
+/* line 17, ../scss/_header.scss */
+header span p.nobreak { margin: 0; }
+/* line 23, ../scss/_header.scss */
+header .intro { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; margin-top: 10px; }
+/* line 29, ../scss/_header.scss */
+header .intro .logomask { background: url(../images/logo.png) no-repeat center center; background-size: contain; height: 100px; width: 100px; }
+/* line 35, ../scss/_header.scss */
+header .intro span { text-align: left; color: #000; font-style: italic; font-weight: normal; text-transform: none; font-size: medium; width: 100%; }
+
+/* line 1, ../scss/_index.scss */
+.main { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-align-self: center; -moz-align-self: center; -ms-flex-item-align: center; align-self: center; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; padding-top: 20px; margin: 10px; width: 80%; background-color: rgba(255, 255, 255, 0.9); }
+/* line 7, ../scss/_index.scss */
+.main.top { margin-top: 10px; padding-top: 60px; }
+/* line 16, ../scss/_index.scss */
+.main a { font-weight: bold; font-style: italic; letter-spacing: -1px; height: 12px; }
+/* line 23, ../scss/_index.scss */
+.main .espace { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; width: 81%; min-width: 925px; line-height: 150%; text-transform: uppercase; font-weight: bold; font-size: xx-small; }
+/* line 35, ../scss/_index.scss */
+.main .espace a { color: #83A52B; font-style: normal; letter-spacing: inherit; }
+/* line 41, ../scss/_index.scss */
+.main .espace span { color: black; }
+/* line 46, ../scss/_index.scss */
+.main .container { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-align-self: center; -moz-align-self: center; -ms-flex-item-align: center; align-self: center; -webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; align-items: flex-start; }
+/* line 54, ../scss/_index.scss */
+.main .container.center { -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
+/* line 58, ../scss/_index.scss */
+.main .container .bar { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; min-width: 425px; max-width: 50%; font-size: small; text-align: justify; }
+/* line 69, ../scss/_index.scss */
+.main .container .bar .box { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; -webkit-align-self: center; -moz-align-self: center; -ms-flex-item-align: center; align-self: center; width: 425px; }
+/* line 76, ../scss/_index.scss */
+.main .container .bar .box h1 { font-weight: bold; color: inherit; text-align: justify; text-transform: uppercase; font-size: small; }
+/* line 84, ../scss/_index.scss */
+.main .container .bar .box p { color: black; }
+/* line 90, ../scss/_index.scss */
+.main .container .red { color: #4B1E22; }
+/* line 93, ../scss/_index.scss */
+.main .container .red a { background: url("../images/imgDA.gif") no-repeat left bottom; background-size: contain; padding-left: 20px; padding-bottom: 2px; }
+/* line 101, ../scss/_index.scss */
+.main .container .green { color: #4A765C; }
+/* line 103, ../scss/_index.scss */
+.main .container .green a { background: url("../images/img13C.gif") no-repeat left bottom; background-size: contain; padding-left: 20px; padding-bottom: 2px; }
+/* line 111, ../scss/_index.scss */
+.main .container .content { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; min-width: 497px; max-width: 50%; line-height: 20px; margin-top: 10px; }
+/* line 121, ../scss/_index.scss */
+.main .container .content .thanks { font-weight: bold; }
+/* line 124, ../scss/_index.scss */
+.main .container .content .thanks span { font-size: large; }
+/* line 129, ../scss/_index.scss */
+.main .container .content img { float: left; }
+/* line 133, ../scss/_index.scss */
+.main .container .content p { padding-left: 110px; }
+/* line 137, ../scss/_index.scss */
+.main .container .content .d110 { padding-left: 110px; }
+/* line 142, ../scss/_index.scss */
+.main .logo { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; width: 100%; border: 1px solid black; margin: 5px; }
+/* line 151, ../scss/_index.scss */
+.main .logo .band { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; width: 100%; margin: 10px; }
+/* line 160, ../scss/_index.scss */
+.main .logo img { padding: 0 10px; }
+/* line 165, ../scss/_index.scss */
+.main .mention { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; width: 100%; background-color: #4B1E22; color: #fff; margin: 10px; margin-top: 20px; font-size: small; }
+/* line 175, ../scss/_index.scss */
+.main .mention a { font-size: small; font-style: normal; font-weight: normal; color: #F7CA79; margin-right: 1ex; }
+/* line 184, ../scss/_index.scss */
+.main .friends { font-style: italic; margin: 2rem; font-size: medium; }
+
+/* line 1, ../scss/_stage.scss */
+.mstage { background-color: rgba(254, 232, 183, 0.9); display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-align-self: center; -moz-align-self: center; -ms-flex-item-align: center; align-self: center; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; }
+/* line 8, ../scss/_stage.scss */
+.mstage .content { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; width: 100%; padding: 20px; }
+/* line 14, ../scss/_stage.scss */
+.mstage .content.nc { -webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; align-items: flex-start; }
+/* line 20, ../scss/_stage.scss */
+.mstage .content .pres { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; color: black; width: 30%; }
+/* line 27, ../scss/_stage.scss */
+.mstage .content .pres span { margin-bottom: 2em; }
+/* line 30, ../scss/_stage.scss */
+.mstage .content .pres .image { background: url(../images/im1-stage.png) no-repeat center center; width: 80%; min-height: 115px; margin-bottom: 20px; }
+/* line 38, ../scss/_stage.scss */
+.mstage .content .stage { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; width: 33%; padding: 5%; }
+/* line 45, ../scss/_stage.scss */
+.mstage .content .stage h1 { color: #6a5132; font-weight: large; margin-bottom: 15%; text-align: left; }
+/* line 52, ../scss/_stage.scss */
+.mstage .content .stage ul li { margin: 2% 0; }
+/* line 54, ../scss/_stage.scss */
+.mstage .content .stage ul li:first-of-type { margin-bottom: 5%; }
+/* line 58, ../scss/_stage.scss */
+.mstage .content .stage ul li a { font-weight: normal; }
+/* line 62, ../scss/_stage.scss */
+.mstage .content .stage ul span { font-weight: bold; font-style: italic; margin-right: 1ex; }
+/* line 67, ../scss/_stage.scss */
+.mstage .content .stage ul sep { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; height: 6ex; }
+/* line 74, ../scss/_stage.scss */
+.mstage .content .stage:last-of-type sep { height: 1ex; }
+/* line 80, ../scss/_stage.scss */
+.mstage .content .loc { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; color: black; width: 30%; text-align: justify; }
+/* line 89, ../scss/_stage.scss */
+.mstage .content .loc h2 { text-align: center; margin-bottom: 1em; color: #775c3e; line-height: 80px; font-weight: bold; font-size: x-large; }
+/* line 98, ../scss/_stage.scss */
+.mstage .content .loc .block { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; }
+/* line 103, ../scss/_stage.scss */
+.mstage .content .loc .block span { margin-bottom: 2em; }
+/* line 107, ../scss/_stage.scss */
+.mstage .content .loc .block a { margin-bottom: 2em; }
+/* line 111, ../scss/_stage.scss */
+.mstage .content .loc .image { background: url(../images/mascotte-stage.png) no-repeat center center; width: 80%; min-height: 259px; margin: 20px 0 100px; }
+/* line 119, ../scss/_stage.scss */
+.mstage .content .intro { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; color: black; width: 30%; }
+/* line 126, ../scss/_stage.scss */
+.mstage .content .intro h1 { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; text-align: left; margin-bottom: 2em; width: 80%; font-size: xx-large; }
+/* line 137, ../scss/_stage.scss */
+.mstage .content .intro h1 span { text-align: right; }
+/* line 141, ../scss/_stage.scss */
+.mstage .content .intro h1 sep { height: 0.1ex; }
+/* line 146, ../scss/_stage.scss */
+.mstage .content .intro .image { background: url(../images/im2-stage-small.jpg) no-repeat center center; width: 80%; min-height: 256px; margin: 40px 0; }
+/* line 155, ../scss/_stage.scss */
+.mstage .progheader { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; padding-top: 10em; }
+/* line 162, ../scss/_stage.scss */
+.mstage .progheader span { text-transform: uppercase; background-color: #e92a21; color: #fef6f5; font-size: large; padding: 5px; }
+/* line 171, ../scss/_stage.scss */
+.mstage .progfooter { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
+/* line 176, ../scss/_stage.scss */
+.mstage .progfooter span { margin: 0 1%; padding-bottom: 3%; }
+
+/* line 3, ../scss/_infospratiques.scss */
+.main .container .festival { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; line-height: normal; width: 45%; }
+/* line 9, ../scss/_infospratiques.scss */
+.main .container .festival h1, .main .container .festival h2 { text-transform: uppercase; }
+/* line 12, ../scss/_infospratiques.scss */
+.main .container .festival h1 { color: #FF6600; font-size: x-large; text-align: left; margin-bottom: 2ex; }
+/* line 18, ../scss/_infospratiques.scss */
+.main .container .festival h2 { text-align: left; font-weight: bold; font-size: 1.2rem; }
+/* line 22, ../scss/_infospratiques.scss */
+.main .container .festival h2 span { text-transform: lowercase; }
+/* line 26, ../scss/_infospratiques.scss */
+.main .container .festival h3 { text-decoration: underline; }
+/* line 30, ../scss/_infospratiques.scss */
+.main .container .festival div { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; }
+/* line 36, ../scss/_infospratiques.scss */
+.main .container .festival div span { margin-bottom: 2ex; }
+/* line 37, ../scss/_infospratiques.scss */
+.main .container .festival div span.move { color: #FF6600; font-style: italic; }
+/* line 43, ../scss/_infospratiques.scss */
+.main .container .festival div a { margin-bottom: 2ex; }
+/* line 49, ../scss/_infospratiques.scss */
+.main .container .other { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; text-align: right; width: 45%; }
+/* line 55, ../scss/_infospratiques.scss */
+.main .container .other h1 { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; text-transform: uppercase; color: #83A52B; font-size: large; }
+/* line 63, ../scss/_infospratiques.scss */
+.main .container .other div { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; text-align: right; }
+/* line 70, ../scss/_infospratiques.scss */
+.main .container .other div ul { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; text-align: right; font-family: Times, Calibri, "calibri", Arial, Helvetica, sans-serif; }
+/* line 77, ../scss/_infospratiques.scss */
+.main .container .other div ul li { text-align: right; margin: 5px; }
+/* line 80, ../scss/_infospratiques.scss */
+.main .container .other div ul li span { font-weight: bold; }
+/* line 86, ../scss/_infospratiques.scss */
+.main .container .other .ci { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between; -moz-justify-content: space-between; justify-content: space-between; }
+/* line 90, ../scss/_infospratiques.scss */
+.main .container .other .ci img { height: 372px; width: 436px; }
+
+/* line 3, ../scss/_association.scss */
+.main .container.center .informations { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; width: 48%; text-align: justify; }
+/* line 11, ../scss/_association.scss */
+.main .container.center .informations h2 { font-weight: bold; margin: 1rem 0; }
+/* line 16, ../scss/_association.scss */
+.main .container.center .administration { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; width: 48%; text-align: justify; }
+/* line 24, ../scss/_association.scss */
+.main .container.center .administration .pict { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; background: url("../images/img3D.jpg") no-repeat center center; background-size: contain; height: 201px; width: 100%; }
+/* line 32, ../scss/_association.scss */
+.main .container.center .administration h1 { color: #F89133; text-align: justify; font-weight: bold; line-height: 150%; font-style: italic; font-size: large; }
+/* line 41, ../scss/_association.scss */
+.main .container.center .administration .membership { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; }
+/* line 45, ../scss/_association.scss */
+.main .container.center .administration .membership span { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; margin-bottom: 1rem; }
+/* line 50, ../scss/_association.scss */
+.main .container.center .administration .membership a { background: url(../images/linkadhesion.jpg) center center no-repeat; background-size: contain; width: 100%; height: 70px; }
+/* line 58, ../scss/_association.scss */
+.main .container.center .administration .donnation { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; }
+/* line 63, ../scss/_association.scss */
+.main .container.center .administration .donnation span { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; margin-bottom: 1rem; }
+/* line 68, ../scss/_association.scss */
+.main .container.center .administration .donnation a { background: url(../images/linkdonnation.jpg) center center no-repeat; background-size: contain; width: 100%; height: 70px; }
+
+/* line 1, ../scss/_contact.scss */
+.contact { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; }
+/* line 7, ../scss/_contact.scss */
+.contact h1 { text-align: left; font-style: italic; color: #F89133; margin: 0 30px; line-height: 150%; font-size: large; }
+/* line 16, ../scss/_contact.scss */
+.contact ul { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-align-self: center; -moz-align-self: center; -ms-flex-item-align: center; align-self: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; width: 80%; }
+/* line 23, ../scss/_contact.scss */
+.contact ul li { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; align-items: flex-start; width: 100%; }
+/* line 30, ../scss/_contact.scss */
+.contact ul li .way { font-style: italic; text-align: right; width: 50%; padding: 5px; }
+/* line 36, ../scss/_contact.scss */
+.contact ul li .solution { text-align: left; width: 50%; padding: 5px; }
+/* line 41, ../scss/_contact.scss */
+.contact ul li .title { width: 180px; text-align: right; padding: 5px; }
+/* line 47, ../scss/_contact.scss */
+.contact ul li .name { width: 180px; text-align: center; padding: 5px; }
+/* line 53, ../scss/_contact.scss */
+.contact ul li .link { width: 180px; text-align: left; padding: 5px; font-size: small; }
+
+/* line 63, ../scss/_contact.scss */
+.cad { text-align: center; font-size: small; }
+
+/* line 68, ../scss/_contact.scss */
+form { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; margin: 4em 0; }
+/* line 75, ../scss/_contact.scss */
+form label { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
+/* line 81, ../scss/_contact.scss */
+form label span, form label input, form label textarea { margin: 5px; }
+/* line 85, ../scss/_contact.scss */
+form label span { width: 10em; }
+/* line 89, ../scss/_contact.scss */
+form label input { width: 15em; margin-right: 7.5em; }
+/* line 95, ../scss/_contact.scss */
+form input { width: 5em; }
+/* line 99, ../scss/_contact.scss */
+form span { text-align: right; color: #CC6600; font-size: small; }
+
+/* line 3, ../scss/_affiches.scss */
+.main .pres { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; margin: 10px; margin-bottom: 40px; min-height: 96px; }
+/* line 11, ../scss/_affiches.scss */
+.main .pres .txt { line-height: 150%; width: 100%; }
+/* line 14, ../scss/_affiches.scss */
+.main .pres .txt span { font-weight: bold; }
+/* line 17, ../scss/_affiches.scss */
+.main .pres .txt a { font-weight: normal; font-size: medium; font-style: italic; }
+/* line 24, ../scss/_affiches.scss */
+.main .pres .picture { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; height: 96px; width: 110px; margin: 20px; background: url(../images/virgile.jpg) center center no-repeat; background-size: contain; }
+/* line 34, ../scss/_affiches.scss */
+.main .affiche { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
+/* line 39, ../scss/_affiches.scss */
+.main .affiche .band { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; width: 80%; margin: 10px; }
+/* line 47, ../scss/_affiches.scss */
+.main .affiche .band .b { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; text-align: left; margin: 10px; }
+/* line 55, ../scss/_affiches.scss */
+.main .affiche .band .r { text-align: right; }
+/* line 59, ../scss/_affiches.scss */
+.main .affiche .band .aff { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; margin-bottom: 10px; }
+/* line 64, ../scss/_affiches.scss */
+.main .affiche .band span { font-weight: bold; font-style: italic; }
+
+/* line 2, ../scss/_adhesion.scss */
+.main .membership { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; width: 80%; margin: 1.5rem 0; line-height: 150%; }
+/* line 10, ../scss/_adhesion.scss */
+.main .membership h1 { color: black; font-size: medium; font-weight: normal; }
+/* line 14, ../scss/_adhesion.scss */
+.main .membership h1 a { font-size: medium; text-decoration: underline; }
+/* line 20, ../scss/_adhesion.scss */
+.main .membership span { font-size: small; font-style: italic; text-align: center; font-weight: bold; margin: 1.5rem 0; }
+/* line 27, ../scss/_adhesion.scss */
+.main .membership span:first-of-type, .main .membership span:last-child { font-weight: normal; margin: 0; }
+
+/* line 2, ../scss/_don.scss */
+.main .text { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; text-align: center; }
+/* line 7, ../scss/_don.scss */
+.main .text span { text-align: justify; margin: 1em 0; font-style: italic; }
+/* line 13, ../scss/_don.scss */
+.main .text table { -webkit-align-self: center; -moz-align-self: center; -ms-flex-item-align: center; align-self: center; border: medium solid #000; text-align: center; border-collapse: separate; border-spacing: 2px; }
+/* line 19, ../scss/_don.scss */
+.main .text table th { -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; text-align: center; background-color: #9ca2b0; color: #fff; margin: 10px; padding: 5px; width: 33%; font-size: 1.2rem; }
+/* line 30, ../scss/_don.scss */
+.main .text table td { background-color: #eaeaea; text-align: center; font-weight: bold; font-size: 0.9rem; }
+/* line 38, ../scss/_don.scss */
+.main .text .donate { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; text-align: center; font-size: small; font-weight: 700; font-variant: small-caps; margin: 7% 0 4%; }
+/* line 48, ../scss/_don.scss */
+.main .text .donate .image { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; width: 200px; height: 54px; background: url(https://www.paypal.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif) center center no-repeat; background-size: contain; margin: 10px; }
+/* line 58, ../scss/_don.scss */
+.main .text footer { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: end; -ms-flex-pack: end; -webkit-justify-content: flex-end; -moz-justify-content: flex-end; justify-content: flex-end; -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; text-align: right; font-size: small; }
+/* line 65, ../scss/_don.scss */
+.main .text footer h4 { text-decoration: underline; }
+/* line 68, ../scss/_don.scss */
+.main .text footer span { text-align: inherit; font-style: normal; margin: 5px 0; }
+
+/* line 1, ../scss/_presseandmention.scss */
+.contactpress { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: horizontal; -webkit-flex-direction: row; -moz-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-align-self: center; -moz-align-self: center; -ms-flex-item-align: center; align-self: center; }
+/* line 6, ../scss/_presseandmention.scss */
+.contactpress .desc { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; margin: 5px; }
+/* line 13, ../scss/_presseandmention.scss */
+.contactpress .contact { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; margin: 5px; }
+/* line 20, ../scss/_presseandmention.scss */
+.contactpress .contact h1 { font-weight: bold; color: #000; font-size: normal; font-style: normal; text-align: justify; margin: 0; padding: 0; }
+/* line 29, ../scss/_presseandmention.scss */
+.contactpress .contact span { font-size: normal; }
+/* line 32, ../scss/_presseandmention.scss */
+.contactpress .contact a { font-weight: normal; font-size: normal; font-style: italic; }
+
+/* line 40, ../scss/_presseandmention.scss */
+.contentmention { display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-box-direction: normal; -webkit-box-orient: vertical; -webkit-flex-direction: column; -moz-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: space-around; -ms-flex-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; justify-content: space-around; -webkit-align-self: flex-start; -moz-align-self: flex-start; -ms-flex-item-align: start; align-self: flex-start; -webkit-box-align: stretch; -ms-flex-align: stretch; -webkit-align-items: stretch; -moz-align-items: stretch; align-items: stretch; margin: 20px 3%; min-height: 350px; font-size: small; }
+/* line 49, ../scss/_presseandmention.scss */
+.contentmention h1 { font-size: medium; letter-spacing: 1pt; color: #4B1E22; font-style: normal; margin: 20px 0; padding: 0; text-align: justify; }
+/* line 59, ../scss/_presseandmention.scss */
+.contentmention h2 { color: #4B1E22; font-weight: bold; letter-spacing: 1pt; text-transform: uppercase; }

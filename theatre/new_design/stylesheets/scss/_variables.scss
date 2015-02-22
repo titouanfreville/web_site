@@ -7,8 +7,8 @@
 }
 
 @font-face {
-  font-family: 'PWAlabama';
-  src: url('../fonts/PWAlabama.ttf') format('truetype');
+  font-family: 'anke';
+  src: url('../fonts/ankecallig.ttf') format('truetype');
 }
 
 @font-face {
@@ -16,24 +16,23 @@
   src: url('../fonts/dactylo.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'impact';
-  src: url('../fonts/impact.ttf') format('truetype');
-}
-
 @import url(http://allfont.net/css/?fonts=arial-black);
 
 $fonts:                       Calibri, 'calibri', Arial, Helvetica, sans-serif !default;
 $ptitle-font-style:           $fonts;
 $stitle-font-style:           $ptitle-font-style;
-$prog_font:                   Arial, $fonts;
-$h1_prog_font:                'Arial Black', Arial, fonts;
+$prog_font:                   $fonts;
+$h1_prog_font:                $fonts;
 $base-font-color:             #0131B4;
 
 // Body ----------------------
 /* 1600 - 1200 - 800 - 600 */
 $background-img:              url(../images/fond.png);
 $background-color:            #000;
+
+$action-color:                #600202;
+
+$rideau:                      url(../images/opening_rideau.png);
 
 // Utilities ----------------
 $h1-font-family:             $ptitle-font-style;
@@ -66,10 +65,9 @@ $description-font-weight:     normal;
 
 // Menu & cie ---------------
 $logo:                       url(../images/perso.png);
-$name-font:                  'PWAlabama',$fonts;
+$name-font:                  'anke',$fonts;
 $name-font-size:             3rem;
 $name-color:                 #860001;
 
 $action-font:                'dactylo',$fonts;
 $action-font-size:           1.5rem;
-$action-color:               #600202;

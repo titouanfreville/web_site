@@ -42,13 +42,14 @@
         color: $name-color;
       }
       .action{
-        @include display-flex;
+        display: none;
+       /* @include display-flex;
         @include justify-content(center);
         @include align-items(center);
         font-family: $action-font;
         font-size: $action-font-size;
         margin: 1rem 0;
-        color: $action-color;
+        color: $action-color; */
       }
     }
   }

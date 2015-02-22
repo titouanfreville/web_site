@@ -12,7 +12,6 @@ header {
     @include flex-direction(row);
     @include justify-content(flex-end);
     p {
-      color: #83A52B;
       margin-right: 1ex;
       &.nobreak {
         margin: 0;
