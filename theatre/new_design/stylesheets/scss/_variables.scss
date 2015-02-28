@@ -16,7 +16,6 @@
   src: url('../fonts/dactylo.ttf') format('truetype');
 }
 
-@import url(http://allfont.net/css/?fonts=arial-black);
 
 $fonts:                       Calibri, 'calibri', Arial, Helvetica, sans-serif !default;
 $ptitle-font-style:           $fonts;
@@ -34,6 +33,8 @@ $action-color:                #600202;
 
 $rideau:                      url(../images/opening_rideau.png);
 
+
+$affiche_event:             url(../images/affiche-2014.jpg);
 // Utilities ----------------
 $h1-font-family:             $ptitle-font-style;
 $h1-font-size:                1.7rem;

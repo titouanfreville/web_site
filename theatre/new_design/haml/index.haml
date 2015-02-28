@@ -1,3 +1,5 @@
+/ @author: FREVILLE Titouan <titouanfreville@hotmail.fr, tfreville@nexway.com, titouan.freville@ensiie.fr >
+/ This is the proposed version. Official version will be upload on <http://www.festival-saint-valery.fr/>
 !!!
 %html
   %head
@@ -10,15 +12,27 @@
     %a.nodisp(href="./index.html") &nbsp;
     %input{:type=>"radio", :id=>"overlay_joke", :name=>"overlay"}
     %label{:for=>"overlay_joke"}
-    .header.overlay
+    .rideau
+    .overlay
+      .ocontent
+        .close
+          Accéder au site
+        %a(href="./programme.html")
+          .img
+        .txt
+          %a{:href=>"./programme.html"} 
+            %i 
+              Cliquez ici 
+            pour rentrer dans le 7eme festival de théâtre de Saint Valery sur Somme, les 25, 26, 27et 28 juin 2015
+    .header
       .bandeau
-        .logo.visibility
+        .logo
         .txt
           .name
             Théâtre en Festival
           .action
             Festival de Théâtre Saint Valery sur Somme
-      .menu.visibility
+      .menu
         %ul
           %li<
             %a{:href=>"./index.html"} ACCUEIL
@@ -38,15 +52,11 @@
             %a{:href=>"./contact.html"} CONTACT
     %br
     %br
-    .overlay
-      .ocontent
-        .img
-        %a(href="./programme.html") cliquez ici pour rentrer dans le 7eme festival de théâtre de Saint Valery sur Somme, les 25, 26, 27et 28 juin 2015
-    .main.overlay
-      .espace.visibility
+    .main
+      .espace
         %a(href="./espacepresse.html") ESPACE PRESSE
         %span &nbsp;| espace adhérents
-      .container.visibility
+      .container
         / Diaporama text commandé.
         %span#sl_play.command &nbsp;
         %span#sl_pause.command &nbsp;
@@ -57,6 +67,7 @@
           %a.play_commands.pause{:href => "#sl_pause", :title => "pause"} pause
           %a.play_commands.play{:href=>"#sl_play", :title => "play"} play
           .bar
+            / Animate slider
             .mslider.animate
               .box.red.b1
                 %h1 PROGRAMME des stages
@@ -76,6 +87,27 @@
                   %strong Le Festival de Saint Valery est présent sur Facebook.
                   Un espace d'échanges et d'informations pour être au plus près du Festival, pendant le mois de juin, mais aussi toute l'année. Pour être les premiers informés de notre actualité.
                 %a(href="https://fr-fr.facebook.com/Theatre.en.Festival")aller sur Facebook
+            / Controlled slider. As animation position isn't editable using css, we have to hack it using a second slider.
+            .dslider
+              .box.red.b1
+                %h1 PROGRAMME des stages
+                %img{:height => "139", :width => "300", :src => "./images/im1-stage.png"}>
+                %br
+                %a(href="./stages.html") présentation des stages 2014-2015
+              .box.green.b2
+                %h1 SOUTENEZ LE FESTIVAL : adhérez à l'ASSOCIATION.
+                %img{:alt=>"Toute l&#39;équipe de Théâtre en festival prépare la cinquième édition de ce rendez-vous culturel, voulu populaire et festif.", :height=>"163", :src=>"./images/adhesion.jpg", :width=>"420"}
+                %p
+                  Rejoignez notre belle aventure. En adhérant,  vous aidez l'association mais vous pouvez aussi si vous le souhaitez participer activement à l'accomplissement de nos missions.
+                %a(href="./association.html")en savoir +
+              .box.red.b3
+                %h1 LE FESTIVAL EST SUR FACEBOOK.
+                %img{:height=>"163", :width=>"420", :src=>"./images/img6C.jpg"}
+                %p
+                  %strong Le Festival de Saint Valery est présent sur Facebook.
+                  Un espace d'échanges et d'informations pour être au plus près du Festival, pendant le mois de juin, mais aussi toute l'année. Pour être les premiers informés de notre actualité.
+                %a(href="https://fr-fr.facebook.com/Theatre.en.Festival")aller sur Facebook
+          / Dots to control the animation position
           %ul.dots_commands<
             %li>
               %a{:title=>"Show slide 1", :href=>"#sl_i1"}Slide 1
@@ -104,7 +136,7 @@
             %p
               <strong>L'histoire du Festival c'est aussi celle de ses affiches.</strong> <br /> Depuis la première édition, le dessinateur Virgile Antoine invente chaque année un dessin mettant en scène le personnage Walric. Une rétrospective qui suit les étapes de l'aventure.
             %a.green.d110(href="./affiches.html") voir les affiches
-      %section.visibility
+      %section
         #pa_play.pacommand 
         #pa_pause.pacommand  
         .slideshow
