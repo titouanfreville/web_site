@@ -40,9 +40,388 @@
     .main
       %header
         %span <p>Les </p> Tarifs
-      .waiting
-        %span
-          Les tarifs du 7<sup>e</sup> festival sont en cours d'élaboration.
+      .tarifs
+        %h1 Les tarifs du 7<sup>ème</sup> festival
+        / Allow printing by day or spectacles
+        %input{:type=>"radio", :id => "date", :name => "selector_joke", :checked => "checked"}
+        %input{:type=>"radio", :id => "price", :name => "selector_joke"}
+        %input{:type=>"radio", :id => "pricer", :name => "selector_joke"}
+        %input{:type=>"radio", :id => "name", :name => "selector_joke"}
+
+        / Print selected days shedule
+        %input{:type => "checkbox", :id => "j"}
+        %input{:type => "checkbox", :id => "v"}
+        %input{:type => "checkbox", :id => "s"}
+        %input{:type => "checkbox", :id => "d"}
+  
+        .selector
+          %ul
+            %li
+              %ul
+                %li Tri :
+                %li 
+                  %label.date{:for => "date"} Par date
+                %li
+                  %label.price{:for => "price"} Par prix (plein tarif)
+                %li
+                  %label.pricer{:for => "pricer"} Par prix (tarif réduit)
+                %li
+                  %label.name{:for => "name"} Par nom
+            %li 
+              %ul
+                %li Date
+                %li 
+                  %label.j{:for => "j"} Jeudi 25 juin
+                %li
+                  %label.v{:for => "v"} Vendredi 26 juin
+                %li
+                  %label.s{:for => "s"} Samedi 27 juin
+                %li  
+                  %label.d{:for => "d" } Dimanche 28 juin
+        / By date table
+        .solo.date
+          %ul
+            %li.lheader
+              .name 
+                %span Spectacles
+              .pt 
+                %span Plein tarif
+              .tr
+                %span Tarif réduit (scolaires, étudiants, demandeurs d’emploi, intermittents)
+            %li.j
+              .date Jeudi 25 juin
+            %li.j
+              .name La petite sirène
+              .pt 5€
+              .tr 4€ (CCBSS)
+            %li.j
+              .name Petits contes de la joie de vivre
+              .pt 5€
+              .tr.none               
+            %li.j
+              .name Friends
+              .pt 12€
+              .tr 8€
+            %li.v
+              .date Vendredi 26 juin
+            %li.v
+              .name  La petite sirène
+              .pt 5€
+              .tr 4€ (CCBSS)
+            %li.v
+              .name Y’a d’la joie
+              .pt 12€
+              .tr  8€
+            %li.v
+              .name Comme un gant
+              .pt 12€
+              .tr 8€ 
+            %li.s 
+              .date Samedi 27 juin
+            %li.s
+              .name Quand le silence se prend une claque
+              .pt 8€
+              .tr.none
+            %li.s
+              .name Petit navire
+              .pt 3€
+              .tr.none
+            %li.s
+              .name Enfantillages
+              .pt 5€
+              .tr.none
+            %li.s
+              .name Palatine
+              .pt 12€
+              .tr 8€
+            %li.d
+              .date Dimanche 28 juin
+            %li.d
+              .name Légendes picardes du M.A.
+              .pt 5€
+              .tr.none
+            %li.d
+              .name Café Proust
+              .pt 5€
+              .tr.none
+            %li.d
+              .name Yvonne et Gaston
+              .pt 5€
+              .tr.none
+            %li.d
+              .name Albertine, Marthe, Andrée…
+              .pt 12€
+              .tr 8€
+            %li.d
+              .name Le Malade Imaginaire
+              .pt 12€
+              .tr 8€
+        / By name table
+        .solo.name
+          %ul
+            %li.lheader
+              .name 
+                %span Spectacles
+              .pt 
+                %span Plein tarif
+              .tr
+                %span Tarif réduit (scolaires, étudiants, demandeurs d’emploi, intermittents)
+              .date
+                %span Dates
+
+            %li.d
+              .name Albertine, Marthe, Andrée…
+              .pt 12€
+              .tr 8€
+              .date Dimanche 28 juin
+            %li.d
+              .name Café Proust
+              .pt 5€
+              .tr.none
+              .date Dimanche 28 juin
+
+            %li.v
+              .name Comme un gant
+              .pt 12€ 
+              .tr 8€
+              .date Vendredi 26 juin
+
+            %li.s
+              .name Enfantillages
+              .pt 5€
+              .tr.none
+              .date Samedi 27 juin
+
+            %li.j
+              .name Friends
+              .pt 12€
+              .tr 8€
+              .date Jeudi 25 juin
+
+            %li.j.v
+              .name La petite sirène
+              .pt 5€
+              .tr 4€ (CCBSS)
+              .date Jeudi 25 juin <br /> Vendredi 26 juin
+
+            %li.d
+              .name Légendes picardes du M.A.
+              .pt 5€
+              .tr.none
+              .date Dimanche 28 juin
+
+            %li.d
+              .name Le Malade Imaginaire
+              .pt 12€
+              .tr 8€
+              .date Dimanche 28 juin
+
+            %li.s
+              .name Palatine
+              .pt 12€
+              .tr 8€
+              .date Samedi 27 juin
+
+            %li.j
+              .name Petits contes de la joie de vivre
+              .pt 5€
+              .tr.none  
+              .date Jeudi 25 juin
+
+            %li.s
+              .name Petit navire
+              .pt 3€
+              .tr.none
+              .date Samedi 27 juin
+
+            %li.s
+              .name Quand le silence se prend une claque
+              .pt 8€
+              .tr.none
+              .date Samedi 27 juin             
+
+            %li.v
+              .name Y’a d’la joie
+              .pt 12€
+              .tr  8€
+              .date Vendredi 26 juin
+            %li.d
+              .name Yvonne et Gaston
+              .pt 5€
+              .tr.none
+              .date Dimanche 28 juin
+        / By price table
+        .solo.price
+          %ul
+            %li.lheader
+              .name 
+                %span Spectacles
+              .tr
+                %span Tarif réduit (scolaires, étudiants, demandeurs d’emploi, intermittents)
+              .date 
+                %span Dates
+
+            %li
+              .price 3€    
+            %li.s
+              .name Petit navire
+              .tr 3€
+              .date Samedi 27 juin
+
+            %li
+              .price 5€
+            %li.j.v
+              .name La petite sirène
+              .tr 4€ (CCBSS)
+              .date Jeudi 25 juin<br />Vendredi 26 juin
+            %li.j
+              .name Petits contes de la joie de vivre
+              .tr 5€
+              .date Jeudi 25 juin
+            %li.s
+              .name Enfantillages
+              .tr 5€
+              .date Samedi 27 juin
+            %li.d
+              .name Légendes picardes du M.A.
+              .tr 5€
+              .date Dimanche 28 juin
+            %li.d
+              .name Café Proust
+              .tr 5€
+              .date Dimanche 28 juin
+            %li.d
+              .name Yvonne et Gaston
+              .tr 5€
+              .date Dimanche 28 juin
+
+            %li
+              .price 8€
+            %li.s
+              .name Quand le silence se prend une claque
+              .tr 8€
+              .date Samedi 27 juin
+
+            %li
+              .price 12€
+            %li.j
+              .name Friends
+              .tr 8€
+              .date Jeudi 25 juin
+            %li.v
+              .name Y’a d’la joie
+              .tr  8€
+              .date Vendredi 26 juin
+            %li.v
+              .name Comme un gant
+              .tr 8€
+              .date Vendredi 26 juin
+            %li.s
+              .name Palatine
+              .tr 8€
+              .date Samedi 25 juin
+            %li.d
+              .name Albertine, Marthe, Andrée…
+              .tr 8€
+              .date Dimanche 28 juin
+            %li.d
+              .name Le Malade Imaginaire
+              .tr 8€
+              .date Dimanche 28 juin
+        / By reduced price table
+        .solo.pricer
+          %ul
+            %li.lheader
+              .name 
+                %span Spectacles
+              .tr
+                %span Plein tarif
+              .date 
+                %span Dates
+
+            %li
+              .price 3€    
+            %li.s
+              .name Petit navire
+              .tr 3€
+              .date Samedi 27 juin
+
+            %li 
+              .price 4€              
+            %li.j.v
+              .name La petite sirène
+              .tr 5€
+              .date Jeudi 25 juin<br />Vendredi 26 juin
+            %li
+              .price 5€
+            %li.j
+              .name Petits contes de la joie de vivre
+              .tr 5€
+              .date Jeudi 25 juin
+            %li.s
+              .name Enfantillages
+              .tr 5€
+              .date Samedi 27 juin
+            %li.d
+              .name Légendes picardes du M.A.
+              .tr 5€
+              .date Dimanche 28 juin
+            %li.d
+              .name Café Proust
+              .tr 5€
+              .date Dimanche 28 juin
+            %li.d
+              .name Yvonne et Gaston
+              .tr 5€
+              .date Dimanche 28 juin
+
+            %li
+              .price 8€
+            %li.s
+              .name Quand le silence se prend une claque
+              .tr 8€
+              .date Samedi 27 juin
+
+            %li
+              .price 8€
+            %li.j
+              .name Friends
+              .tr 12€
+              .date Jeudi 25 juin
+            %li.v
+              .name Y’a d’la joie
+              .tr  12€
+              .date Vendredi 26 juin
+            %li.v
+              .name Comme un gant
+              .tr 12€
+              .date Vendredi 26 juin
+            %li.s
+              .name Palatine
+              .tr 12€
+              .date Samedi 25 juin
+            %li.d
+              .name Albertine, Marthe, Andrée…
+              .tr 12€
+              .date Dimanche 28 juin
+            %li.d
+              .name Le Malade Imaginaire
+              .tr 12€
+              .date Dimanche 28 juin
+        
+        / Passeport
+        .passeport
+          %ul
+            %li.des
+              .intro
+                Le Passeport Festival est une enveloppe qui contient une entrée pour les spectacles suivants :
+              .sp1 Friends,
+              .sp2 Y’a d’la joie,
+              .sp3 Comme un gant,
+              .sp4 Palatine,
+              .sp5 le Malade Imaginaire.
+            %li.price
+              55€
       .mention
         %a(href="mentionslegales.html") Mentions Légales
         | Copyright © Théâtre en Festival. Tous droits réservés
