@@ -3,52 +3,53 @@ a {
 }
 /* fonction d'animation, n'oubliez pas de prefixer ! */
 @include keyframes(slider) {
-    0%, 100%        { left: 0 }
-    3%, 99%         { left: -100% }
-    6%, 98%         { left: -200% }
-    9%, 96%         { left: -300% }
-    12%,94%         { left: -400% }
-    15%,92%         { left: -500% }
-    18%,90%         { left: -600% }
-    21%,88%         { left: -700% }
-    24%,86%         { left: -800% }
-    27%,84%         { left: -900% }
-    30%,82%         { left: -1000% }
-    33%,80%         { left: -1100% }
-    36%,78%         { left: -1200% }
-    39%,76%         { left: -1300% }
-    42%,74%         { left: -1400% }
-    45%,72%         { left: -1500% }
-    48%,69%         { left: -1600% }
-    51%,66%         { left: -1700% }
-    54%,64%         { left: -1800% }
-    57%,62%         { left: -1900% }
-    60%             { left: -2000% }
+    from       { left: 0 }
+    5%         { left: -100% }
+    10%        { left: -200% }
+    15%        { left: -300% }
+    20%        { left: -400% }
+    25%        { left: -500% }
+    30%        { left: -600% }
+    35%        { left: -700% }
+    40%        { left: -800% }
+    45%        { left: -900% }
+    50%        { left: -1000% }
+    54%        { left: -1100% }
+    60%        { left: -1200% }
+    65%        { left: -1300% }
+    70%        { left: -1400% }
+    75%        { left: -1500% }
+    80%        { left: -1600% }
+    85%        { left: -1700% }
+    90%        { left: -1800% }
+    95%        { left: -1900% }
+    to         { left: -2000% }
 }
 @include keyframes(translate){
   0%,5%    { left: 0 }
-  81%,to      { left: -5000px; }
+  81%,to   { left: -5000px; }
 }
 /* fonction d'animation, n'oubliez pas de prefixer ! */
 @include keyframes(mslider) {
-    0%,19%, 81%,100%      { left: 0 }
-    21%, 39%, 61%, 79%    { left: -100% }
-    41%, 59%              { left: -200% }
+    from, 37%    { left: 0 }
+    35%, 67%     { left: -100% }
+    69%, to      { left: -200% }
 }
 
 /* fonction d'animation sur les points */
 @include keyframes(dotser) {
-  0%, 100%  { opacity: 1; left: 5px;  }
-
-  18%,81%     { opacity: 1; left: 5px;    }
-  19%,80%     { opacity: 0; left: 5px;    }
-  20%,79%     { opacity: 0; left: 23px; }
-  21%,78%     { opacity: 1; left: 23px; }
-
-  38%,61%    { opacity: 1; left: 23px; }
-  39%,60%     { opacity: 0; left: 23px; }
-  40%,59%     { opacity: 0; left: 41px; }
-  41%,58%     { opacity: 1; left: 41px; }
+  // Initial cooration
+  from       { opacity: 1; left: 5px;  }
+  // Transition 1
+  33%        { opacity: 1; left: 5px;    }
+  34%        { opacity: 0; left: 5px;    }
+  35%        { opacity: 0; left: 23px; }
+  36%        { opacity: 1; left: 23px; }
+  // Transition 2
+  67%        { opacity: 1; left: 23px; }
+  68%        { opacity: 0; left: 23px; }
+  69%        { opacity: 0; left: 41px; }
+  70%,to     { opacity: 1; left: 41px; }
 
 }
 /* Slider partenaires */
@@ -201,7 +202,7 @@ a {
 
   .animate {
    /* ... avec la propriété animation */
-    @include animation(slider 96s infinite);
+    @include animation(slider 48s infinite alternate);
   }
 }
 
@@ -313,7 +314,7 @@ a {
 
         &:first-child {
           a:after {
-            @include animation(dotser 60s infinite);
+            @include animation(dotser 30s infinite alternate);
           }
         }
 
@@ -404,9 +405,8 @@ a {
     height: 300px;
     overflow: hidden;
   }
-
   .animate {
-    @include animation(mslider 60s infinite);
+    @include animation(mslider 30s infinite alternate);
   }
 }
 .command {
