@@ -34,7 +34,7 @@ a {
 }
 
 @include keyframes(mslider) {
-    from, 37%    { left: 0 }
+    from, 33%    { left: 0 }
     35%, 67%     { left: -100% }
     69%, to      { left: -200% }
 }
