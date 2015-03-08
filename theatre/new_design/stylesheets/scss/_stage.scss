@@ -47,13 +47,19 @@
         width: 33%;
         padding: 5%;
         h1 {
+          @include display-flex;
           color: #6a5132;
           font-weight: large;
           margin-bottom: 15%;
           text-align: left;
+          line-height: 2ex;
         }
         ul {
+         // @include display-flex;
+         // @include flex-direction(column);
           li {
+         // @include display-flex;
+         // @include flex-direction(row);
             margin: 2% 0;
             &:first-of-type {
               margin-bottom: 5%;

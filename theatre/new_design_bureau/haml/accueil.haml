@@ -1,14 +1,15 @@
+/ @author: FREVILLE Titouan <titouanfreville@hotmail.fr, tfreville@nexway.com, titouan.freville@ensiie.fr >
+/ This is on of the projected version. Official version will be upload on <http://www.festival-saint-valery.fr/>
 !!!
 %html
   %head
     %meta{"http-equiv" => "Content-Type", :content => "text/html; charset=UTF-8"}/
-    %title Festival de Saint Valery sur Somme :: partenaires
+    %title Festival de Saint Valery sur Somme :: site officiel
     %link{:href => "./stylesheets/style.css", :rel => "stylesheet", :type =>"text/css", :title => "style"}/
     %link{:rel => "shortcut icon", :type => "image/x-icon", :href => "./images/favicon.ico"}/
     %link{:rel => "icon", :type=>"image/png", :href=>"./images/favicon.png"}/
-    %script{:type=>"text/javascript", :src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"}
-    %script{:type=>"text/javascript", :src=>"./js/menu.js"}
-  %body
+  %body 
+
     .header
       .bandeau
         .logo
@@ -16,7 +17,7 @@
           .name
             Théâtre en Festival
           .action
-            Festival de Théâtre Saint Valery sur somme
+            Festival de Théâtre Saint Valery sur Somme
       .menu
         %ul
           %li<
@@ -38,12 +39,23 @@
     %br
     %br
     .main
-      %header
-        %span <p>les </p> partenaires
-      %span.friends Ils nous soutiennent
+      .espace
+        %a(href="./espacepresse.html") ESPACE PRESSE
+        %span &nbsp;| espace adhérents
+      .container
+        .content
+          %sep
+          .thanks
+            <span>Un grand merci</span> aux comédiens, metteurs en scène, administrateurs, et techniciens du spectacle vivant qui font vivre ces jours de théâtre.
+          %sep
+          .thanks
+            Merci aux bénévoles qui travaillent à ces rencontres et mettent au service de l’association, leur disponibilité, leurs compétences, leur dynamisme.
+          %sep
+          .thanks
+            Merci aux collectivités territoriales et aux partenaires qui, par leur financement, rendent cette aventure possible.
       %section
-        %span#pa_play.pacommand &nbsp;
-        %span#pa_pause.pacommand &nbsp;  
+        #pa_play.pacommand 
+        #pa_pause.pacommand  
         .slideshow
           %a.play_commands.pause{:href => "#pa_pause", :title => "pause"} pause
           %a.play_commands.play{:href=>"#pa_play", :title => "play"} play
@@ -93,6 +105,6 @@
                 %img{:src=>"images/bateau_baie_desomme_defile.png", :class=>"anim"}
               %figure>
                 %img{:src=>"images/nora_defile.png", :class=>"anim"}
-      .mention
+      .mention.visibility
         %a(href="mentionslegales.html") Mentions Légales
         | Copyright © Théâtre en Festival. Tous droits réservés

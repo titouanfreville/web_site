@@ -35,47 +35,44 @@
       }
     }
 
-    .stage {
+    .allstage{
       @include display-flex;
-      @include flex-direction(column);
+      @include flex-direction(row);
       @include justify-content(space-around);
-      width: 33%;
-      padding: 5%;
+      height: 100%;
+      .stage {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        width: 33%;
+        padding: 5%;
+        h1 {
+          color: #6a5132;
+          font-weight: large;
+          margin-bottom: 15%;
+          text-align: left;
+          line-height: 1.5ex;
+        }
+        ul {
+          li {
+            margin: 2% 0;
+            &:first-of-type {
+              margin-bottom: 5%;
+            }
 
-      h1 {
-        color: #6a5132;
-        font-weight: large;
-        margin-bottom: 15%;
-        text-align: left;
-      }
-      ul {
-        li {
-          margin: 2% 0;
-          &:first-of-type {
-            margin-bottom: 5%;
+            a {
+              font-weight: normal;
+            }
           }
-
-          a {
-            font-weight: normal;
+          span {
+            font-weight: bold;
+            font-style: italic;
+            margin-right: 1ex;
           }
-        }
-        span {
-          font-weight: bold;
-          font-style: italic;
-          margin-right: 1ex;
-        }
-        sep {
-          @include display-flex;
-          height: 6ex;
-        }
-      }
-
-      &:last-of-type {
-        sep {
-          height: 1ex;
         }
       }
     }
+    
 
     .loc {
       @include display-flex;

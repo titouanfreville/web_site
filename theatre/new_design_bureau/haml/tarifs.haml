@@ -1,3 +1,5 @@
+/ @author: FREVILLE Titouan <titouanfreville@hotmail.fr, tfreville@nexway.com, titouan.freville@ensiie.fr >
+/ This is on of the projected version. Official version will be upload on <http://www.festival-saint-valery.fr/>
 !!!
 %html
   %head
@@ -14,13 +16,13 @@
         .logo
         .txt
           .name
-            Association Théâtre en Festival
+            Théâtre en Festival
           .action
             Festival de Théâtre Saint Valery sur somme
       .menu
         %ul
           %li<
-            %a{:href=>"./index.html"} ACCUEIL
+            %a{:href=>"./accueil.html"} ACCUEIL
           %li<
             %a{:href=>"./programme.html"} PROGRAMME
           %li<
@@ -40,9 +42,119 @@
     .main
       %header
         %span <p>Les </p> Tarifs
-      .waiting
-        %span
-          Les tarifs du 7<sup>e</sup> festival sont en cours d'élaboration.
+      .tarifs
+        %h1 Les tarifs du 7<sup>ème</sup> festival
+
+        / Print selected days shedule
+        %input{:type => "checkbox", :id => "j"}
+        %input{:type => "checkbox", :id => "v"}
+        %input{:type => "checkbox", :id => "s"}
+        %input{:type => "checkbox", :id => "d"}
+  
+        .selector
+          %ul
+            %li 
+              %ul
+                %li Date
+                %li 
+                  %label.j{:for => "j"} Jeudi 25 juin
+                %li
+                  %label.v{:for => "v"} Vendredi 26 juin
+                %li
+                  %label.s{:for => "s"} Samedi 27 juin
+                %li  
+                  %label.d{:for => "d" } Dimanche 28 juin
+        / By date table
+        .solo.date
+          %ul
+            %li.lheader
+              .name 
+                %span Spectacles
+              .pt 
+                %span Plein tarif
+              .tr
+                %span Tarif réduit (scolaires, étudiants, demandeurs d’emploi, intermittents)
+            %li.j
+              .date Jeudi 25 juin
+            %li.j
+              .name La petite sirène
+              .pt 5€
+              .tr 4€ (CCBSS)
+            %li.j
+              .name Petits contes de la joie de vivre
+              .pt 5€
+              .tr.none               
+            %li.j
+              .name Friends
+              .pt 12€
+              .tr 8€
+            %li.v
+              .date Vendredi 26 juin
+            %li.v
+              .name  La petite sirène
+              .pt 5€
+              .tr 4€ (CCBSS)
+            %li.v
+              .name Y’a d’la joie
+              .pt 12€
+              .tr  8€
+            %li.v
+              .name Comme un gant
+              .pt 12€
+              .tr 8€ 
+            %li.s 
+              .date Samedi 27 juin
+            %li.s
+              .name Quand le silence se prend une claque
+              .pt 8€
+              .tr.none
+            %li.s
+              .name Petit navire
+              .pt 3€
+              .tr.none
+            %li.s
+              .name Enfantillages
+              .pt 5€
+              .tr.none
+            %li.s
+              .name Palatine
+              .pt 12€
+              .tr 8€
+            %li.d
+              .date Dimanche 28 juin
+            %li.d
+              .name Légendes picardes du M.A.
+              .pt 5€
+              .tr.none
+            %li.d
+              .name Café Proust
+              .pt 5€
+              .tr.none
+            %li.d
+              .name «&nbsp;Ma chère Yvonne&nbsp;»
+              .pt 5€
+              .tr.none
+            %li.d
+              .name Albertine, Marthe, Andrée…
+              .pt 12€
+              .tr 8€
+            %li.d
+              .name Le Malade Imaginaire
+              .pt 15€
+              .tr 12€
+        / Passeport
+        .passeport
+          %ul
+            %li.des
+              .intro
+                Le Passeport Festival est une enveloppe qui contient une entrée pour les spectacles suivants :
+              .sp1 Friends,
+              .sp2 Y’a d’la joie,
+              .sp3 Comme un gant,
+              .sp4 Palatine,
+              .sp5 le Malade Imaginaire.
+            %li.price
+              55€
       .mention
         %a(href="mentionslegales.html") Mentions Légales
         | Copyright © Théâtre en Festival. Tous droits réservés
