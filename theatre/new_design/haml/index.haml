@@ -1,5 +1,5 @@
 / @author: FREVILLE Titouan <titouanfreville@hotmail.fr, tfreville@nexway.com, titouan.freville@ensiie.fr >
-/ This is the proposed version. Official version will be upload on <http://www.festival-saint-valery.fr/>
+/ This is on of the projected version. Official version will be upload on <http://www.festival-saint-valery.fr/>
 !!!
 %html
   %head
@@ -13,10 +13,66 @@
     %input{:type=>"radio", :id=>"overlay_joke", :name=>"overlay"}
     %label{:for=>"overlay_joke"}
     .rideau
+
+    / Popup events
     .overlay
       .ocontent
         .close
           Accéder au site
+        / Slider partenaire
+        %section
+          #pa_play.pacommand 
+          #pa_pause.pacommand  
+          .slideshow
+            %a.play_commands.pause{:href => "#pa_pause", :title => "pause"} pause
+            %a.play_commands.play{:href=>"#pa_play", :title => "play"} play
+            .container
+              .slider.animate
+                %figure<
+                  %img{:src=>"images/stvalery_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/comdecom_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/somme_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/region_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/picardiefr3_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/intermarche_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/garagebarbier_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/delahaye_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/france_bleu_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/picardia_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/nautic_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/hyperu_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/proxinews_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/courrierpicard_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/picardieweb_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/journaldabbeville_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/eclaireur_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/ecbs_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/evasion_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/irem_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/bateau_baie_desomme_defile.png", :class=>"anim"}
+                %figure>
+                  %img{:src=>"images/nora_defile.png", :class=>"anim"}
+        / End slider
         %a(href="./programme.html")
           .img
         .txt
@@ -24,6 +80,7 @@
             %i 
               Cliquez ici 
             pour rentrer dans le 7eme festival de théâtre de Saint Valery sur Somme, les 25, 26, 27et 28 juin 2015
+
     .header
       .bandeau
         .logo
@@ -57,29 +114,29 @@
         %a(href="./espacepresse.html") ESPACE PRESSE
         %span &nbsp;| espace adhérents
       .container
-        / Diaporama text commandé.
+        / Command for information slider
         %span#sl_play.command &nbsp;
         %span#sl_pause.command &nbsp;
         %span#sl_i1.command.i &nbsp;
         %span#sl_i2.command.i &nbsp;
         %span#sl_i3.command.i &nbsp;
+        / Animate slider : informations
         %section.mslide
           %a.play_commands.pause{:href => "#sl_pause", :title => "pause"} pause
           %a.play_commands.play{:href=>"#sl_play", :title => "play"} play
           .bar
-            / Animate slider
             .mslider.animate
-              .box.green.b2
+              .box.green
                 %h1 Le 7<sup>ème</sup> festival s'annonce !
                 %img{:alt=>"Toute l&#39;équipe de Théâtre en festival prépare la cinquième édition de ce rendez-vous culturel, voulu populaire et festif.", :height=>"163", :src=>"./images/adhesion.jpg", :width=>"420"}
                 %br
                 %a(href="./programme.html")voir le programme
-              .box.red.b1
+              .box.red
                 %h1 PROGRAMME des stages
                 %img{:height => "139", :width => "300", :src => "./images/im1-stage.png"}>
                 %br
                 %a(href="./stages.html") présentation des stages 2014-2015
-              .box.green.b2
+              .box.green
                 %h1 SOUTENEZ LE FESTIVAL : adhérez à l'ASSOCIATION.
                 %img{:alt=>"Toute l&#39;équipe de Théâtre en festival prépare la cinquième édition de ce rendez-vous culturel, voulu populaire et festif.", :height=>"163", :src=>"./images/adhesion.jpg", :width=>"420"}
                 %p
@@ -87,18 +144,18 @@
                 %a(href="./association.html")en savoir +
             / Controlled slider. As animation position isn't editable using css, we have to hack it using a second slider.
             .dslider
-              .box.green.b2
+              .box.green.b1
                 %h1 Le 7<sup>ème</sup> festival s'annonce !
                 %img{:alt=>"Toute l&#39;équipe de Théâtre en festival prépare la cinquième édition de ce rendez-vous culturel, voulu populaire et festif.", :height=>"163", :src=>"./images/adhesion.jpg", :width=>"420"}
                 %br
                 %a(href="./programme.html")voir le programme
                 %a(href="./tarifs.html")voir les tarifs 
-              .box.red.b1
+              .box.red.b2
                 %h1 PROGRAMME des stages
                 %img{:height => "139", :width => "300", :src => "./images/im1-stage.png"}>
                 %br
                 %a(href="./stages.html") présentation des stages 2014-2015
-              .box.green.b2
+              .box.green.b3
                 %h1 SOUTENEZ LE FESTIVAL : adhérez à l'ASSOCIATION.
                 %img{:alt=>"Toute l&#39;équipe de Théâtre en festival prépare la cinquième édition de ce rendez-vous culturel, voulu populaire et festif.", :height=>"163", :src=>"./images/adhesion.jpg", :width=>"420"}
                 %p
@@ -113,20 +170,21 @@
             %li>
               %a{:title=>"Show slide 3", :href=>"#sl_i3"}Slide 3
         .content
-          %span
-            Un grand merci aux comédiens, metteurs en scène, administrateurs et techniciens du spectacle vivant que nous accueillons pour le plus grand plaisir de tous et qui assurent la réussite du festival.
-          %span
+          %sep
+          .thanks
+            <span>Un grand merci</span> aux comédiens, metteurs en scène, administrateurs, et techniciens du spectacle vivant qui font vivre ces jours de théâtre.
+          %sep
+          .thanks
             Merci aux bénévoles qui travaillent à ces rencontres et mettent au service de l’association, leur disponibilité, leurs compétences, leur dynamisme.
-          %span
+          %sep
+          .thanks
             Merci aux collectivités territoriales et aux partenaires qui, par leur financement, rendent cette aventure possible.
             %br
           %sep
           .red
             %a(href="http://www.festival-saint-valery.fr/pdfs/theatre_en_festival_stage_2014_2015.pdf")téléchargez les informations pour les stages au format PDF (24 Mo)
           %sep
-          .thanks
-            <span>Un grand merci</span> aux comédiens, metteurs en scène, administrateurs, et techniciens du spectacle vivant qui font vivre ces jours de théâtre.
-          %sep
+          
           %span
             %img{:height=>"96", :src=>"./images/nouvel33.jpg", :width=>"100"}
             %p

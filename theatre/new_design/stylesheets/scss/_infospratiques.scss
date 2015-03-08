@@ -43,6 +43,18 @@
         a {
           margin-bottom: 2ex;
         }
+
+        &.plus {
+          color: #215868;
+          h4 {
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: x-large;
+            margin: 1ex;
+            font-weight: bold;
+            text-align: center;
+          }
+        }
       }
 
     }
