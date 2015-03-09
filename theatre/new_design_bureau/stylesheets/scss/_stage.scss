@@ -12,7 +12,10 @@
     @include align-items(center);
 
     &.nc {
-      @include align-items(flex-start);
+      @include display-flex;
+      @include flex-direction(row);
+      @include justify-content(space-around);
+      height: 100%;
     }
     width: 100%;
     padding: 20px;
@@ -35,40 +38,39 @@
       }
     }
 
-    .allstage{
+    .stage {
       @include display-flex;
-      @include flex-direction(row);
+      @include flex-direction(column);
       @include justify-content(space-around);
-      height: 100%;
-      .stage {
+      width: 33%;
+      padding: 5%;
+      h1 {
         @include display-flex;
-        @include flex-direction(column);
-        @include justify-content(space-around);
-        width: 33%;
-        padding: 5%;
-        h1 {
-          color: #6a5132;
-          font-weight: large;
-          margin-bottom: 15%;
-          text-align: left;
-          line-height: 1.5ex;
-        }
-        ul {
-          li {
-            margin: 2% 0;
-            &:first-of-type {
-              margin-bottom: 5%;
-            }
+        color: #6a5132;
+        font-weight: large;
+        margin-bottom: 15%;
+        text-align: left;
+        line-height: 2ex;
+      }
+      ul {
+       // @include display-flex;
+       // @include flex-direction(column);
+        li {
+       // @include display-flex;
+       // @include flex-direction(row);
+          margin: 2% 0;
+          &:first-of-type {
+            margin-bottom: 5%;
+          }
 
-            a {
-              font-weight: normal;
-            }
+          a {
+            font-weight: normal;
           }
-          span {
-            font-weight: bold;
-            font-style: italic;
-            margin-right: 1ex;
-          }
+        }
+        span {
+          font-weight: bold;
+          font-style: italic;
+          margin-right: 1ex;
         }
       }
     }
