@@ -55,10 +55,53 @@
       .name {
         @include display-flex;
         @include flex(1.2);
+        position: relative;
         font-style: italic;
         font-weight: bold;
         border-left-width: 2px;
         min-width: 380px;
+        cursor: url(../images/loupe.svg), auto;
+        .highlight {
+          display: none;
+          position: absolute;
+          h1 {
+            text-align: center !important;
+          }
+          &.l {
+            height: 250px;
+            min-width: 700px;
+            width: 800px;
+            max-width: 900px;
+            top: -250px;
+          }
+          &.m {
+            height: 300px;
+            min-width: 700px;
+            width: 800px;
+            max-width: 900px;
+            top: -300px;
+          }
+          &.t {
+            height: 400px;
+            min-width: 700px;
+            width: 800px;
+            max-width: 900px;
+            top: -400px; 
+          }
+          &.b { 
+            height: 200px;
+            width: 480px;
+            top: -200px; 
+          }
+          left: 0;
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+        &:active {
+          .highlight {
+            display:block;
+            z-index: 200;
+          }
+        }
       }
       .pt, .tr, .date, .price {
         @include display-flex;
@@ -76,6 +119,7 @@
       &:first-child {
         .name, .pt, .tr, .date {
           border-top-width: 2px;
+          pointer-events: none;
         }
       }
       &:last-child {
@@ -95,6 +139,7 @@
         width: 100%;
         padding: 2px 0;
         text-align: center;
+        pointer-events: none;
       }
       .tr{
         border-right-width: 2px;
