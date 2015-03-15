@@ -50,56 +50,57 @@
         %input{:type => "checkbox", :id => "v"}
         %input{:type => "checkbox", :id => "s"}
         %input{:type => "checkbox", :id => "d"}
-  
+
         .selector
           %ul
-            %li 
+            %li
               %ul
                 %li Date
-                %li 
+                %li
                   %label.j{:for => "j"} Jeudi 25 juin
                 %li
                   %label.v{:for => "v"} Vendredi 26 juin
                 %li
                   %label.s{:for => "s"} Samedi 27 juin
-                %li  
+                %li
                   %label.d{:for => "d" } Dimanche 28 juin
         / By date table
         .solo.date
           %ul
             %li.lheader
-              .name 
+              .name
                 %span Spectacles
-              .pt 
+              .pt
                 %span Plein tarif
               .tr
                 %span Tarif réduit (scolaires, étudiants, demandeurs d’emploi, intermittents)
             %li.j
               .date Jeudi 25 juin
+            /
+              %li.j
+                .name
+                  La petite sirène
+                  Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
+                  .highlight.l
+                    .box
+                      .img.sirene
+                      .txt.sirene
+                        .info
+                          .tete.pmarge
+                            %h1
+                              la petite sirene
+                            %h3
+                              La Briganderie
+                          %span
+                            Tout le monde connait le conte d'Andersen&nbsp;: une petite sirène sauve un prince du naufrage et ...
+                        %span.horaire
+                          Matinées réservées aux scolaires<br />jeudi 25 juin à 10 h. et vendredi 26 juin à 10 et 15 h.
+                .pt 5€
+                .tr 4€ (CCBSS)
             %li.j
-              .name 
-                La petite sirène
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
-                .highlight.l
-                  .box
-                    .img.sirene
-                    .txt.sirene
-                      .info
-                        .tete.pmarge
-                          %h1
-                            la petite sirene
-                          %h3
-                            La Briganderie
-                        %span
-                          Tout le monde connait le conte d'Andersen&nbsp;: une petite sirène sauve un prince du naufrage et ...
-                      %span.horaire
-                        Matinées réservées aux scolaires<br />jeudi 25 juin à 10 h. et vendredi 26 juin à 10 et 15 h.
-              .pt 5€
-              .tr 4€ (CCBSS)
-            %li.j
-              .name 
+              .name
                 Petits contes de la joie de vivre
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.b
                   .band
                     .tete.pmarge
@@ -112,11 +113,11 @@
                       %span.horaire
                         Jeudi 25 juin à 19 h.
               .pt 5€
-              .tr.none               
+              .tr.none
             %li.j
-              .name 
+              .name
                 Friends
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#friends
                     .img.friends
@@ -137,30 +138,31 @@
               .tr 8€
             %li.v
               .date Vendredi 26 juin
+            /
+              %li.v
+                .name
+                  La petite sirène
+                  Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
+                  .highlight.l
+                    .box
+                      .img.sirene
+                      .txt.sirene
+                        .info
+                          .tete.pmarge
+                            %h1
+                              la petite sirene
+                            %h3
+                              La Briganderie
+                          %span
+                            Tout le monde connait le conte d'Andersen&nbsp;: une petite sirène sauve un prince du naufrage et ...
+                        %span.horaire
+                          Matinées réservées aux scolaires<br />jeudi 25 juin à 10 h. et vendredi 26 juin à 10 et 15 h.
+                .pt 5€
+                .tr 4€ (CCBSS)
             %li.v
               .name
-                La petite sirène
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
-                .highlight.l
-                  .box
-                    .img.sirene
-                    .txt.sirene
-                      .info
-                        .tete.pmarge
-                          %h1
-                            la petite sirene
-                          %h3
-                            La Briganderie
-                        %span
-                          Tout le monde connait le conte d'Andersen&nbsp;: une petite sirène sauve un prince du naufrage et ...
-                      %span.horaire
-                        Matinées réservées aux scolaires<br />jeudi 25 juin à 10 h. et vendredi 26 juin à 10 et 15 h.
-              .pt 5€
-              .tr 4€ (CCBSS)
-            %li.v
-              .name 
                 Y’a d’la joie
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.l
                   .box#yadlajoie
                     .img.yadlajoie
@@ -178,9 +180,9 @@
               .pt 12€
               .tr  8€
             %li.v
-              .name 
+              .name
                 Comme un gant
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#commeungant
                     .img.commeungant
@@ -196,13 +198,13 @@
                       %span.horaire
                         Vendredi 26 juin à 21h. 30
               .pt 12€
-              .tr 8€ 
-            %li.s 
+              .tr 8€
+            %li.s
               .date Samedi 27 juin
             %li.s
-              .name 
+              .name
                 Quand le silence se prend une claque
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.m
                   .box#silence.hfirst
                     %h1
@@ -220,9 +222,9 @@
               .pt 8€
               .tr.none
             %li.s
-              .name 
+              .name
                 Petit navire
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.l
                   .box#navire.petitnavire
                     .img.petitnavire
@@ -240,9 +242,9 @@
               .pt 3€
               .tr.none
             %li.s
-              .name 
+              .name
                 Enfantillages
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#enfant
                     .img.enfantillages
@@ -260,9 +262,9 @@
               .pt 5€
               .tr.none
             %li.s
-              .name 
+              .name
                 Palatine
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#palatine
                     .img.palatine
@@ -282,9 +284,9 @@
             %li.d
               .date Dimanche 28 juin
             %li.d
-              .name 
+              .name
                 Légendes picardes du M.A.
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#lpma
                     .img.lpma
@@ -302,9 +304,9 @@
               .pt 5€
               .tr.none
             %li.d
-              .name 
+              .name
                 Café Proust
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.l
                   .box#cp
                     .img.cafeproust
@@ -322,9 +324,9 @@
               .pt 5€
               .tr.none
             %li.d
-              .name 
+              .name
                 «&nbsp;Ma chère Yvonne&nbsp;»
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#mcy
                     .img.yvonneetgaston
@@ -342,9 +344,9 @@
               .pt 5€
               .tr.none
             %li.d
-              .name 
+              .name
                 Albertine, Marthe, Andrée…
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#hamac.hfirst
                     %h1.hamac
@@ -365,9 +367,9 @@
               .pt 12€
               .tr 8€
             %li.d
-              .name 
+              .name
                 Le Malade Imaginaire
-                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon 
+                / Thanks to http://www.flaticon.com/authors/vectorgraphit for the icon
                 .highlight.t
                   .box#mi.hfirst
                     %h1.mi
