@@ -1,0 +1,105 @@
+.contact {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(stretch);
+
+  h1 {
+    text-align: left;
+    font-style: italic;
+    color: #F89133;
+    margin: 0 30px;
+    line-height: 150%;
+    font-size: large;
+  }
+
+  ul {
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-self(center);
+    @include align-items(center);
+    width: 80%;
+    li {
+      @include display-flex;
+      @include flex-direction(row);
+      @include justify-content(center);
+      @include align-items(flex-start);
+      width: 100%;
+
+      .way {
+        font-style: italic;
+        text-align: right;
+        width:50%;
+        padding: 5px;
+      }
+      .solution {
+        text-align: left;
+        width: 50%;
+        padding: 5px;
+      }
+      .title {
+        width : 180px;
+        text-align: right;
+        padding: 5px;
+      }
+
+      .name {
+        width : 180px;
+        text-align: center;
+        padding: 5px;
+      }
+
+      .link {
+        width : 180px;
+        text-align: left;
+        padding: 5px;
+        font-size: small;
+      }
+    }
+  }
+}
+
+.cad {
+  text-align: center;
+  font-size: small;
+}
+
+form {
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  margin: 4em 0;
+
+  label {
+    @include display-flex;
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+
+    span,input,textarea {
+      margin: 5px;
+    }
+
+    span {
+      width: 10em;
+    }
+
+    input {
+      width: 15em;
+      margin-right: 7.5em;
+    }
+  }
+
+  input {
+    width: 5em;
+  }
+
+  span {
+    text-align: right;
+    color: #CC6600;
+    font-size: small;
+  }
+
+}

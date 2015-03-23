@@ -1,0 +1,339 @@
+.pgr {
+  background-color: rgba(255,255,255,0.8);
+  .content{
+    @include display-flex;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-self(center);
+    font-size: normal;
+    .important {
+      font-family: $prog_font;
+      color: red;
+      text-decoration: underline;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 20px;
+    }
+    .table {
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      @include align-items(center);
+      color: #215868;
+      font-family: $prog_font;
+      width: 100%;
+      h1 {
+        @include display-flex;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-family: $h1_prog_font;
+      }
+      ul {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(flex-start);
+        width: 70%;
+        margin: 1em 0;
+        li {
+          @include display-flex;
+          @include flex-direction(row);
+          @include justify-content(center);
+          width: 100%;
+          .name, .date, .heure {
+            border: 1px solid red;
+            padding: 2px 5px;
+          }
+          .name {
+            @include display-flex;
+            @include flex(2);
+            font-style: italic;
+            font-weight: bold;
+            border-left: 2px solid red;
+            min-width: 380px;
+
+            span {
+              color: #8B3036;
+              margin-right: 1ex;
+            }
+          }
+          .date, .heure{
+            @include display-flex;
+            @include flex(1);
+            text-align: center;
+            @include justify-content(center);
+          }
+          .date{
+            min-width:100px;
+          }
+          .heure {
+            border-right: 2px solid red;
+            min-width:140px;
+          }
+          &:first-child {
+            .name, .date, .heure {
+              border-top: 2px solid red;
+            }
+          }
+          &:last-child {
+            .name, .date, .heure {
+              border-bottom: 2px solid red;
+            }
+          }
+        }
+        li.important{
+          text-decoration: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+    .box {
+      @include display-flex;
+      @include flex-direction(row);
+      @include justify-content(space-around);
+      @include align-self(center);
+      font-family: $prog_font;
+      width: 85%;
+      min-height: 200px;
+      margin: 2em 0;
+      h1,h2,h3 {
+        font-family: inherit;
+        font-style: italic;
+        font-weight: bold;
+      }
+      h2,h3 {
+        font-size: x-large;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: xx-large;
+        font-family: $h1_prog_font;
+      }
+      h3 {
+        margin: 10px;
+      }
+      .img {
+        @include display-flex;
+        @include flex(1);
+        margin: 0 5px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+      .sauvageries{
+        height: 220px;
+        background-image: url(../images/sauvageries.jpg);
+      }
+      .sirene {
+        background-image: url(../images/lapetitesirene.jpg);
+        h1 {
+          color: #215868;
+        }
+      }
+      .friends {
+        background-image: url(../images/friends.png);
+        height: 350px;
+        font-style: normal;
+        h1 {
+          color: #f8b600;
+        }
+        .comment {
+          color: #A37D5C;
+          text-align: center;
+          margin: 2.5ex;
+        }
+      }
+      .yadlajoie {
+        background-image: url(../images/yadlajoie.png);
+        h1 {
+          color: #D2700F;
+        }
+      }
+      .commeungant {
+        background-image: url(../images/commeungant.jpg);
+        height: 350px;
+        h1 {
+          color: #0F3566;
+        }
+      }
+      .silence {
+        background-image: url(../images/quandlesilence.png);
+        height: 250px;
+        h1 {
+          color: #C5030B;
+        }
+      }
+      .petitnavire{
+        height: 220px;
+        background-image: url(../images/petitnavire.png); 
+        h1{
+          color: #3C91A6;
+        }
+      }
+      .enfantillages{
+        background-image: url(../images/enfantillages.jpg);
+        height: 350px;
+        h1{
+          color: #940602;
+        }
+      }
+      .palatine{
+        background-image: url(../images/palatine.jpg);
+        height: 350px;
+        h1{
+          color: #d27d10;
+        }
+      }
+      .lpma{
+        background-image: url(../images/lpma.jpg);
+        height: 350px;
+        h1{
+          color: #7E9336;
+          line-height: 2.5ex;
+        }
+      }
+      .cafeproust{
+        background-image: url(../images/cafeproust.jpg);
+        h1 {
+          color: #9E0410;
+        }
+      }
+      .yvonneetgaston{
+        background-image: url(../images/yvonneetgaston.jpg);
+        height: 350px;
+        h1{
+          color: #936130;
+          line-height: 2.5ex;
+        }
+      }
+      .amac{
+        background-image: url(../images/amac.jpg);
+        height: 340px;
+        h1{
+          color: #CB8114;
+          line-height: 2.5ex;
+        }
+      }
+      .maladeimaginaire{
+        background-image: url(../images/maladeimaginaire.jpg);
+        height: 350px;
+      }
+      .txt {
+          @include display-flex;
+          @include flex-direction(column);
+          @include flex(1.5);
+          @include justify-content(space-around);
+          @include align-content(center);
+          @include align-items(center);
+          background: transparent;
+          text-align: center;
+          margin: 0px 5px;
+        .info {
+          @include display-flex;
+          @include flex-direction(column);
+          color: black;
+          margin: 10px;
+        }
+        span {
+          text-align: justify;
+        }
+        span.horaire{
+          text-align: center;
+        }
+      }
+    }
+    .hfirst {
+      @include flex-direction(column);
+      h1 {
+        margin: 0;
+      }
+      .bband {
+        @include display-flex;
+        @include flex-direction(row);
+        width: 100%;
+      }
+      .hamac {
+        color: #CB8114;
+        background: transparent;
+      }
+      .mi{
+        color: #BC4542;
+        line-height: 2.5ex;
+      }
+    }
+    .sauvageries{
+      @include flex-direction(column);
+      text-align: center;
+      h1 {
+        margin: 0;
+        color: #fa5fc5;
+      }
+      .band {
+        @include display-flex;
+        @include flex-direction(row);
+        width: 100%;
+      }
+      .horaire{
+        font-size: 1.2rem;
+        color: #28425D;
+      }
+    }
+    .band {
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      @include align-self(center);
+      text-align:center;
+      font-family: $prog_font;
+      width: 80%;
+      h1,h2,h3 {
+        font-style: italic;
+        font-weight: normal;
+        font-family: inherit;
+        margin: 5px;
+        font-weight: bold;
+      }
+      h1,h2{
+        color: #c00000;
+      }
+      h2,h3 {
+        font-size: x-large;
+      }
+      h1 {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-family: $h1_prog_font;
+      }
+      h2{
+        text-transform: lowercase;
+      }
+      h3 {
+        text-transform: none;
+      }
+      span {
+        margin: 10px;
+      }
+    }
+.tete{
+  @include display-flex;
+  @include flex-direction(column);
+  @include justify-content(space-around);
+}
+.horaire {
+  color: #4d6571;
+  font-weight: bold;
+  text-align: center;
+  .right {
+    text-align: right;
+    margin-right: 5%;
+  }
+}
+.pmarge {
+  margin: 0 0 2%;
+}
+.lmarge {
+  margin: 0 0 10%;
+}
