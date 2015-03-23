@@ -11,7 +11,7 @@
     echo "</head>\n\t<body>\n";
   }
 
-  function bheader()
+  function bheader($class_part)
   {
     echo "<div class=\"header\">\n";
     echo "<div class=\"bandeau\"></div>\n";
@@ -28,12 +28,12 @@
     echo "</ul>\n";
     echo "</div>\n";
     echo "</div>\n";
-    echo "<div class=\"main\">\n";
+    echo "<div class=\"main $class_part\">\n";
   }
 
-  function full_header($title){
+  function full_header($title,$class_part){
     pheader($title);
-    bheader();
+    bheader($class_part);
   }
 
   // print eof
