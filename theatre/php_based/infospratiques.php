@@ -1,6 +1,6 @@
 <?php
   include 'utilities/utilities.php';
-  full_header(infos pratiques);
+  full_header(infos_pratiques);
 ?>
       <header>
         <span><p>infos </p> pratiques</span>
@@ -16,7 +16,7 @@
             </i></span>
           </div>
           <div>
-            <h1>Réservation & achat des billets</h1>
+            <h1>Réservation et achat des billets</h1>
             <h2>En cours d'élaboration pour le 7<sup>éme</sup> festival.</h2>
           </div>
           <div class='plus'>
@@ -52,7 +52,7 @@
               <li><span>Hôtel du Port et des Bains</span> - 1 Quai Blavet<br />Saint Valery // Tél. 03 22 60 80 09</li>
               <li><span>Passage en Baie</span> - Quai Perrée<br />Saint Valery // Tél. 06 09 49 49 04</li>
               <li><span>Hôtel Picardia</span> - Quai du Romerel<br />Saint Valery // Tél. 03 22 60 62 30</li>
-              <li><span>Au Vélocipède & La Femme d'à côté</span> - Rue du Puits Salé<br />Saint Valery // Tél. 03 22 60 57 42</li>
+              <li><span>Au Vélocipède et La Femme d'à côté</span> - Rue du Puits Salé<br />Saint Valery // Tél. 03 22 60 57 42</li>
               <li><span>L'Auberge de la Marine</span> - Rue Florentin Lefils<br />Le Crotoy // Tél. 03 22 27 92 44</li>
               <li><span>Hôtel les Tourelles</span> - 2-4 rue Pierre Guerlain<br />Le Crotoy // Tél. 03 22 27 16 33</li>
               <li><span>Le Château des Lumières</span><br />Saint Blimont // Tél. 09 62 20 42 83</li>

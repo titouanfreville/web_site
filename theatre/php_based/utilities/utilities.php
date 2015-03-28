@@ -11,27 +11,31 @@
     echo "</head>\n\t<body>\n";
   }
 
-  function bheader($class_part)
+  function bheader($class_part=null)
   {
-    echo "<div class=\"header\">\n";
-    echo "<div class=\"bandeau\"></div>\n";
-    echo "<div class=\"menu\">\n";
+    echo "<div class='header'>\n";
+    echo "<div class='bandeau'>\n";
+    echo "<div class='logo'></div>\n";
+    echo "<div class='txt'><div class='name'>Théâtre en Festival</div>";
+    echo "<div class='action'>Festival de Théâtre Saint Valery sur Somme</div>\n";
+    echo"</div></div>\n";
+    echo "<div class='menu $class_part'>\n";
     echo "<ul>\n";
-    echo "<li><a style=\"link\" href=\"./index.html\">ACCUEIL</a></li>\n";
-    echo "<li><a style=\"link\" href=\"./programme.html\">PROGRAMME</a></li>\n";
-    echo "<li><a style=\"link\" href=\"./infospratiques.html\">INFOS PRATIQUES</a></li>\n";
-    echo "<li><a style=\"link\" href=\"./tarifs.html\">TARIFS</a></li>\n";
-    echo "<li><a style=\"link\" href=\"./association.html\">L'ASSOCIATION</a></li>\n";
-    echo "<li><a style=\"link\" href=\"./stages.html\">LES STAGES</a></li>\n";
-    echo "<li><a style=\"link\" href=\"./partenaires.html\">PARTENAIRES</a></li>\n";
-    echo "<li><a style=\"link\" href=\"./contact.html\">CONTACT</a></li>\n";
+    echo "<li><a style='link' href='./index.php'>ACCUEIL</a></li>\n";
+    echo "<li><a style='link' href='./programme.php'>PROGRAMME</a></li>\n";
+    echo "<li><a style='link' href='./infospratiques.php'>INFOS PRATIQUES</a></li>\n";
+    echo "<li><a style='link' href='./tarifs.php'>TARIFS</a></li>\n";
+    echo "<li><a style='link' href='./association.php'>L'ASSOCIATION</a></li>\n";
+    echo "<li><a style='link' href='./stages.php'>LES STAGES</a></li>\n";
+    echo "<li><a style='link' href='./partenaires.php'>PARTENAIRES</a></li>\n";
+    echo "<li><a style='link' href='./contact.php'>CONTACT</a></li>\n";
     echo "</ul>\n";
     echo "</div>\n";
     echo "</div>\n";
-    echo "<div class=\"main $class_part\">\n";
+    echo "<div class='main'>\n";
   }
 
-  function full_header($title,$class_part){
+  function full_header($title,$class_part=null){
     pheader($title);
     bheader($class_part);
   }
@@ -40,7 +44,7 @@
   function eof()
   {
     echo "<div class='mention visibility'>\n";
-    echo "<a href='mentionslegales.html'>Mentions Légales</a>\n";
+    echo "<a href='mentionslegales.php'>Mentions Légales</a>\n";
     echo "| Copyright © Théâtre en Festival. Tous droits réservés\n";
     echo "</div>\n";
     echo "</div>\n</body>\n</html>";
