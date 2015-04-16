@@ -33,6 +33,24 @@
         @include justify-content(space-around);
         @include align-items(stretch);
 
+        .warning {
+          @include display-flex;
+          @include flex-direction(row);
+          height: 100%;
+          .img {
+            @include display-flex;
+            background: $warning center center no-repeat;
+            background-size: contain;
+            @include flex(0.5);
+            height: 100%;
+          }
+          .txt {
+            @include display-flex;
+            @include flex(2);
+            height: 100%;
+          }
+        }
+
         span {
           &.move {
             color: #FF6600;
