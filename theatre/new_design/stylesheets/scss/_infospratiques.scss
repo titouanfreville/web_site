@@ -27,12 +27,22 @@
         text-decoration: underline;
       }
       width: 45%;
+      // Billettrie
       div {
         @include display-flex;
         @include flex-direction(column);
         @include justify-content(space-around);
         @include align-items(stretch);
 
+        h2 {
+          color: #FF6600;
+          font-size: 1rem;
+          margin-left: 1rem;
+        }
+
+        .center {
+          text-align: center;
+        }
         .warning {
           @include display-flex;
           @include flex-direction(row);
@@ -42,12 +52,19 @@
             background: $warning center center no-repeat;
             background-size: contain;
             @include flex(0.5);
-            height: 100%;
           }
           .txt {
             @include display-flex;
             @include flex(2);
+            @include flex-direction(column);
             height: 100%;
+            font-style: italic;
+            font-size: 0.8rem;
+            span {
+              b {
+                font-weight: bold;
+              }
+            }
           }
         }
 
