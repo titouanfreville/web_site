@@ -75,21 +75,21 @@
           @include align-self(center);
           width: 425px;
           .img {
-            background: center center no-repeat;
+            background: transparent center center no-repeat;
             background-size: contain;
             width: 425px;
           }
-          .i1 {
-            background-image: url(../images/affiche-2015.jpg);
+          .i1 {
             height: 200px;
+            background-image: url(../images/affiche-2015.jpg);
           }
-          .i2 {
+          .i2 {
+            height: 200px;
             background-image: url(../images/im1-stage.png);
-            height: 139px;
           }
-          .i3 {
-            background-image: url(../images/adhesion.jpg);
+          .i3 {
             height: 163px;
+            background-image: url(../images/adhesion.jpg);
           }
           h1 {
             font-weight: bold;
