@@ -1,0 +1,70 @@
+.main {
+
+  .pres {
+    @include display-flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    @include align-items(center);
+    margin: 10px;
+    margin-bottom: 40px;
+    min-height: 96px;
+    .txt{
+      line-height: 150%;
+      width: 100%;
+      span {
+        font-weight: bold;
+      }
+      a {
+        font-weight: normal;
+        font-size: medium;
+        font-style: italic;
+      }
+    }
+
+    .picture{
+      @include display-flex;
+      height: 96px;
+      width: 110px;
+      margin: 20px;
+      background: url(../images/virgile.jpg) center center no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .affiche {
+    @include display-flex;
+    @include flex-direction(column);
+    @include align-items(center);
+
+    .band {
+      @include display-flex;
+      @include flex-direction(row);
+      @include justify-content(center);
+      @include align-items(stretch);
+      width: 80%;
+      margin: 10px;
+
+      .b {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        text-align: left;
+        margin: 10px;
+      }
+
+      .r{
+        text-align: right;
+      }
+
+      .aff {
+        @include display-flex();
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+}

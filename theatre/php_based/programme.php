@@ -1,4 +1,4 @@
-;<?php
+<?php
   include 'utilities/utilities.php';
   full_header(programme, pgr);
 ?>

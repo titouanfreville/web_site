@@ -21,7 +21,7 @@
     echo "<div class='txt'><div class='name'>Théâtre en Festival</div>";
     echo "<div class='action'>Festival de Théâtre Saint Valery sur Somme</div>\n";
     echo"</div></div>\n";
-    echo "<div class='menu $class_part'>\n";
+    echo "<div class='menu'>\n";
     echo "<ul>\n";
     echo "<li><a style='link' href='./index.php'>ACCUEIL</a></li>\n";
     echo "<li><a style='link' href='./programme.php'>PROGRAMME</a></li>\n";
@@ -34,7 +34,7 @@
     echo "</ul>\n";
     echo "</div>\n";
     echo "</div>\n";
-    echo "<div class='main'>\n";
+    echo "<div class='main $class_part'>\n";
   }
 
   function full_header($title,$class_part=null){
