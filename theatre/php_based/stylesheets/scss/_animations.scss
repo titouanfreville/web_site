@@ -54,7 +54,7 @@ a {
   70%,to     { opacity: 1; left: 41px; }
 
 }
-/* Sponseor slider */
+/* Sponsor slider */
 .slideshow {
   position: relative;
   width: 283px;
@@ -81,19 +81,86 @@ a {
     height: 160px;
   }
 
-  figure {
+  diapo {
     position:relative;
     display:inline-block;
     padding:0; margin:0;
+    background: transparent no-repeat center center;
+    background-size: contain;
+    width: 283px; height: 160px;
     // Effect on the slide
    &:after {
       position: absolute;
       display:block;
       content: " ";
       top:0; left:0;
-      width: 100%; height: 100%;
+      background:none;
+      width: 283px; height: 160px;
       box-shadow: 0 0 65px rgba(0,0,0, 0.5) inset;
     }
+  }
+  .comdecom {
+    background-image: url(../images/comdecom_defile.jpg);
+  }
+  .somme {
+    background-image: url(../images/somme_defile.jpg);
+  }
+  .region {
+    background-image: url(../images/region_defile.jpg);
+  }
+  .picardie {
+    background-image: url(../images/picardiefr3_defile.jpg);
+  }
+  .intermarche {
+    background-image: url(../images/intermache_defile.jpg);
+  }
+  .garagebarbier {
+    background-image: url(../images/garagebarbier_defile.jpg);
+  }
+  .delahaye {
+    background-image: url(../images/delahaye_defile.jpg);
+  }
+  .france_bleu {
+    background-image: url(../images/france_bleu_defile.jpg);
+  }
+  .picardia {
+    background-image: url(../images/picardia_defile.jpg);
+  }
+  .nautic {
+    background-image: url(../images/nautic_defile.jpg);
+  }
+  .hyperu {
+    background-image: url(../images/hyperu_defile.jpg);
+  }
+  .proxinews {
+    background-image: url(../images/proxinews_defile.jpg);
+  }
+  .courrierpicard {
+    background-image: url(../images/courrierpicard_defile.jpg);
+  }
+  .picardieweb {
+    background-image: url(../images/picardieweb_defile.gif);
+  }
+  .journaldabbeville {
+    background-image: url(../images/journaldabbeville_defile.jpg);
+  }
+  .eclaireur {
+    background-image: url(../images/eclaireur_defile.jpg);
+  }
+  .ecbs {
+    background-image: url(../images/ecbs_defile.jpg);
+  }
+  .evasion {
+    background-image: url(../images/evasion_defile.jpg);
+  }
+  .irem {
+    background-image: url(../images/irem_defile.jpg);
+  }
+  .bateau_baie_desomme {
+    background-image: url(../images/bateau_baie_desomme_defile.jpg);
+  }
+  .nora {
+    background-image: url(../images/nora_defile.jpg);
   }
 
   .play_commands {
@@ -163,7 +230,7 @@ a {
   #pa_play:target ~ & .pause:focus   { opacity:1; }
   .pacommand:target ~ & .play          { opacity:1; right: 25px; cursor: pointer; }
   #pa_play:target ~ & .play          { opacity:0; right: 35px; cursor: default; }
-  
+
   // Show buttons when over/focused
   &:hover {
     .pause, .play_commands:focus {
@@ -177,7 +244,7 @@ a {
   }
 }
 
-/* Slider txt 
+/* Slider txt
 */
 .mslide {
   @include display-flex;
@@ -299,7 +366,7 @@ a {
       }
 
   }
-  
+
   .mslider {
     @include display-flex;
     @include flex-direction(row);

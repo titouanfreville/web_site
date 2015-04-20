@@ -77,7 +77,8 @@ form {
     @include flex-direction(row);
     @include justify-content(center);
     @include align-items(center);
-
+    position: inherit;
+    z-index: inherit;
     span,input,textarea {
       margin: 5px;
     }
