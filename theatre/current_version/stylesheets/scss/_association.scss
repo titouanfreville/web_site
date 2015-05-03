@@ -1,0 +1,82 @@
+.main {
+  .container.center {
+    .informations{
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      @include align-items(center);
+      width: 48%;
+      text-align: justify;
+
+      span {
+        text-indent: 1rem;
+        padding: 0.5ex;
+      }
+
+      h2 {
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+    }
+    .administration {
+      @include display-flex;
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      @include align-items(center);
+      width: 48%;
+      text-align: justify;
+
+      .pict {
+        @include display-flex;
+        background: url("../images/img3D.jpg") no-repeat center center;
+        background-size: contain;
+        height: 201px;
+        width: 100%;
+      }
+
+      h1 {
+        color: #F89133;
+        text-align: justify;
+        font-weight: bold;
+        line-height: 150%;
+        font-style: italic;
+        font-size: large;
+      }
+
+      .membership {
+        @include display-flex;
+        @include flex-direction(column);
+        @include align-items(stretch);
+        span {
+          @include display-flex;
+          margin-bottom: 1rem;
+        }
+
+        a {
+          background: url(../images/linkadhesion.jpg) center center no-repeat;
+          background-size: contain;
+          width: 100%;
+          height: 70px;
+        }
+      }
+
+      .donnation {
+        @include display-flex;
+        @include flex-direction(column);
+        @include align-items(stretch);
+
+        span {
+          @include display-flex;
+          margin-bottom: 1rem;
+        }
+
+        a {
+          background: url(../images/linkdonnation.jpg) center center no-repeat;
+          background-size: contain;
+          width: 100%;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
