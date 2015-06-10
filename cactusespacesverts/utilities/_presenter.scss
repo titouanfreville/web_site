@@ -1,0 +1,19 @@
+presenter {
+  @include display-flex;
+  height: 100%;
+  width: 90%;
+  .diap {
+    @include dislay-flex;
+    @include flex(1);
+    background-size: contain;
+    min-width: 200px;
+    min-height: 100px;
+
+    &:hover {
+      @include flex(2);
+      min-width: 400px !important;
+      min-height: 200px !important;
+    }
+    /* PASSER par js pour le diap */
+  }
+}re
