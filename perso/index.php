@@ -13,9 +13,11 @@
     <h1>Quelques expériences professionnels</h1>
     <ul>
       <li>
-        <date>Décembre 2014 - Mai 2015</date>
-        <role>Web Designer</role>
-        <entreprise>Association Théâtre en Festival</entreprise>
+        <info>
+          <date>Décembre 2014 - Mai 2015</date>
+          <role>Web Designer</role>
+          <entreprise>Association Théâtre en Festival</entreprise>
+        </info>
         <objectif>
           Maintenance du site internet de l'association.
         </objectif>
@@ -25,7 +27,7 @@
               <name>Maintenance du code</name>
               <description>
                 <ul>
-                  <li>Réécriture du code pour l'adapter au novel technologies</li>
+                  <li>Réécriture du code pour l'adapter aux nouvelles technologies</li>
                   <li>Simplification de la navigation</li>
                 </ul>
               </description>
@@ -47,12 +49,15 @@
         </tasks>
       </li>
       <li>
-        <date>25 juin 2014 - 12 septembre 2014</date>
-        <role>Stagiaire</role>
-        <entreprise>Nexway</entreprise>
+        <info>
+          <date>25 juin 2014 - 12 septembre 2014</date>
+          <role>Stagiaire</role>
+          <entreprise class="nexway">Nexway</entreprise>
+        </info>
         <objectif>
           Intégration d'une équipe de développement : développement d'une application de facturation intégrer pour plateforme portable.
         </objectif>
+
         <tasks>
           <ul>
             <li>
@@ -75,6 +80,7 @@
             </li>
           </ul>
         </tasks>
+
       </li>
     </ul>
   </summary>

@@ -13,10 +13,11 @@ body {
   margin: 0;
   // configurable properties -------------
   background-color: $background-color;
-  background: $background-img no-repeat;
+  // background: $background-img no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: $fonts;
-  font-size: 100%;
+  font-size: 1.1rem;
+  line-height: 1.1;
   color: $base-font-color;
 }

@@ -48,7 +48,7 @@
     echo "<body>";
     echo "<div class='header'>";
     echo "<presenter>";
-    echo "<h1>FREVILLE Titouan</h1><br /><h2>$age ans, né le 27 Août 1993 à Abbeville, Somme, FRANCE</h2>";
+    echo "<h1>FREVILLE Titouan</h1><h2>$age ans, né le 27 Août 1993 <span>à Abbeville, Somme, FRANCE</span></h2>";
     echo "<studies>Élèves à l'école d'ingénieur ENSIIE, formation continue</studies>";
     echo "</presenter>";
     echo "<menu>";
@@ -57,6 +57,14 @@
     echo "<li><a>CV</a></li>";
     echo "<li><a>Projet personnel et contribution</a></li>";
     echo "</ul>";
+    echo "<socialnetwork>";
+    echo "<ul>";
+    echo "<li><a href='https://fr.linkedin.com/pub/titouan-freville/9a/5b2/3' class='linkedin'></a></li>";
+    echo "<li><a href='http://fr.viadeo.com/fr/profile/titouan.freville' class='viadeo'></a></li>";
+    echo "<li><a href='https://twitter.com/TitouanFREVILLE' class='twitter'></a></li>";
+    echo "</ul>";
+    echo "</menu>";
+    echo "</div>";
     echo "<div class='main'>";
   }
 

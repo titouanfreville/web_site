@@ -3,48 +3,47 @@
 // Fonts ---------------------
 
 @font-face {
-  font-family: 'splendid';
-  src: url('../../fonts/splendid.ttf') format('truetype');
+  font-family: 'manonegra';
+  src: url('../../fonts/manonegra.ttf') format('truetype');
+  //src: url('manonegra.otf') format('truetype');
 }
 
 @font-face {
-  font-family: 'serena';
-  src: url('../../fonts/serena.ttf') format('truetype');
+  font-family: 'artbrush';
+  src: url('../../fonts/artbrush.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'contact';
-  src: url('../../fonts/testaddress/blackjack.ttf') format('truetype');
+  font-family: 'handtest';
+  src: url('../../fonts/handtest.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'laine';
-  src: url('../../fonts/laine.ttf') format('truetype');
+  font-family: 'tangerine';
+  src: url('../../fonts/tangerine.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'coneria';
-  src: url('../../fonts/coneriascript.ttf') format('truetype');
+  font-family: 'kawoszeh';
+  src: url('../../fonts/kawoszeh.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'aerofoil';
-  src: url('../../fonts/aerofoil.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: 'fontinfo';
+//   src: url('../../fonts/fontinfo.ttf') format('truetype');
+// }
 
-@font-face {
-  font-family: 'fontinfo';
-  src: url('../../fonts/fontinfo.ttf') format('truetype');
-}
-
-$fonts:                       'comic', Geneva CE, Helvetica !default;
+$fonts:                       'kawoszeh',Geneva CE, Helvetica !default;
 $ptitle-font-style:           $fonts;
-$stitle-font-style:           'splendid',$ptitle-font-style;
-$base-font-color:             #0131B4;
+$stitle-font-style:           'scriptina';
+$title-font:                  'manonegra';
+$loc-naissance-font:          'handtest';
+$age-font:                    'tangerine';
+$base-font-color:              #0131B4;
 
 // Body ----------------------
 $background-img:              url(../../images/background.png);
-$background-color:            #000;
+$background-color:            #fff;
 
 // Utilities ----------------
 $h1-font-family:             $ptitle-font-style;
@@ -76,6 +75,9 @@ $description-font-style:      normal;
 $description-font-weight:     normal;
 
 // Menu & cie ---------------
+// Logo Social Network ------
+$logo-twitter:               url(../../images/twitter.svg);
+
 $background-img-ciename:     url(../../images/namebackground.png);
 $menubackground:             $background-img;
 $main-title-font-size:       3.2rem;
