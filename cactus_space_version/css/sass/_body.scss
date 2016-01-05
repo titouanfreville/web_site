@@ -5,8 +5,8 @@ body {
   @include tap-highlight-transparent();
   @include user-select(none);
   @include display-flex;
+  @include flex-direction(column);
   word-wrap: break-word;
-  line-height: 20px;
   -webkit-backface-visibility: hidden;
   -webkit-user-drag: none;
   padding: 0;

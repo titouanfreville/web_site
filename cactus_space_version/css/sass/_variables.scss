@@ -40,7 +40,7 @@
 $fonts:                       'comic', Geneva CE, Helvetica !default;
 $ptitle-font-style:           $fonts;
 $stitle-font-style:           'splendid',$ptitle-font-style;
-$base-font-color:             #0131B4;
+$base-font-color:             #3fb500;
 
 // Body ----------------------
 $background-img:              url(../../images/background.png);
@@ -90,15 +90,12 @@ $main-subtitle-font-family:  $stitle-font-style;
 $logo:                       url(../../images/logo.svg);
 $main-title-color:           #057d37;
 
-$header-contact-font-family:    'contact',$fonts;
+$header-contact-font-family: $fonts;
 $phone:                      url(../../images/phone.svg);
 
 $menu-fonts-family-lv0:      'serena',$fonts;
 $menu-lv0-color:             #73736d;
 $menu-fonts-family-lv2:      $fonts;
-
-$menu-lv0-border-color:      #077f36;
-$menu-lv0-border-style:      dotted;
 
 $cactus-green:               url(../../images/cactusgreen.svg);
 $cactus-black:               url(../../images/cactusblack.svg);

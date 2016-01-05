@@ -1,31 +1,117 @@
 header {
   @include display-flex;
-  @include flex-direction(column);
-  overflow: hidden;
-  overflow: none;
-  position: fixed;
+  @include flex-direction(row);
+  // overflow: hidden;
+  // overflow: none;
+  // position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  background-color: white;
 
-  .header {
+  div {
     @include display-flex;
     @include flex-direction(column);
-    background: $menubackground fixed no-repeat;
-
-    .band {
+    &:first-of-type {
+      @include flex(0.5);
+    }
+    &:last-of-type {
+      @include flex(1.2);
+    }
+    // Logo and contact information ------------------------
+    .logo {
       @include display-flex;
-      @include flex-direction(normal);
-      @include justify-content(space-between);
-      @include align-items(center);
-      width: 100%;
+      @include flex(1);
+      // height: 204px;
+      // width: 20%;
+      background: $logo no-repeat center center;
+      background-color: transparent;
+      background-size: contain;
+      margin: 0 0 0 10px;
+    }
+    .contact {
+      @include display-flex;
+      @include flex(0.5);
+      ul {
+        @include display-flex;
+        @include flex-direction(column);
+        li {
+          @include display-flex;
+          @include flex-direction(row);
+          text-align: center;
+          font-family: $menu-fonts-family-lv0;
+          color: $menu-lv0-color;
+          min-width: 140px;
+          padding: 5px;
+          @include border-radius(4px);
+          min-height: 1ex;
+          max-height: 20px;
+          .name, .element {
+            @include display-flex;
+          }
+          .name {
+            @include flex(0.5);
+          }
+          .element {
+            @include flex(1);
+          }
+        }
 
-      &:last-of-type {
-        @include align-items(flex-start);
       }
     }
+    // Titles and Navigation
+    .titles {
+      @include display-flex;
+      @include flex-direction(column);
+      h1 {
+        font-size: $main-title-font-size;
+        font-family: $main-title-font-family;
+        margin: 10px;
+        padding: 0.7rem;
+        color: $main-title-color;
+      }
 
+      h2 {
+        font-size: $main-subtitle-font-size;
+        font-family: $main-subtitle-font-family;
+        text-align: center;
+        margin: 10px;
+        padding: 0.5rem;
+        color:$main-title-color;
+      }
+    }
+    nav {
+      @include display-flex;
+      ul {
+        @include display-flex;
+        @include flex-direction(row);
+        width: 100%;
+        a {
+          padding-left: 30px;
+          background-image: $cactus-green;
+          background-size: contain;
+          background-position: left bottom;
+          background-repeat: no-repeat;
+          width: 100%;
+          &:hover{
+            background-image: $cactus-black;
+            background-color: rgba(255,255,255,0.1);
+          }
+        }
+
+        li {
+          @include display-flex;
+          @include flex(1);
+          text-align: center;
+          font-family: $menu-fonts-family-lv0;
+          color: $menu-lv0-color;
+          min-width: 140px;
+          padding: 5px;
+          @include border-radius(4px);
+          min-height: 1ex;
+          max-height: 20px;
+        }
+      }
+    }
     /* ----------- Banner cie name ---------------------------------- */
     .ciename {
       @include display-flex;
@@ -62,19 +148,7 @@ header {
     }
 
     /* -------------------------- Cie logo and link to index -------------------------- */
-    .logo {
-      @include display-flex;
-      // @include flex(1);
-      // position: fixed;
-      height: 204px;
-      width: 20%;
-      top:0;
-      left:0;
-      background: $logo no-repeat center center;
-      background-color: transparent;
-      background-size: contain;
-      margin: 0 0 0 10px;
-    }
+
 
     /* --------------------------- Phone and address based ---------------------*/
     .bannercontact {
