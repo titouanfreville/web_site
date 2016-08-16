@@ -2,115 +2,63 @@
 <html>
   <head>
     <meta charset='utf-8' />
-    <meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width'>
-    <title>Cactus Espace Verts</title>
-    <link rel='icon' href='favicon.ico' />
-    <link rel='icon' type='image/gif' href='cactusgreen.gif' />
-
-    <!-- loading CSS -->
-    <link href='./css/stylesheets/style.css' rel='stylesheet'>
-
-    <!--laoding JS files -- >
-
+    <meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width' />
+    <title>Cactus Espaces Verts, le jardin plus proche de la nature.</title>
+    <!-- loading JS -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src='js/app.js'></script>
+    <!-- Loading CSS -->
+    <link href='style/style.css' rel='stylesheet'>
   </head>
-  <body>
-    <printzone>
-      <header>
-        <div class='band'>
-          <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LOGO  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-          <a href='/' class='logo'></a>
-          <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CIE NAME !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-          <div class='ciename'>
-            <h1>Cactus Espaces Verts</h1>
-            <h2>Le jardin plus proche de la nature</h2>
-            <span>... à votre service depuis plus de 20 ans</span>
-          </div>
-        </div>
-        <div class='band'>
-          <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!! BANNER CONTACT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-          <div class='bannercontact'>
-            <div class='phone'>
-            <span class='img'></span>
-            <span>03.22.26.62.82</span>
-          </div>
-          <div class='address'>
-            <div class='street'>145, rue du Maréchal Foch</div>
-            <div class='cp'> <span>80410</span> <span>Cayeux/mer</span></div>
-          </div>
-        </div>
-      </header>
-      <section id="intro">
-        <accr>
-          Votre Jardin plus beau, plus propre, plus nature...
-        </accr>
-        <section>
-          <div class="container">
-            <div class="slider animate">
-              <figure>
-                <img src="images/diapo1.jpg" class="anim"/>
-              </figure><figure>
-                <img src="images/diapo2.jpg" class="anim"/>
-              </figure><figure>
-                <img src="images/diapo3.jpg" class="anim"/>
-              </figure><figure>
-                <img src="images/diapo4.jpg" class="anim"/>
-              </figure><figure>
-                <img src="images/diapo5.jpg" class="anim"/>
-              </figure><figure>
-                <img src="images/diapo0.jpg" class="anim"/>
-              </figure>
-          </div>
-        </section>
-      </section>
-      <section id="creation">
-        <div id="terrasse">
-          <p id="bois">
-          </p>
-          <p id="pave">
-          </p>
-          <p id ="mineral">
-          </p>
-        </div>
-        <div id="vegetal">
-          <p id="massif">
-          </p>
-          <p id="gazon">
-          </p>
-          <p id="plantation">
-          </p>
-        </div>
-        <div id="menuiseriepaysagere">
-          <p id="banc">
-          </p>
-          <p id="bac">
-          </p>
-          <p id="pergola">
-          </p>
-          <p id="chalet">
-          </p>
-        </div>
-        <div id="circulation">
-          <p id="pavage">
-          </p>
-          <p id="c_bois">
-          </p>
-          <p id="c_mineral">
-          </p>
-        </div>
-        <div id="bassin">
-        </div>
-        <div id="soutenement">
-        </div>
-      </section>
-      <section id="Entretien">
-        <div id="ca"></div>
-        <div id="ip"></div>
-        <div id="tsa"></div>
-      </section>
-      <section id="materiel">
-      </section>
-      <section id="contact">
-      </section>
-    </printzone>
+  <body ng-app='cactusespacesverts'>
+    <!-- Index view opening the web site -->
+    <div>
+      <div ui-view="menu">
+      </div>    
+      <div ui-view="opening">
+      </div>
+    </div>
+    <sep></sep>
+    <!-- View for remarquable work (ex : fruticetum) -->
+    <div>
+      <div ui-view="menu">
+      </div>  
+      <div ui-view="remarquable">
+      </div>
+    </div>  
+    <sep></sep>  
+    <!-- Creation View, show all creation informations -->
+    <div>
+      <div ui-view="menu">
+      </div>  
+      <div ui-view="creations">
+      </div>
+    </div>   
+    <sep></sep> 
+    <!-- Entretien View, show information relative to entretien -->
+    <div>
+      <div ui-view="menu">
+      </div>  
+      <div ui-view="entretien">
+      </div>
+    </div>  
+    <sep></sep> 
+    <!-- Contact information -->
+    <div>
+      <div ui-view="menu">
+      </div>  
+      <div ui-view="contact">
+      </div>
+    </div>   
+    <sep></sep>
+    <!-- Others  -->
+    <div>
+      <div ui-view="menu">
+      </div>  
+      <div ui-view="others">
+      </div>
+    </div>
   </body>
 </html>

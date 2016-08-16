@@ -1,0 +1,22 @@
+{
+  "name": "cactusespacesverts",
+  "description": "Site Vitrine",
+  "main": "index.js",
+  "authors": [
+    "Titouan FREVILL titouanfreville@hotmail.fr"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/titouanfreville/web_site",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.5.8",
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1"
+  }
+}
