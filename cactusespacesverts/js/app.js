@@ -11,17 +11,12 @@ var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.rou
 // Config require $stateProvider and $urlRouterProvider
 cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
-    // Index stats. Will load login form with mainCtrl
+    // Opening State. The base state when you access the web site.
     .state('cactusespacesverts', {
       url: '',
       views:{
         'opening': {
           templateUrl: 'views/opening.html',
-          views: {
-            'menu':{
-              templateUrl: 'views/menu.html'
-            }
-          }
         },
         'remarquable': {
           templateUrl: 'views/remarquable.html'
@@ -38,136 +33,79 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         'others': {
           templateUrl: 'views/others.html'
         },
-        'menu':{
-          templateUrl: 'views/menu.html'
+        'header':{
+          templateUrl: 'views/header.html'
         }
       }
      })
-    // Index stats for navigation use.
-    .state('index', {
-      url: '/index',
+    // Accueil state for navigation requirements.
+    .state('accueil', {
+      url: '/accueil',
       views:{
         'opening': {
-          templateUrl: 'views/opening.html'
+          templateUrl: 'views/opening.html',
         },
-        'remarquable': {
-          templateUrl: 'views/remarquable.html'
-        },
-        'creations': {
-          templateUrl: 'views/creations.html'
-        },
-        'entretien': {
-          templateUrl: 'views/entretien.html'        
-        },
-        'contact': {
-          templateUrl: 'views/contact.html'
-        },
-        'others': {
-          templateUrl: 'views/others.html'
+        'header':{
+          templateUrl: 'views/header.html'
         }
       }
      })
-    // Logged Stat => first state when logged.
-    // State to list new tickets. Can't be acced if not logged
-    .state('logged', {
-      url: '/logged',
-      onEnter: function($rootScope, $window, $state) {
-        if (!($rootScope.userName || $window.sessionStorage.userName)) {
-          $window.alert('You are log in the application. Please login before trying to access.');
-          $state.go('index');
+    .state('fruticetum', {
+      url: '/fruticetum',
+      views:{
+        'opening': {
+          templateUrl: 'views/remarquable.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
         }
-      },
-      controller: 'newTicketCtrl',
-      templateUrl: 'private/show.html'
-    })
-    // List Sticket state
-    // State to list all tickets. Can't be acced if not logged
-    .state('listtickets', {
-      url: '/listtickets',
-      onEnter: function($rootScope, $window, $state) {
-        if (!($rootScope.userName || $window.sessionStorage.userName)) {
-          $window.alert('You are log in the application. Please login before trying to access.');
-          $state.go('index');
+      }
+     })
+    .state('creations', {
+      url: '/creations',
+      views:{
+        'opening': {
+          templateUrl: 'views/creations.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
         }
-      },
-      controller: 'allTicketCtrl',
-      templateUrl: 'private/show.html'
-    })
-    // My Tickets state
-    // State to list all tickets. Can't be acced if not logged
-    .state('mytickets', {
-      url: '/mytickets',
-      onEnter: function($rootScope, $window, $state) {
-        if (!($rootScope.userName || $window.sessionStorage.userName)) {
-          $window.alert('You are log in the application. Please login before trying to access.');
-          $state.go('index');
+      }
+     })
+    .state('entretien', {
+      url: '/entretien',
+      views:{
+        'opening': {
+          templateUrl: 'views/entretien.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
         }
-      },
-      controller: 'myTicketCtrl',
-      templateUrl: 'private/show.html'
-    })
-    // Details ticket state
-    // State to show détails of tickets. Can't be acced if not logged
-    .state('details', {
-      url: '/details',
-      onEnter: function($rootScope, $window, $state) {
-        if (!($rootScope.userName || $window.sessionStorage.userName)) {
-          $window.alert('You are log in the application. Please login before trying to access.');
-          $state.go('index');
+      }
+     })
+    .state('contact', {
+      url: '/contact',
+      views:{
+        'opening': {
+          templateUrl: 'views/contact.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
         }
-      },
-      controller: 'mainCtrl',
-      templateUrl: 'private/details.html'
-    })
-    // Add ticket state
-    // State to add ticket. Can't be acced if not logged
-    .state('addticket', {
-      url: '/addticket',
-      onEnter: function($rootScope, $window, $state) {
-        if (!($rootScope.userName || $window.sessionStorage.userName)) {
-          $window.alert('You are log in the application. Please login before trying to access.');
-          $state.go('index');
+      }
+     })
+    .state('other', {
+      url: '/other',
+      views:{
+        'opening': {
+          templateUrl: 'views/other.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
         }
-        var ispo;
-        if ($rootScope.userRole) ispo = ($rootScope.userRole == 'ProductOwner')
-        else {
-          if ($window.sessionStorage.userName) ispo = ($window.sessionStorage.userRole == 'ProductOwner');
-        }
-        console.log(ispo);
-        if (ispo == false) {
-          $window.alert('You are not allowed to access this space');
-          $state.go('logged');
-        }
-      },
-      controller: 'mainCtrl',
-      templateUrl: 'private/add.html'
-    })
-    // Edit ticket state
-    // State to edit a specific ticket. Can't be acced if not logged
-    .state('edit', {
-      url: '/edit',
-      onEnter: function($rootScope, $window, $state) {
-        if (!($rootScope.userName || $window.sessionStorage.userName)) {
-          $window.alert('You are log in the application. Please login before trying to access.');
-          $state.go('index');
-        }
-        var ispo;
-        if ($rootScope.userRole) ispo = ($rootScope.userRole == 'ProductOwner')
-        else {
-          if ($window.sessionStorage.userName) ispo = ($window.sessionStorage.userRole == 'ProductOwner');
-        }
-        console.log(ispo);
-        if (ispo == false) {
-          $window.alert('You are not allowed to access this space');
-          $state.go('logged');
-        }
-      },
-      controller: 'mainCtrl',
-      templateUrl: 'private/edit.html'
-    })
-  ;
-  // Route to index by default when others failled. 
-  $urlRouterProvider.otherwise('/index');
+      }
+     })
+   
 })
 // Main Controller
 // Used on all view to check if user is define && if user is ProductOwner

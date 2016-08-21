@@ -3,6 +3,9 @@
   <head>
     <meta charset='utf-8' />
     <meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width' />
+    <meta name="description" content="Cactus Espaces Verts, Le jardin plus proche de la nature.">
+    <meta name="keywords" content="entretient, jardin, baie de somme, somme, cayeux sur mer, saint valéry sur somme, abbeville, terrasse, bois, construction bois, pavage, souténement, jardins, créations, plantations">
+    <meta name="author" content="Titouan FREVILLE <titouanfreville@hotmail.fr>">
     <title>Cactus Espaces Verts, le jardin plus proche de la nature.</title>
     <!-- loading JS -->
     <script src="bower_components/angular/angular.js"></script>
@@ -13,52 +16,31 @@
     <link href='style/style.css' rel='stylesheet'>
   </head>
   <body ng-app='cactusespacesverts'>
-    <!-- Index view opening the web site -->
-    <div>
-      <div ui-view="menu">
-      </div>    
-      <div ui-view="opening">
-      </div>
+    <!-- Header for all states. He is unique and will stay at the top of the page, whatever happen :) -->
+    <div ui-view="header">
+    </div> 
+    <!-- Index view opening the web site -->  
+    <div ui-view="opening">
     </div>
     <sep></sep>
     <!-- View for remarquable work (ex : fruticetum) -->
-    <div>
-      <div ui-view="menu">
-      </div>  
-      <div ui-view="remarquable">
-      </div>
-    </div>  
+    <div ui-view="remarquable">
+    </div>
     <sep></sep>  
     <!-- Creation View, show all creation informations -->
-    <div>
-      <div ui-view="menu">
-      </div>  
-      <div ui-view="creations">
-      </div>
-    </div>   
+    <div ui-view="creations">
+    </div>
     <sep></sep> 
-    <!-- Entretien View, show information relative to entretien -->
-    <div>
-      <div ui-view="menu">
-      </div>  
-      <div ui-view="entretien">
-      </div>
-    </div>  
+    <!-- Entretien View, show information relative to entretien --> 
+    <div ui-view="entretien">
+    </div>
     <sep></sep> 
-    <!-- Contact information -->
-    <div>
-      <div ui-view="menu">
-      </div>  
-      <div ui-view="contact">
-      </div>
-    </div>   
+    <!-- Contact information --> 
+    <div ui-view="contact">
+    </div>
     <sep></sep>
-    <!-- Others  -->
-    <div>
-      <div ui-view="menu">
-      </div>  
-      <div ui-view="others">
-      </div>
+    <!-- Others  --> 
+    <div ui-view="others">
     </div>
   </body>
 </html>
