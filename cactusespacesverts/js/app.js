@@ -83,12 +83,77 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         }
       }
      })
-    
+    .state('t_bois', {
+      url: '/t_bois',
+      views:{
+        'opening': {
+          templateUrl: 'views/terrasses/bois.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })   
+    .state('t_pavees', {
+      url: '/t_pavees',
+      views:{
+        'opening': {
+          templateUrl: 'views/terrasses/pave.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })    
+    .state('t_minerales', {
+      url: '/t_minerales',
+      views:{
+        'opening': {
+          templateUrl: 'views/terrasses/mineral.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
     .state('vegetal', {
       url: '/vegetal',
       views:{
         'opening': {
           templateUrl: 'views/vegetal.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    .state('massif', {
+      url: '/massif',
+      views:{
+        'opening': {
+          templateUrl: 'views/vegetal/massif.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })   
+    .state('gazon', {
+      url: '/gazon',
+      views:{
+        'opening': {
+          templateUrl: 'views/vegetal/gazon.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })    
+    .state('plantation', {
+      url: '/plantation',
+      views:{
+        'opening': {
+          templateUrl: 'views/vegetal/plantation.html',
         },
         'header':{
           templateUrl: 'views/header.html'
@@ -106,12 +171,88 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         }
       }
      })
-
+    .state('banc', {
+      url: '/banc',
+      views:{
+        'opening': {
+          templateUrl: 'views/menuiserie/banc.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })   
+    .state('bac', {
+      url: '/bac',
+      views:{
+        'opening': {
+          templateUrl: 'views/menuiserie/bac.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })    
+    .state('pergola', {
+      url: '/pergola',
+      views:{
+        'opening': {
+          templateUrl: 'views/menuiserie/pergola.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    .state('chalet', {
+      url: '/chalet',
+      views:{
+        'opening': {
+          templateUrl: 'views/menuiserie/chalet.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
     .state('cheminement', {
       url: '/cheminement',
       views:{
         'opening': {
           templateUrl: 'views/cheminement.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    .state('c_pavage', {
+      url: '/c_pavage',
+      views:{
+        'opening': {
+          templateUrl: 'views/cheminement/pave.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })   
+    .state('c_bois', {
+      url: '/c_bois',
+      views:{
+        'opening': {
+          templateUrl: 'views/cheminement/bois.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })    
+    .state('c_mineral', {
+      url: '/c_mineral',
+      views:{
+        'opening': {
+          templateUrl: 'views/cheminement/mineral.html',
         },
         'header':{
           templateUrl: 'views/header.html'
