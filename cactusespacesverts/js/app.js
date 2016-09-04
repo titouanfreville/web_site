@@ -22,7 +22,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
           templateUrl: 'views/remarquable.html'
         },
         'creations': {
-            templateUrl: 'views/creations.html'
+          templateUrl: 'views/creations.html'
         },
         'entretien': {
           templateUrl: 'views/entretien.html'        
@@ -66,6 +66,74 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
       views:{
         'opening': {
           templateUrl: 'views/creations.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    .state('terrasses', {
+      url: '/terrasses',
+      views:{
+        'opening': {
+          templateUrl: 'views/terrasses.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    
+    .state('vegetal', {
+      url: '/vegetal',
+      views:{
+        'opening': {
+          templateUrl: 'views/vegetal.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    .state('menuiserie', {
+      url: '/menuiserie',
+      views:{
+        'opening': {
+          templateUrl: 'views/menuiserie.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+
+    .state('cheminement', {
+      url: '/cheminement',
+      views:{
+        'opening': {
+          templateUrl: 'views/cheminement.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    .state('bassin', {
+      url: '/bassin',
+      views:{
+        'opening': {
+          templateUrl: 'views/bassin.html',
+        },
+        'header':{
+          templateUrl: 'views/header.html'
+        }
+      }
+     })
+    .state('soutenement', {
+      url: '/soutenement',
+      views:{
+        'opening': {
+          templateUrl: 'views/soutenement.html',
         },
         'header':{
           templateUrl: 'views/header.html'
