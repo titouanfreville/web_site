@@ -1,3 +1,8 @@
+<!-- HEADER Template
+	Contain the Navigation menu and the basic informtions (logo/name/tel/add)
+
+	Author: Titouan FREVILLE <tfreville@hotmail.fr>
+-->
 <header>
 	<band>
 		<logo></logo>
@@ -20,10 +25,55 @@
 		<ul>
 			<li><a ui-sref="accueil">Accueil</a></li>
 			<li><a ui-sref="fruticetum">Fruticetum</a></li>
-			<li><a ui-sref="creations">Creations</a></li>
+			<li>
+				<a ui-sref="creations">Creations</a>
+				<ul>
+					<li>
+						<a ui-sref="terrasses">Terrasses</a>
+						<ul>
+							<li><a ui-sref="t_bois">Bois</a></li>
+							<li><a ui-sref="t_pavees">Pavées</a></li>
+							<li><a ui-sref="t_minerales">Minérales</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a ui-sref="terrasses">Végétal</a>
+						<ul>
+							<li><a ui-sref="massif">Massifs</a></li>
+							<li><a ui-sref="gazon">Gazons</a></li>
+							<li><a ui-sref="plantation">Plantations</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a ui-sref="terrasses">Menuiserie paysagère</a>
+						<ul>
+							<li><a ui-sref="banc">Banc</a></li>
+							<li><a ui-sref="bac">Bac</a></li>
+							<li><a ui-sref="pergola">Pergola</a></li>
+							<li><a ui-sref="chalet">Châlet</a></li>
+						</ul>
+					</li>
+				</ul>				
+				<ul>
+					<li>
+						<a ui-sref="terrasses">Cheminement</a>
+						<ul>
+							<li><a ui-sref="c_pavage">Pavage</a></li>
+							<li><a ui-sref="c_bois">Bois</a></li>
+							<li><a ui-sref="c_mineral">Mineral</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul><li><a ui-sref="bassin">Bassin</a></li></ul>
+				<ul><li><a ui-sref="soutenement">Soutènement</a></li></ul>
+			</li>
 			<li><a ui-sref="entretien">Entretien</a></li>
+			<li><a ui-sref="other">Notre matériel</a></li>
 			<li><a ui-sref="contact">Contact</a></li>
-			<li><a ui-sref="other">Autres ?</a></li>
 		</ul>
 	</nav>
 </header>

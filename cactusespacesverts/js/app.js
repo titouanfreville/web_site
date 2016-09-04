@@ -22,7 +22,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
           templateUrl: 'views/remarquable.html'
         },
         'creations': {
-          templateUrl: 'views/creations.html'
+            templateUrl: 'views/creations.html'
         },
         'entretien': {
           templateUrl: 'views/entretien.html'        
@@ -109,25 +109,25 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
 })
 // Main Controller
 // Used on all view to check if user is define && if user is ProductOwner
-jirallo.controller('mainCtrl',['$rootScope', '$scope', '$window', '$state', function($rootScope, $scope, $window, $state) {
-  if ($rootScope.userName) $scope.userName = $rootScope.userName
-  else $scope.userName = $window.sessionStorage.userName;
-  $scope.logged = angular.isDefined($scope.userName);
-  if ($rootScope.userRole) $scope.ispo = ($rootScope.userRole == 'ProductOwner')
-  else $scope.ispo = ($window.sessionStorage.userRole == 'ProductOwner');
-}]);
-// Logout controller. Call the logout server session and remove sessionStorage && rootScope stored user value.
-jirallo.controller('logoutCtrl', ['$scope', '$window', '$rootScope', '$state', '$http', function($scope, $window, $rootScope, $state, $http) {
-  $scope.destroy = function() {
-    $rootScope.userName=null;
-    $rootScope.userRole=null;
-    $window.sessionStorage.clear();
-    $http({
-      method: 'POST',
-      url: '/destroy_session'
-    }).success(function(res){
-      $window.alert(res.message);
-      $state.go('index');
-    })
-  }
-}])
+// jirallo.controller('mainCtrl',['$rootScope', '$scope', '$window', '$state', function($rootScope, $scope, $window, $state) {
+//   if ($rootScope.userName) $scope.userName = $rootScope.userName
+//   else $scope.userName = $window.sessionStorage.userName;
+//   $scope.logged = angular.isDefined($scope.userName);
+//   if ($rootScope.userRole) $scope.ispo = ($rootScope.userRole == 'ProductOwner')
+//   else $scope.ispo = ($window.sessionStorage.userRole == 'ProductOwner');
+// }]);
+// // Logout controller. Call the logout server session and remove sessionStorage && rootScope stored user value.
+// jirallo.controller('logoutCtrl', ['$scope', '$window', '$rootScope', '$state', '$http', function($scope, $window, $rootScope, $state, $http) {
+//   $scope.destroy = function() {
+//     $rootScope.userName=null;
+//     $rootScope.userRole=null;
+//     $window.sessionStorage.clear();
+//     $http({
+//       method: 'POST',
+//       url: '/destroy_session'
+//     }).success(function(res){
+//       $window.alert(res.message);
+//       $state.go('index');
+//     })
+//   }
+// }])
