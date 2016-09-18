@@ -646,7 +646,7 @@ header nav ul li:hover {
 
 /* line 199, sass/_header.scss */
 space {
-  margin-top: 300px;
+  height: 300px;
 }
 
 /* line 1, sass/_body.scss */
