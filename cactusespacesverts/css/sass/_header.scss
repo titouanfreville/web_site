@@ -3,6 +3,12 @@ header {
 	@include flex;
   @include flex-direction(column);
   @include justify-content(space-around);
+  background: #000;
+  z-index: 1000;
+  position: fixed;
+  min-height: 280px;
+  left: 0;
+  top: 0;
   width: 100%;
 	band {
 		@include display-flex;
@@ -91,4 +97,105 @@ header {
 		  }
 		}
 	}
+	nav {
+		@include display-flex;
+		@include flex(0.1);
+	  @include flex-direction(row);
+	  @include justify-content(space-around);
+
+    ul {
+      @include display-flex;
+      @include flex-direction(normal);
+			@include flex;
+      @include justify-content(space-around);
+      width: 100%;
+      min-height: 1ex;
+
+      li {
+        @include display-flex;
+				@include flex;
+        @include flex-direction(column);
+        @include justify-content(center);
+        text-align: center;
+        min-width: 140px;
+        padding: 5px;
+        @include border-radius(4px);
+        min-height: 1ex;
+        max-height: 20px;
+
+        ul {
+          position: relative;
+	        @include display-flex;
+					@include flex;
+          @include flex-direction(column);
+          @include justify-content(flex-start);
+
+          li {
+		        @include display-flex;
+						@include flex;
+	          @include flex-direction(column);
+            border: none;
+            min-height: 15px;
+            height: 30px;
+            padding: 5px;
+            position: relative;
+
+            ul {
+              position: absolute;
+			        @include display-flex;
+							@include flex;
+		          @include flex-direction(column);
+		          @include justify-content(flex-start);
+              left: 235px;
+              padding: 0 10px;
+              top: 0;
+              li {
+                position: relative;
+                min-height: 15px;
+              }
+              display: none;
+            }
+          }
+          &:first-child {
+            padding-top:30px;
+          }
+
+          display: none;
+        }
+
+        &:hover {
+
+          max-height: 500px;
+
+          @media screen and (min-width:1030px) {
+            ul {
+              @include display-flex();
+
+              ul {
+                display: none;
+              }
+
+              li {
+                &:hover {
+                  ul {
+                    @include display-flex();
+                    @include flex-direction(column);
+
+                    li {
+                      &:hover {
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+	}
+}
+
+space {
+	margin-top: 300px;
 }
