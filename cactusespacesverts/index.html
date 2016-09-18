@@ -16,36 +16,39 @@
     <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvv4BBsnlxliMeVKOOFvanEnDrkX3B3y0"></script> -->
     <!-- <script src="/js/map.js"></script> -->
     <!-- Loading CSS -->
-    <link href='style/style.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <!-- Favicons -->
+    <link rel=icon href='images/favicon.png' type="image/png">
+    <link rel=icon href='iamges/windows.ico' type="image/vnd.microsoft.icon">
   </head>
   <body ng-app='cactusespacesverts'>
     <!-- Header for all states. He is unique and will stay at the top of the page, whatever happen :) -->
     <div ui-view="header">
-    </div> 
-    <!-- Index view opening the web site -->  
+    </div>
+    <!-- Index view opening the web site -->
     <div ui-view="opening">
     </div>
     <sep></sep>
     <!-- View for remarquable work (ex : fruticetum) -->
     <div ui-view="remarquable">
     </div>
-    <sep></sep>  
+    <sep></sep>
     <!-- Creation View, show all creation informations
           - Index : Resume with a slider.
           - Others : Particularity selected.
      -->
     <div ui-view="creations">
     </div>
-    <sep></sep> 
-    <!-- Entretien View, show information relative to entretien --> 
+    <sep></sep>
+    <!-- Entretien View, show information relative to entretien -->
     <div ui-view="entretien">
     </div>
-    <sep></sep> 
-    <!-- Contact information --> 
+    <sep></sep>
+    <!-- Contact information -->
     <div ui-view="contact">
     </div>
     <sep></sep>
-    <!-- Others  --> 
+    <!-- Others  -->
     <div ui-view="others">
     </div>
   </body>

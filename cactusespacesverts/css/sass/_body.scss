@@ -5,15 +5,15 @@ body {
   @include tap-highlight-transparent();
   @include user-select(none);
   @include display-flex;
+  @include flex-direction(column);
   word-wrap: break-word;
   line-height: 20px;
   -webkit-backface-visibility: hidden;
   -webkit-user-drag: none;
-  padding: 0;
+  padding: 1%;
   margin: 0;
   // configurable properties -------------
-  background-color: $background-color;
-  background: $background-img no-repeat;
+  background: $background-img $background-color no-repeat;
   background-size: cover;
   background-attachment: fixed;
   font-family: $fonts;

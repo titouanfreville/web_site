@@ -40,10 +40,10 @@
 $fonts:                       'comic', Geneva CE, Helvetica !default;
 $ptitle-font-style:           $fonts;
 $stitle-font-style:           'splendid',$ptitle-font-style;
-$base-font-color:             #0131B4;
+$base-font-color:             #509B23;
 
 // Body ----------------------
-$background-img:              url(../../images/background.png);
+$background-img:              url(../../background.png);
 $background-color:            #000;
 
 // Utilities ----------------
@@ -78,17 +78,11 @@ $description-font-weight:     normal;
 // Menu & cie ---------------
 
 // Logo social network ------
-
-$background-img-ciename:     url(../../images/namebackground.png);
-$menubackground:             $background-img;
-$main-title-font-size:       3.2rem;
-$main-title-font-family:     'aerofoil',$fonts;
-$header-span-font-family:    'fontinfo',$fonts;
-$header-span-color:          #73736d;
-$main-subtitle-font-size:    2.2rem;
-$main-subtitle-font-family:  $stitle-font-style;
+$cie-name-font-size:         3.2rem;
+$cie-name-font-family:       'aerofoil', $fonts;
+$moto-font-size:             3.2rem;
+$moto-font-family:           'splendid', $fonts;
 $logo:                       url(../../images/logo.svg);
-$main-title-color:           #057d37;
 
 $header-contact-font-family:    'contact',$fonts;
 $phone:                      url(../../images/phone.svg);

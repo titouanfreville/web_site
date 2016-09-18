@@ -1,0 +1,705 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'splendid';
+  src: url("../../fonts/splendid.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'serena';
+  src: url("../../fonts/serena.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'contact';
+  src: url("../../fonts/testaddress/blackjack.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'laine';
+  src: url("../../fonts/laine.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'coneria';
+  src: url("../../fonts/coneriascript.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'aerofoil';
+  src: url("../../fonts/aerofoil.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'fontinfo';
+  src: url("../../fonts/fontinfo.ttf") format("truetype");
+}
+/* line 1, sass/_header.scss */
+header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+/* line 7, sass/_header.scss */
+header band {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+/* line 14, sass/_header.scss */
+header band logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.5;
+  -webkit-flex: 0.5;
+  -moz-box-flex: 0.5;
+  -moz-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  background: url(../../images/logo.svg) center center no-repeat;
+  background-size: contain;
+}
+/* line 22, sass/_header.scss */
+header band textes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+/* line 28, sass/_header.scss */
+header band textes h1 {
+  font: 3.2rem "aerofoil", "comic", Geneva CE, Helvetica;
+}
+/* line 31, sass/_header.scss */
+header band textes h2 {
+  font: 3.2rem "splendid", "comic", Geneva CE, Helvetica;
+}
+/* line 36, sass/_header.scss */
+header band scontact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.5;
+  -webkit-flex: 0.5;
+  -moz-box-flex: 0.5;
+  -moz-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+/* line 43, sass/_header.scss */
+header band scontact tel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  padding: 5px;
+}
+/* line 52, sass/_header.scss */
+header band scontact address {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 5px;
+}
+/* line 60, sass/_header.scss */
+header band scontact address street {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 5px 0;
+}
+/* line 68, sass/_header.scss */
+header band scontact address span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+/* line 75, sass/_header.scss */
+header band scontact address span cp {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0.5;
+  -webkit-flex: 0.5;
+  -moz-box-flex: 0.5;
+  -moz-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+/* line 83, sass/_header.scss */
+header band scontact address span city {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 1, sass/_body.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  word-wrap: break-word;
+  line-height: 20px;
+  -webkit-backface-visibility: hidden;
+  -webkit-user-drag: none;
+  padding: 1%;
+  margin: 0;
+  background: url(../../background.png) #000 no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "comic", Geneva CE, Helvetica;
+  font-size: 100%;
+  color: #509B23;
+}
+
+/* fonction d'animation, n'oubliez pas de prefixer ! */
+@-moz-keyframes slider {
+  0%, 8%, 100% {
+    left: 0;
+  }
+  10%, 18%, 90%,98% {
+    left: -100%;
+  }
+  20%, 28%, 80% , 88% {
+    left: -200%;
+  }
+  30%, 38%, 70%, 78% {
+    left: -300%;
+  }
+  40%, 48%, 60%, 68% {
+    left: -400%;
+  }
+  50%, 58% {
+    left: -500%;
+  }
+}
+@-webkit-keyframes slider {
+  0%, 8%, 100% {
+    left: 0;
+  }
+  10%, 18%, 90%,98% {
+    left: -100%;
+  }
+  20%, 28%, 80% , 88% {
+    left: -200%;
+  }
+  30%, 38%, 70%, 78% {
+    left: -300%;
+  }
+  40%, 48%, 60%, 68% {
+    left: -400%;
+  }
+  50%, 58% {
+    left: -500%;
+  }
+}
+@keyframes slider {
+  0%, 8%, 100% {
+    left: 0;
+  }
+  10%, 18%, 90%,98% {
+    left: -100%;
+  }
+  20%, 28%, 80% , 88% {
+    left: -200%;
+  }
+  30%, 38%, 70%, 78% {
+    left: -300%;
+  }
+  40%, 48%, 60%, 68% {
+    left: -400%;
+  }
+  50%, 58% {
+    left: -500%;
+  }
+}
+/* line 11, sass/_animations.scss */
+.slideshow {
+  position: relative;
+  width: 1067px;
+  height: 800px;
+  padding: 15px;
+  margin: 0 auto 2em;
+  border: 1px solid #ddd;
+  background: #FFF;
+  /* CSS3 effects */
+  background: linear-gradient(#ffffff, #ffffff 20%, #eeeeee 80%, #dddddd);
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  /* avanced box-shadow 
+   * tutorial @ 
+   * http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow  
+  */
+  /* gestion des dimensions et débordement du conteneur */
+  /* on prévoit un petit espace gris pour la timeline */
+  /*  
+     le conteneur des slides 
+     en largeur il fait 100% x le nombre de slides 
+  */
+  /* annulation des marges sur figure */
+  /* styles de nos légendes */
+}
+@media (max-height: 1000px) {
+  /* line 11, sass/_animations.scss */
+  .slideshow {
+    width: 413px;
+    height: 310px;
+  }
+}
+@media (max-height: 500px) {
+  /* line 11, sass/_animations.scss */
+  .slideshow {
+    width: 133px;
+    height: 100px;
+  }
+}
+/* line 32, sass/_animations.scss */
+.slideshow img {
+  width: 1067px;
+  height: 800px;
+}
+@media (max-height: 1000px) {
+  /* line 32, sass/_animations.scss */
+  .slideshow img {
+    width: 413px;
+    height: 310px;
+  }
+}
+@media (max-height: 500px) {
+  /* line 32, sass/_animations.scss */
+  .slideshow img {
+    width: 133px;
+    height: 100px;
+  }
+}
+/* line 50, sass/_animations.scss */
+.slideshow:before, .slideshow:after {
+  position: absolute;
+  bottom: 16px;
+  z-index: -10;
+  width: 50%;
+  height: 20px;
+  content: " ";
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4), 0 20px 10px rgba(0, 0, 0, 0.7);
+}
+/* line 62, sass/_animations.scss */
+.slideshow:before {
+  left: 0;
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+/* line 66, sass/_animations.scss */
+.slideshow:after {
+  right: 0;
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+/* line 72, sass/_animations.scss */
+.slideshow .container {
+  position: relative;
+  width: 1067px;
+  height: 800px;
+  overflow: hidden;
+}
+@media (max-height: 1000px) {
+  /* line 72, sass/_animations.scss */
+  .slideshow .container {
+    width: 413px;
+    height: 310px;
+  }
+}
+@media (max-height: 500px) {
+  /* line 72, sass/_animations.scss */
+  .slideshow .container {
+    width: 133px;
+    height: 100px;
+  }
+}
+/* line 89, sass/_animations.scss */
+.slideshow .container:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background: #999;
+}
+/* line 101, sass/_animations.scss */
+.slideshow .slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 600%;
+  height: 310px;
+}
+/* line 109, sass/_animations.scss */
+.slideshow figure {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  /* petit effet de vignette sur les images */
+}
+/* line 114, sass/_animations.scss */
+.slideshow figure:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 65px rgba(0, 0, 0, 0.5) inset;
+}
+/* line 125, sass/_animations.scss */
+.slideshow figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  padding: 20px;
+  margin: 0;
+  border-top: 1px solid #e1e1e1;
+  text-align: center;
+  letter-spacing: 0.05em;
+  word-spacing: 0.05em;
+  font-family: Georgia, Times, serif;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  color: #555;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.3);
+}
+/* line 141, sass/_animations.scss */
+.slideshow .animate {
+  /* ... avec la propriété animation */
+  -webkit-animation: slider 96s infinite;
+  -moz-animation: slider 96s infinite;
+  animation: slider 96s infinite;
+}
+
+/* line 1, sass/_index.scss */
+.main {
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 300px 0 0;
+  font-size: 100%;
+  font-family: inherit;
+  color: inherit;
+  vertical-align: baseline;
+}
+/* line 18, sass/_index.scss */
+.main .pagetitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  padding-bottom: 0.4em;
+}
+/* line 27, sass/_index.scss */
+.main .pagecontents {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 80%;
+}
+/* line 32, sass/_index.scss */
+.main .pagecontents .accroche {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: oblique;
+  font-weight: normal;
+}
+/* line 39, sass/_index.scss */
+.main .pagecontents .listindex {
+  margin: 5px;
+  padding: 0;
+}
+/* line 44, sass/_index.scss */
+.main .pagecontents .description {
+  font-size: normal;
+  font-style: normal;
+  font-weight: normal;
+}
