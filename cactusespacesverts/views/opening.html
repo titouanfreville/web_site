@@ -1,20 +1,29 @@
 <div>
 	<h1>Des jardins plus proche de la nature</h1>
-	<p>
-		Mes compétences et mon expérience acquise depuis 25 ans me permettent de répondre à votre besoin de jardin.<br/>
-		Implanté dans un milieu naturel riche et varié, j’adapte votre jardin à notre région tantôt maritime tantôt campagnarde.<br/>
-		<signature>Yvan Fréville</signature>
-	</p>
-
-	{{ location }}
-
-	<div class="diaporama">
-	DIAPORAMA
+	<div class="intro">
+		<p>
+			<quote>
+				&laquo; Mes compétences et mon expérience acquise depuis 25 ans me permettent de répondre à votre besoin de jardin.
+				Implanté dans un milieu naturel riche et varié, j’adapte votre jardin à notre région tantôt maritime tantôt campagnarde. &raquo;
+			</quote>
+			<signature>Yvan Fréville</signature>
+		</p>
+		<!-- Slider :) -->
+		<section ng-controller="OpSliderCtrl">
+			<div class="slider">
+				<img ng-repeat="slide in slides" height="300px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+			</div>
+		</section>
 	</div>
 	<p>
-		Je sais plus, mais je sais qu'il y avait une deuxième boite.<br/>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus neque, volutpat et ipsum vitae, dictum vulputate ligula. Aliquam erat volutpat. Duis odio diam, vulputate sed egestas quis, malesuada semper mi. Vivamus nec odio ac neque vulputate maximus. Vivamus dapibus elit ipsum, a suscipit lacus finibus vel. Aliquam at ligula dui. Morbi ullamcorper lacinia magna, ut maximus elit tempus eu. Praesent odio dolor, convallis non neque sed, lobortis lobortis ante. Fusce ut mauris cursus, volutpat diam ut, ultricies felis. Vivamus ut nunc laoreet, tincidunt orci in, pretium lacus. In metus diam, vestibulum et rhoncus eu, ultrices quis ex.
-		Curabitur tincidunt aliquam dolor, ut convallis purus varius sed. Praesent diam sapien, elementum sed maximus eleifend, auctor vel dui. Phasellus commodo felis ligula, nec pulvinar urna efficitur sit amet. Pellentesque posuere odio in ligula tristique, pharetra tempor sem interdum. Morbi tempus augue in ornare dapibus. Curabitur et nunc mollis, convallis est nec, sollicitudin ex. Nulla facilisi. Aenean posuere magna id est fermentum venenatis. Maecenas tincidunt elementum fermentum. Morbi varius tincidunt bibendum. Nulla pharetra porta sem, id ultricies augue sodales eget. Maecenas sit amet ultrices erat, et dapibus sem.
+		L'entreprise Cactus accompagne ces clients depuis plus de 20 ans. Elle est installée dans la zone naturelle de la Baie de Somme, et travail en harmonie avec ce milieu particulier. Son exigence et la qualité de son travail en font un acteur reconnu et apprécier dans la région pour des créations exceptionnelle, des aménagements publics ou l'entretient des zones vertes de certains producteur.
+	</p>
+	<p>
+		Ils nous font confiances : 
+		<span class="works">
+			<img alt='Communautée de Commune Baie de Somme Sud' height='100px' src='images/partenaires/ccbss.jpg'/>
+			<img alt='Commune de Cayeux sur Mer' height='100px' src='images/partenaires/cayeuxsurmer.png'/>
+			<img alt='Point P Saint Valéry sur Somme' height='100px' src='images/partenaires/pointp.png'/>
+		</span>
 	</p>
 </div>
-<sep></sep>

@@ -1,3 +1,72 @@
 sep {
   height: 110vh;
 }
+
+div {
+  @include display-flex;
+  @include flex;
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  h1, h2 {
+    @include display-flex;
+    @include flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    vertical-align: center; 
+  }
+  h1 {
+    @include align-self(center);
+    font: $h1-font-size $h1-font-family;
+    color: $h1-font-color;
+    text-align: center;
+    margin: 2vh;
+  }
+  section {
+    @include display-flex;
+    @include flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    width:100%;
+    .slider {
+      @include display-flex;
+      @include flex;
+      @include flex-direction(row);
+      width: 100%;
+    }
+  }
+  .intro {
+    @include display-flex;
+    @include flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+  }
+  p {
+    @include display-flex;
+    @include flex;
+    @include flex-direction(column);
+    @include justify-content(space-around);
+
+    quote {
+      @include display-flex;
+      @include flex;
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      font-style: $quote-font-style;
+      color: $quote-color;
+    }
+    signature {
+      @include display-flex;
+      @include flex;
+      @include flex-direction(column);
+      @include justify-content(space-around);
+    }
+
+    .works {
+      @include display-flex;
+      @include flex;
+      @include flex-direction(row);
+      @include justify-content(space-around);
+
+    }
+  }
+}

@@ -31,6 +31,10 @@ header {
 		  @include flex-direction(column);
 		  @include justify-content(space-around);
 		  @include align-items(center);
+      h1, h2 {
+        @include align-items(center);
+        margin: 0 !important;
+      }
 			h1 {
 				font: $cie-name-font-size $cie-name-font-family;
 			}
@@ -146,7 +150,7 @@ header {
 							@include flex;
 		          @include flex-direction(column);
 		          @include justify-content(flex-start);
-              left: 235px;
+              left: 15vw;
               padding: 0 10px;
               top: 0;
               li {

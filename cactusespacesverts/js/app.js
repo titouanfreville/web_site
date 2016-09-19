@@ -6,7 +6,7 @@
 /* jshint +W097 */
 'use strict';
 /*jshint -W097 */
-var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router']);
+var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'ngAnimate']);
 // State navigation for angular.
 // Config require $stateProvider and $urlRouterProvider
 cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
@@ -319,6 +319,59 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
      })
 })
 
+cactusespacesverts.controller('OpSliderCtrl', function($scope, $timeout) {
+  var INTERVAL = 5000;
+  
+  $scope.slides = [
+    {image: 'images/diapo1.jpg', description: 'Image 00'},
+    {image: 'images/diapo2.jpg', description: 'Image 01'},
+    {image: 'images/diapo3.jpg', description: 'Image 02'},
+    {image: 'images/diapo4.jpg', description: 'Image 03'},
+    {image: 'images/diapo5.jpg', description: 'Image 04'}
+  ];
+
+  function setCurrentSlideIndex(index) {
+      $scope.currentIndex = index;
+  }
+  function isCurrentSlideIndex(index) {
+      return $scope.currentIndex === index;
+  }
+  function nextSlide() {
+      $scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
+      $timeout(nextSlide, INTERVAL);
+  }
+  function loadSlides() {
+      $timeout(nextSlide, INTERVAL);
+  }
+
+  $scope.currentIndex = 0;
+  $scope.setCurrentSlideIndex = setCurrentSlideIndex;
+  $scope.isCurrentSlideIndex = isCurrentSlideIndex;
+  loadSlides();
+});
+
+cactusespacesverts.animation('.slide-animation', function () {
+  return {
+    addClass: function (element, className, done) {
+      if (className == 'ng-hide') {
+         TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+      }
+      else {
+        done();
+      }
+    },
+    removeClass: function (element, className, done) {
+      if (className == 'ng-hide') {
+        element.removeClass('ng-hide');
+        TweenMax.set(element, { left: element.parent().width() });
+        TweenMax.to(element, 0.5, {left: 0, onComplete: done });
+      }
+      else {
+        done();
+      }
+    }
+  };
+});
 // Main Controller
 // Used on all view to check if user is define && if user is ProductOwner
 // cactusespacesverts.controller('mainCtrl', function($rootScope, $scope, $state) {
