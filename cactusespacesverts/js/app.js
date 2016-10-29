@@ -6,10 +6,21 @@
 /* jshint +W097 */
 'use strict';
 /*jshint -W097 */
+<<<<<<< Updated upstream
 var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'ngAnimate']);
+=======
+var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'uiGmapgoogle-maps']);
+>>>>>>> Stashed changes
 // State navigation for angular.
 // Config require $stateProvider and $urlRouterProvider
-cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
+cactusespacesverts.config(function ($stateProvider, $urlRouterProvider, uiGmapGoogleMapApiProvider) {
+
+  uiGmapGoogleMapApiProvider.configure({
+    key: "AIzaSyDvv4BBsnlxliMeVKOOFvanEnDrkX3B3y0", //Clé pour utiliser l'API
+    v: '3.17', //Par défaut la version la plus récente disponible
+    libraries: 'geometry,visualization' //Librairies supplémentaires
+  });
+
   $stateProvider
     // Opening State. The base state when you access the web site.
     .state('cactusespacesverts', {
@@ -38,7 +49,8 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         'header':{
           templateUrl: 'views/header.html'
         }
-      }
+      },
+      controller: 'mapCtrl'
      })
     // Accueil state for navigation requirements.
     .state('accueil', {
@@ -304,7 +316,8 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         'header':{
           templateUrl: 'views/header.html'
         }
-      }
+      },
+      controller: 'mapCtrl'
      })
     .state('other', {
       url: '/other',
@@ -378,6 +391,7 @@ cactusespacesverts.animation('.slide-animation', function () {
 //   $rootScope.state = $scope.loc_state;
 // });
 //   if ($rootScope.userRole) $scope.ispo = ($rootScope.userRole == 'ProductOwner')
+<<<<<<< Updated upstream
 // // Logout controller. Call the logout server session and remove sessionStorage && rootScope stored user value.
 // jirallo.controller('logoutCtrl', ['$scope', '$window', '$rootScope', '$state', '$http', function($scope, $window, $rootScope, $state, $http) {
 //   $scope.destroy = function() {
@@ -393,3 +407,40 @@ cactusespacesverts.animation('.slide-animation', function () {
 //     })
 //   }
 // }])
+=======
+//   else $scope.ispo = ($window.sessionStorage.userRole == 'ProductOwner');
+// }]);
+// Map controller. initialize map values.
+cactusespacesverts.controller('mapCtrl', ['$scope', '$window', '$rootScope', '$state', '$http', function($scope, $window, $rootScope, $state, $http) {
+  //Initialisation des variables
+  $scope.map = {
+     center: {
+    latitude: 46.5132, //Position initial de la carte
+    longitude: 0.1033
+     },
+     zoom: 11 // de 0 à 19, 0 étant la valeur de zoom la plus forte
+  };
+
+  $scope.markers = [{
+     coord: {
+        latitude: 44.93, //Coordonnées où placer le point
+        longitude: 4.89
+     },
+     email: "netapsys@netapsys.fr", //Propriété métier, pour les afficher à l'utilisateur lorsqu'il sélectionne le point par exemple
+     icon: "https://maps.gstatic.com/mapfiles/api-3/images/spotlight-poi.png", //Icone personnalisée
+     id: 412
+  },{
+     coord: {
+        latitude: 46.5132,
+        longitude: 0.1033
+     },
+     email: "netapsys@netapsys.fr",
+     icon: "//developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png", //Icone personnalisée
+     id: 413
+  }];
+
+  $scope.clickMarker = function(marker) {
+     alert(marker.email); //Affichera l'email du point sur lequel on a cliqué
+  };
+}])
+>>>>>>> Stashed changes
