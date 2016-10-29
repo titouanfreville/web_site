@@ -1,25 +1,43 @@
 <div>
-	<h1>Des jardins plus proche de la nature</h1>
-	<div class="intro">
-		<p>
-			<quote>
-				&laquo; Mes compétences et mon expérience acquise depuis 25 ans me permettent de répondre à votre besoin de jardin.
-				Implanté dans un milieu naturel riche et varié, j’adapte votre jardin à notre région tantôt maritime tantôt campagnarde. &raquo;
-			</quote>
-			<signature>Yvan Fréville</signature>
-		</p>
+	<div class="slider">
+        <section ng-controller="OpSliderCtrl">
+            <div class="slider">
+                <img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+            </div>
+        </section>
 		<!-- Slider :) -->
 		<section ng-controller="OpSliderCtrl">
 			<div class="slider">
-				<img ng-repeat="slide in slides" height="300px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+				<img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
 			</div>
 		</section>
+
+        <section ng-controller="OpSliderCtrl">
+            <div class="slider">
+                <img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+            </div>
+        </section>
 	</div>
+    <div class="intro">
+        <p>
+            <span class="quote">
+                &laquo; Mes compétences et mon expérience acquise depuis 25 ans me permettent de répondre à votre besoin de jardin.
+                Implanté dans un milieu naturel riche et varié, j’adapte votre jardin à notre région tantôt maritime tantôt campagnarde. &raquo;
+            </span>
+            <span class="signature">Yvan Fréville</span>
+        </p>
+        <p>
+            <span class="entPresentation">
+                L'entreprise Cactus accompagne ses clients depuis 25 ans. Installée en Baie de Somme, elle travaille en
+                harmonie avec ce milieu particulier. L'exigence et la qualité de ses prestations originales et uniques en
+                font un partenaire reconnu et apprécié pour des aménagements privés ou publics.
+            </span>
+            <span class="signature"></span>
+        </p>
+
+    </div>
 	<p>
-		L'entreprise Cactus accompagne ces clients depuis plus de 20 ans. Elle est installée dans la zone naturelle de la Baie de Somme, et travail en harmonie avec ce milieu particulier. Son exigence et la qualité de son travail en font un acteur reconnu et apprécier dans la région pour des créations exceptionnelle, des aménagements publics ou l'entretient des zones vertes de certains producteur.
-	</p>
-	<p>
-		Ils nous font confiances : 
+		Ils nous font confiance :
 		<span class="works">
 			<img alt='Communautée de Commune Baie de Somme Sud' height='100px' src='images/partenaires/ccbss.jpg'/>
 			<img alt='Commune de Cayeux sur Mer' height='100px' src='images/partenaires/cayeuxsurmer.png'/>

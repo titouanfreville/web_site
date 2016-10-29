@@ -7,12 +7,14 @@ div {
   @include flex;
   @include flex-direction(column);
   @include justify-content(space-around);
+  height: 100%;
   h1, h2 {
     @include display-flex;
     @include flex;
     @include flex-direction(row);
     @include justify-content(space-around);
-    vertical-align: center; 
+    vertical-align: center;
+    height: 100%;
   }
   h1 {
     @include align-self(center);
@@ -20,6 +22,7 @@ div {
     color: $h1-font-color;
     text-align: center;
     margin: 2vh;
+    height: 100%;
   }
   section {
     @include display-flex;
@@ -27,11 +30,13 @@ div {
     @include flex-direction(row);
     @include justify-content(space-around);
     width:100%;
+    height: 100%;
     .slider {
       @include display-flex;
       @include flex;
       @include flex-direction(row);
       width: 100%;
+      height: 100%;
     }
   }
   .intro {
@@ -39,26 +44,57 @@ div {
     @include flex;
     @include flex-direction(row);
     @include justify-content(space-around);
+    height: 100%;
+    p {
+      font-size: 2em;
+
+      &:first-child {
+        margin: 0 2em 0 0.2em;
+      }
+      &:last-child {
+        margin: 0 0.2em 0 2em;
+      }
+    }
   }
+
+  .slider {
+    @include display-flex;
+    @include flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    margin: 0.5em 0 2em;
+    height: 100%;
+    min-height: 410px;
+  }
+
   p {
     @include display-flex;
     @include flex;
     @include flex-direction(column);
     @include justify-content(space-around);
-
-    quote {
+    height: 100%;
+    .quote, .entPresentation {
       @include display-flex;
       @include flex;
       @include flex-direction(column);
       @include justify-content(space-around);
-      font-style: $quote-font-style;
+      height: 100%;
       color: $quote-color;
+      text-align: justify;
+      text-justify: inter-word;
     }
-    signature {
+    .quote {
+      font-style: $quote-font-style;
+    }
+    .signature {
       @include display-flex;
       @include flex;
       @include flex-direction(column);
       @include justify-content(space-around);
+      height: 100%;
+      font-family: $h1-font-family;
+      text-align: right;
+      font-size: 1.8em;
     }
 
     .works {
@@ -66,6 +102,9 @@ div {
       @include flex;
       @include flex-direction(row);
       @include justify-content(space-around);
+      height: 100%;
+      text-align: justify;
+      text-justify: inter-word;
 
     }
   }

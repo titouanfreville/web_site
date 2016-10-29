@@ -27,12 +27,12 @@
   src: url('../../fonts/aerofoil.ttf') format('truetype');
 }
 
-$fonts:                       'comic', Geneva CE, Helvetica !default;
-$base-font-color:             #509B23;
+$fonts:                       Georgia, !default;
+$base-font-color:             #0B610B;
 
 // Body ----------------------
 $background-img:              url(../../background.png);
-$background-color:            #000;
+$background-color:            #fff;
 
 // Pages --------------------
 // ----- Title --------------
@@ -46,15 +46,15 @@ $h2-font-color:              #4CAF50;
 // ----- Contents -----------
 // ----------- quotes -------
 $quote-font-style:           italic;
-$quote-color:                #8BC34A;
+$quote-color:                #0B610B;
 
 // Menu & cie ---------------
 
 // Logo social network ------
 $cie-name-font-size:         3.2rem;
-$cie-name-font-family:       'aerofoil', $fonts;
+$cie-name-font-family:       'serena';
 $moto-font-size:             3.2rem;
-$moto-font-family:           'splendid', $fonts;
+$moto-font-family:           'serena';
 $logo:                       url(../../images/logo.svg);
 $cactus-green:               url(../../images/cactusgreen.svg);
 $cactus-black:               url(../../images/cactusblack.svg);

@@ -1,28 +1,30 @@
 header {
-	@include display-flex;
-	@include flex;
+  @include display-flex;
+  @include flex;
   @include flex-direction(column);
   @include justify-content(space-around);
+  @include flex-shrink(0);
+
   background: #000;
   z-index: 1000;
   position: fixed;
-  min-height: 280px;
+  min-height: 160px;
   left: 0;
   top: 0;
   width: 100%;
 	band {
-		@include display-flex;
-		@include flex;
+      @include display-flex;
+      @include flex;
 	  @include flex-direction(row);
 	  @include justify-content(space-around);
   	width: 100%;
 
 		logo {
-			@include display-flex;
-			@include flex(0.5);
+          @include display-flex;
+          @include flex(0.5);
 		  @include justify-content(space-around);
-			background: $logo center center no-repeat;
-			background-size: contain;
+          background: $logo center center no-repeat;
+          background-size: contain;
 		}
 
 		textes {
@@ -106,6 +108,7 @@ header {
 		@include flex(0.1);
 	  @include flex-direction(row);
 	  @include justify-content(space-around);
+	  margin-top: 1.5em;
 
     ul {
       @include display-flex;
@@ -178,28 +181,14 @@ header {
               ul {
                 display: none;
               }
-
-              li {
-                &:hover {
-                  ul {
-                    @include display-flex();
-                    @include flex-direction(column);
-
-                    li {
-                      &:hover {
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         }
       }
     }
-	}
+  }
+}
 }
 
 space {
-	height: 300px;
+	height: 180px;
 }
