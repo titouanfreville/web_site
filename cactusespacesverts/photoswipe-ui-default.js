@@ -167,7 +167,7 @@ var PhotoSwipeUI_Default =
 			}
 		},
 		_toggleShareModalClass = function() {
-			_togglePswpClass(_shareModal, 'share-modal--hidden', _shareModalHidden);
+			_togglePswpClass(_shareModal, 'share-modal--pswp_hide', _shareModalHidden);
 		},
 		_toggleShareModal = function() {
 
@@ -631,21 +631,21 @@ var PhotoSwipeUI_Default =
 				_shareModal.children[0].onclick = null;
 			}
 			framework.removeClass(_controls, 'pswp__ui--over-close');
-			framework.addClass( _controls, 'pswp__ui--hidden');
+			framework.addClass( _controls, 'pswp__ui--pswp_hide');
 			ui.setIdle(false);
 		});
 		
 
 		if(!_options.showAnimationDuration) {
-			framework.removeClass( _controls, 'pswp__ui--hidden');
+			framework.removeClass( _controls, 'pswp__ui--pswp_hide');
 		}
 		_listen('initialZoomIn', function() {
 			if(_options.showAnimationDuration) {
-				framework.removeClass( _controls, 'pswp__ui--hidden');
+				framework.removeClass( _controls, 'pswp__ui--pswp_hide');
 			}
 		});
 		_listen('initialZoomOut', function() {
-			framework.addClass( _controls, 'pswp__ui--hidden');
+			framework.addClass( _controls, 'pswp__ui--pswp_hide');
 		});
 
 		_listen('parseVerticalMargin', _applyNavBarGaps);
@@ -671,7 +671,7 @@ var PhotoSwipeUI_Default =
 	};
 
 	ui.update = function() {
-		// Don't update UI if it's hidden
+		// Don't update UI if it's pswp_hide
 		if(_controlsVisible && pswp.currItem) {
 			
 			ui.updateIndexIndicator();
@@ -771,7 +771,7 @@ var PhotoSwipeUI_Default =
 	};
 
 	ui.hideControls = function() {
-		framework.addClass(_controls,'pswp__ui--hidden');
+		framework.addClass(_controls,'pswp__ui--pswp_hide');
 		_controlsVisible = false;
 	};
 
@@ -780,7 +780,7 @@ var PhotoSwipeUI_Default =
 		if(!_overlayUIUpdated) {
 			ui.update();
 		}
-		framework.removeClass(_controls,'pswp__ui--hidden');
+		framework.removeClass(_controls,'pswp__ui--pswp_hide');
 	};
 
 	ui.supportsFullscreen = function() {

@@ -823,6 +823,11 @@ var publicMethods = {
 		
 		self.scrollWrap = framework.getChildByClass(template, 'pswp__scroll-wrap');
 		self.container = framework.getChildByClass(self.scrollWrap, 'pswp__container');
+		console.log("init ? ");
+		var pswp_elements = document.getElementsByClassName('pswp_hide');
+		for (var i=0; i < pswp_elements.length; i++) {
+			pswp_elements[i].style.display += " block";
+		}
 
 		_containerStyle = self.container.style; // for fast access
 
@@ -877,7 +882,7 @@ var publicMethods = {
 			_isFixedPosition = false;
 		}
 		
-		template.setAttribute('aria-hidden', 'false');
+		template.setAttribute('aria-pswp_hide', 'false');
 		if(_options.modal) {
 			if(!_isFixedPosition) {
 				template.style.position = 'absolute';
@@ -968,13 +973,9 @@ var publicMethods = {
 		if(!_isOpen) {
 			return;
 		}
-		var pswp_elements = document.getElementsByClassName('pswp__button');
-		for (var i=0; i < photos.length; i++) {
-			pswp_elements[i].className += " hidden";
-		}
-		var pswp_elements = document.getElementsByClassName('pswp__ui');
-		for (var i=0; i < photos.length; i++) {
-			pswp_elements[i].className += " hidden";
+		var pswp_elements = document.getElementsByClassName('pswp_hide');
+		for (var i=0; i < pswp_elements.length; i++) {
+			pswp_elements[i].style.display += " none";
 		}
 		_isOpen = false;
 		_isDestroying = true;
@@ -992,7 +993,7 @@ var publicMethods = {
 			clearTimeout(_showOrHideTimeout);
 		}
 		
-		template.setAttribute('aria-hidden', 'true');
+		template.setAttribute('aria-pswp_hide', 'true');
 		template.className = _initalClassName;
 
 		if(_updateSizeInterval) {

@@ -38,10 +38,16 @@ $background-color:            #fff;
 // ----- Title --------------
 // ---------- h1 ------------
 $h1-font-color:              #388E3C;
-$h1-font-size:               2rem;
+$h1-font-size:               3.2rem;
 $h1-font-family:            'serena';
 // ---------- h2 ------------
 $h2-font-color:              #4CAF50;
+$h2-font-size:               2.8em;
+$h2-font-family:            'serena';
+// ---------- h3 ------------
+$h3-font-color:              #4CAF50;
+$h3-font-size:               2.5em;
+$h3-font-family:            'serena';
 
 // ----- Contents -----------
 // ----------- quotes -------
@@ -58,7 +64,11 @@ $moto-font-family:           'serena';
 $logo:                       url(../../images/logo.svg);
 $cactus-green:               url(../../images/cactusgreen.svg);
 $cactus-black:               url(../../images/cactusblack.svg);
+$band-background:            url(../../images/test_bandeau1.jpg);
 
+
+
+// PSWP Variables
 $pswp__show-hide-transition-duration: 333ms !default;
 $pswp__controls-transition-duration: 333ms !default;
 $pswp__background-color: #000 !default;

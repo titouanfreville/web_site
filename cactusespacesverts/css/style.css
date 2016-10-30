@@ -325,7 +325,7 @@ button, input, select {
 	3. Index indicator ("1 of X" counter)
 	4. Caption
 	5. Loading indicator
-	6. Additional styles (root element, top bar, idle state, hidden state, etc.)
+	6. Additional styles (root element, top bar, idle state, pswp_hide state, etc.)
 
 */
 /*
@@ -876,7 +876,7 @@ a.pswp__share--download:hover {
 }
 
 /*
-	pswp__ui--hidden class is added when controls are hidden
+	pswp__ui--pswp_hide class is added when controls are pswp_hide
 	e.g. when user taps to toggle visibility of controls
 */
 /* line 552, sass/default-skin/default-skin.scss */
@@ -931,19 +931,18 @@ header {
   -webkit-justify-content: space-around;
   -moz-justify-content: space-around;
   justify-content: space-around;
-  -webkit-flex-shrink: 0;
-  flex-shrink: 0;
   background: #000;
-  background: url("../../images/test_bandeau1.jpg") no-repeat top center;
-  background: cover;
+  background: url(../../images/test_bandeau1.jpg) no-repeat bottom center;
+  background-size: cover;
   z-index: 1000;
   position: fixed;
   min-height: 160px;
   left: 0;
   top: 0;
   width: 100%;
+  color: #fff;
 }
-/* line 16, sass/_header.scss */
+/* line 17, sass/_header.scss */
 header band {
   display: -webkit-box;
   display: -webkit-flex;
@@ -970,7 +969,7 @@ header band {
   justify-content: space-around;
   width: 100%;
 }
-/* line 23, sass/_header.scss */
+/* line 24, sass/_header.scss */
 header band logo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -992,7 +991,7 @@ header band logo {
   background: url(../../images/logo.svg) center center no-repeat;
   background-size: contain;
 }
-/* line 31, sass/_header.scss */
+/* line 32, sass/_header.scss */
 header band textes {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1023,7 +1022,7 @@ header band textes {
   -moz-align-items: center;
   align-items: center;
 }
-/* line 37, sass/_header.scss */
+/* line 38, sass/_header.scss */
 header band textes h1, header band textes h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1031,16 +1030,17 @@ header band textes h1, header band textes h2 {
   -moz-align-items: center;
   align-items: center;
   margin: 0 !important;
+  color: #fff;
 }
-/* line 41, sass/_header.scss */
+/* line 43, sass/_header.scss */
 header band textes h1 {
   font: 3.2rem "serena";
 }
-/* line 44, sass/_header.scss */
+/* line 46, sass/_header.scss */
 header band textes h2 {
   font: 3.2rem "serena";
 }
-/* line 49, sass/_header.scss */
+/* line 51, sass/_header.scss */
 header band scontact {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1071,7 +1071,7 @@ header band scontact {
   -moz-align-items: center;
   align-items: center;
 }
-/* line 56, sass/_header.scss */
+/* line 58, sass/_header.scss */
 header band scontact tel {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1098,7 +1098,7 @@ header band scontact tel {
   width: 100%;
   padding: 5px;
 }
-/* line 65, sass/_header.scss */
+/* line 67, sass/_header.scss */
 header band scontact address {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1130,7 +1130,7 @@ header band scontact address {
   align-items: center;
   padding: 5px;
 }
-/* line 73, sass/_header.scss */
+/* line 75, sass/_header.scss */
 header band scontact address street {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1156,7 +1156,7 @@ header band scontact address street {
   align-items: center;
   padding: 5px 0;
 }
-/* line 81, sass/_header.scss */
+/* line 83, sass/_header.scss */
 header band scontact address span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1182,7 +1182,7 @@ header band scontact address span {
   align-items: center;
   width: 100%;
 }
-/* line 88, sass/_header.scss */
+/* line 90, sass/_header.scss */
 header band scontact address span cp {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1213,7 +1213,7 @@ header band scontact address span cp {
   -moz-justify-content: flex-start;
   justify-content: flex-start;
 }
-/* line 96, sass/_header.scss */
+/* line 98, sass/_header.scss */
 header band scontact address span city {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1244,7 +1244,7 @@ header band scontact address span city {
   -ms-flex-direction: row;
   flex-direction: row;
 }
-/* line 107, sass/_header.scss */
+/* line 109, sass/_header.scss */
 header nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1270,8 +1270,9 @@ header nav {
   -moz-justify-content: space-around;
   justify-content: space-around;
   margin-top: 1.5em;
+  color: #fff;
 }
-/* line 114, sass/_header.scss */
+/* line 117, sass/_header.scss */
 header nav ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1299,7 +1300,7 @@ header nav ul {
   width: 100%;
   min-height: 1ex;
 }
-/* line 122, sass/_header.scss */
+/* line 125, sass/_header.scss */
 header nav ul li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1333,7 +1334,7 @@ header nav ul li {
   min-height: 1ex;
   max-height: 20px;
 }
-/* line 134, sass/_header.scss */
+/* line 137, sass/_header.scss */
 header nav ul li ul {
   position: relative;
   display: -webkit-box;
@@ -1361,7 +1362,7 @@ header nav ul li ul {
   justify-content: flex-start;
   display: none;
 }
-/* line 141, sass/_header.scss */
+/* line 144, sass/_header.scss */
 header nav ul li ul li {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1387,7 +1388,7 @@ header nav ul li ul li {
   padding: 5px;
   position: relative;
 }
-/* line 151, sass/_header.scss */
+/* line 154, sass/_header.scss */
 header nav ul li ul li ul {
   position: absolute;
   display: -webkit-box;
@@ -1418,21 +1419,21 @@ header nav ul li ul li ul {
   top: 0;
   display: none;
 }
-/* line 160, sass/_header.scss */
+/* line 163, sass/_header.scss */
 header nav ul li ul li ul li {
   position: relative;
   min-height: 15px;
 }
-/* line 167, sass/_header.scss */
+/* line 170, sass/_header.scss */
 header nav ul li ul:first-child {
   padding-top: 30px;
 }
-/* line 174, sass/_header.scss */
+/* line 177, sass/_header.scss */
 header nav ul li:hover {
   max-height: 500px;
 }
 @media screen and (min-width: 1030px) {
-  /* line 179, sass/_header.scss */
+  /* line 182, sass/_header.scss */
   header nav ul li:hover ul {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1441,13 +1442,13 @@ header nav ul li:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  /* line 182, sass/_header.scss */
+  /* line 185, sass/_header.scss */
   header nav ul li:hover ul ul {
     display: none;
   }
 }
 
-/* line 193, sass/_header.scss */
+/* line 196, sass/_header.scss */
 space {
   height: 180px;
 }
@@ -1501,9 +1502,66 @@ a {
   color: inherit;
   text-decoration: none;
 }
-/* line 9, sass/_utilities.scss */
-a:visited {
-  color: grey;
+
+/* line 17, sass/_utilities.scss */
+.presenter-row {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 21, sass/_utilities.scss */
+.photo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: center center no-repeat;
+  background-size: contain;
+  min-height: 250px;
+  min-width: 30%;
+  margin: 1em;
+}
+
+/* line 35, sass/_utilities.scss */
+.terrasse1 {
+  background-image: url(../../images/terrasse/terasse.jpg);
+}
+
+/* line 38, sass/_utilities.scss */
+.terrasse2 {
+  background-image: url(../../images/terrasse/terasse_ronde_macket.jpg);
+}
+
+/* line 41, sass/_utilities.scss */
+.terrasse3 {
+  background-image: url(../../images/terrasse/terrasse_mc_mopin.jpg);
 }
 
 /* fonction d'animation, n'oubliez pas de prefixer ! */
@@ -1802,13 +1860,22 @@ div h1 {
   -moz-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  font: 2rem "serena";
+  font: 3.2rem "serena";
   color: #388E3C;
   text-align: center;
   margin: 2vh;
   height: 100%;
 }
 /* line 27, sass/_index.scss */
+div h2, div h3 {
+  font: 2.8em "serena";
+  margin: 0.5em 0 0.1em;
+}
+/* line 31, sass/_index.scss */
+div h3 {
+  font: 2.5em "serena";
+}
+/* line 34, sass/_index.scss */
 div section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1836,7 +1903,7 @@ div section {
   width: 100%;
   height: 100%;
 }
-/* line 34, sass/_index.scss */
+/* line 41, sass/_index.scss */
 div section .slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1859,7 +1926,7 @@ div section .slider {
   width: 100%;
   height: 100%;
 }
-/* line 42, sass/_index.scss */
+/* line 49, sass/_index.scss */
 div .intro {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1886,19 +1953,19 @@ div .intro {
   justify-content: space-around;
   height: 100%;
 }
-/* line 48, sass/_index.scss */
+/* line 55, sass/_index.scss */
 div .intro p {
   font-size: 2em;
 }
-/* line 51, sass/_index.scss */
+/* line 57, sass/_index.scss */
 div .intro p:first-child {
   margin: 0 2em 0 0.2em;
 }
-/* line 54, sass/_index.scss */
+/* line 60, sass/_index.scss */
 div .intro p:last-child {
   margin: 0 0.2em 0 2em;
 }
-/* line 60, sass/_index.scss */
+/* line 66, sass/_index.scss */
 div .slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1927,7 +1994,7 @@ div .slider {
   height: 100%;
   min-height: 410px;
 }
-/* line 70, sass/_index.scss */
+/* line 76, sass/_index.scss */
 div p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1953,8 +2020,9 @@ div p {
   -moz-justify-content: space-around;
   justify-content: space-around;
   height: 100%;
+  font-size: 1.5em;
 }
-/* line 76, sass/_index.scss */
+/* line 84, sass/_index.scss */
 div p .quote, div p .entPresentation {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1984,11 +2052,11 @@ div p .quote, div p .entPresentation {
   text-align: justify;
   text-justify: inter-word;
 }
-/* line 86, sass/_index.scss */
+/* line 94, sass/_index.scss */
 div p .quote {
   font-style: italic;
 }
-/* line 89, sass/_index.scss */
+/* line 97, sass/_index.scss */
 div p .signature {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2018,7 +2086,7 @@ div p .signature {
   text-align: right;
   font-size: 1.8em;
 }
-/* line 100, sass/_index.scss */
+/* line 108, sass/_index.scss */
 div p .works {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2048,7 +2116,7 @@ div p .works {
   text-justify: inter-word;
 }
 
-/* line 113, sass/_index.scss */
-#btn-photoswipe, .hidden {
+/* line 121, sass/_index.scss */
+#btn-photoswipe, .hidden, .pswp_hide {
   display: none;
 }

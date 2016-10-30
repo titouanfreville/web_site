@@ -475,7 +475,23 @@ $(document).ready(function() {
                 src: 'images/diapo5.jpg',
                 w: 1024,
                 h: 683
+            },
+            {
+                src: 'images/terrasse/terasse.jpg',
+                w: 1024,
+                h: 683
+            },
+            {
+                src: 'images/terrasse/terasse_ronde_macket.jpg',
+                w: 1024,
+                h: 683
+            },
+            {
+                src: 'images/terrasse/terrasse_mc_mopin.jpg',
+                w: 1024,
+                h: 683
             }
+
         ];
 
         // define options (if needed)
@@ -484,6 +500,7 @@ $(document).ready(function() {
             history: false,
             focus: false,
 
+            shareEl: false,
             showAnimationDuration: 1,
             hideAnimationDuration: 1
 

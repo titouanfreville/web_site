@@ -24,6 +24,13 @@ div {
     margin: 2vh;
     height: 100%;
   }
+  h2, h3 {
+    font: $h2-font-size $h1-font-family;
+    margin: 0.5em 0 0.1em;
+  }
+  h3 {
+    font: $h3-font-size $h1-font-family;
+  }
   section {
     @include display-flex;
     @include flex;
@@ -47,7 +54,6 @@ div {
     height: 100%;
     p {
       font-size: 2em;
-
       &:first-child {
         margin: 0 2em 0 0.2em;
       }
@@ -73,6 +79,8 @@ div {
     @include flex-direction(column);
     @include justify-content(space-around);
     height: 100%;
+    font-size: 1.5em;
+
     .quote, .entPresentation {
       @include display-flex;
       @include flex;
@@ -110,6 +118,6 @@ div {
   }
 }
 
-#btn-photoswipe, .hidden {
+#btn-photoswipe, .hidden, .pswp_hide {
   display: none;
 }

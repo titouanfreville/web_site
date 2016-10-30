@@ -460,7 +460,7 @@ a.pswp__share--download:hover {
   opacity: 0; }
 
 /*
-	pswp__ui--hidden class is added when controls are hidden
+	pswp__ui--pswp_hide class is added when controls are pswp_hide
 	e.g. when user taps to toggle visibility of controls
 */
 .pswp__ui--hidden .pswp__top-bar,

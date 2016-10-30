@@ -6,10 +6,38 @@ a {
   background-repeat: no-repeat;
   color: inherit;
   text-decoration: none;
-	&:visited {
-		color: grey
-	}
+	//&:visited {
+	//	color: grey
+	//}
   &:hover{
     // background-image: $cactus-black;
   }
+}
+
+.presenter-row {
+  @include flex-direction(row);
+}
+
+.photo {
+  @include display-flex();
+  @include justify-content(space-around);
+  @include flex-direction(row);
+  @include flex();
+  @include flex-wrap(wrap);
+  background: center center no-repeat;
+  background-size: contain;
+  min-height: 250px;
+  min-width: 30%;
+  margin: 1em;
+  //max-width: 20%;
+}
+
+.terrasse1 {
+  background-image: url(../../images/terrasse/terasse.jpg);
+}
+.terrasse2 {
+  background-image: url(../../images/terrasse/terasse_ronde_macket.jpg);
+}
+.terrasse3 {
+  background-image: url(../../images/terrasse/terrasse_mc_mopin.jpg);
 }
