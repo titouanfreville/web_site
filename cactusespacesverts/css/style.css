@@ -1794,17 +1794,17 @@ a {
   animation: slider 96s infinite;
 }
 
-/* line 1, sass/_index.scss */
+/* line 4, sass/_index.scss */
 sep {
   height: 110vh;
 }
 
-/* line 4, sass/_index.scss */
+/* line 7, sass/_index.scss */
 label {
   width: 100%;
 }
 
-/* line 7, sass/_index.scss */
+/* line 10, sass/_index.scss */
 div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1837,13 +1837,13 @@ div {
   height: 100%;
   width: 100%;
 }
-/* line 16, sass/_index.scss */
+/* line 19, sass/_index.scss */
 div .fruticteum_pres_photo {
   height: 600px;
   background: url(../../images/fruticetum/fruticetum_vue_bassin.jpg) center center no-repeat;
   background-size: contain;
 }
-/* line 22, sass/_index.scss */
+/* line 25, sass/_index.scss */
 div h1, div h2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1871,7 +1871,7 @@ div h1, div h2 {
   vertical-align: center;
   height: 100%;
 }
-/* line 30, sass/_index.scss */
+/* line 33, sass/_index.scss */
 div h1 {
   -webkit-align-self: center;
   -moz-align-self: center;
@@ -1883,16 +1883,16 @@ div h1 {
   margin: 2vh;
   height: 100%;
 }
-/* line 38, sass/_index.scss */
+/* line 41, sass/_index.scss */
 div h2, div h3 {
   font: 2.8em "serena";
   margin: 0.5em 0 0.1em;
 }
-/* line 42, sass/_index.scss */
+/* line 45, sass/_index.scss */
 div h3 {
   font: 2.5em "serena";
 }
-/* line 45, sass/_index.scss */
+/* line 48, sass/_index.scss */
 div section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1920,7 +1920,7 @@ div section {
   width: 100%;
   height: 100%;
 }
-/* line 52, sass/_index.scss */
+/* line 55, sass/_index.scss */
 div section .slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1943,7 +1943,7 @@ div section .slider {
   width: 100%;
   height: 100%;
 }
-/* line 60, sass/_index.scss */
+/* line 63, sass/_index.scss */
 div .intro {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1970,19 +1970,19 @@ div .intro {
   justify-content: space-around;
   height: 100%;
 }
-/* line 66, sass/_index.scss */
+/* line 69, sass/_index.scss */
 div .intro p {
   font-size: 2em;
 }
-/* line 68, sass/_index.scss */
+/* line 71, sass/_index.scss */
 div .intro p:first-child {
   margin: 0 2em 0 0.2em;
 }
-/* line 71, sass/_index.scss */
+/* line 74, sass/_index.scss */
 div .intro p:last-child {
   margin: 0 0.2em 0 2em;
 }
-/* line 77, sass/_index.scss */
+/* line 80, sass/_index.scss */
 div .slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2011,7 +2011,7 @@ div .slider {
   height: 100%;
   min-height: 410px;
 }
-/* line 87, sass/_index.scss */
+/* line 90, sass/_index.scss */
 div p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2040,7 +2040,7 @@ div p {
   font-size: 1.5em;
   width: 60%;
 }
-/* line 96, sass/_index.scss */
+/* line 99, sass/_index.scss */
 div p .quote, div p .entPresentation {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2070,11 +2070,11 @@ div p .quote, div p .entPresentation {
   text-align: justify;
   text-justify: inter-word;
 }
-/* line 106, sass/_index.scss */
+/* line 109, sass/_index.scss */
 div p .quote {
   font-style: italic;
 }
-/* line 109, sass/_index.scss */
+/* line 112, sass/_index.scss */
 div p .signature {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2104,7 +2104,7 @@ div p .signature {
   text-align: right;
   font-size: 1.8em;
 }
-/* line 120, sass/_index.scss */
+/* line 123, sass/_index.scss */
 div p .works {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2134,7 +2134,7 @@ div p .works {
   text-justify: inter-word;
 }
 
-/* line 133, sass/_index.scss */
+/* line 136, sass/_index.scss */
 #btn-photoswipe, .hidden, .pswp_hide {
   display: none;
 }
