@@ -1503,67 +1503,6 @@ a {
   text-decoration: none;
 }
 
-/* line 17, sass/_utilities.scss */
-.presenter-row {
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-/* line 21, sass/_utilities.scss */
-.photo {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  background: center center no-repeat;
-  background-size: contain;
-  min-height: 250px;
-  min-width: 30%;
-  margin: 1em;
-}
-
-/* line 35, sass/_utilities.scss */
-.terrasse1 {
-  background-image: url(../../images/terrasse/terasse.jpg);
-}
-
-/* line 38, sass/_utilities.scss */
-.terrasse2 {
-  background-image: url(../../images/terrasse/terasse_ronde_macket.jpg);
-}
-
-/* line 41, sass/_utilities.scss */
-.terrasse3 {
-  background-image: url(../../images/terrasse/terrasse_mc_mopin.jpg);
-}
-
 /* fonction d'animation, n'oubliez pas de prefixer ! */
 @-moz-keyframes slider {
   0%, 8%, 100% {
@@ -1805,7 +1744,7 @@ label {
 }
 
 /* line 10, sass/_index.scss */
-div {
+.main {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1838,13 +1777,46 @@ div {
   width: 100%;
 }
 /* line 19, sass/_index.scss */
-div .fruticteum_pres_photo {
+.main div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+/* line 29, sass/_index.scss */
+.main .fruticteum_pres_photo {
   height: 600px;
   background: url(../../images/fruticetum/fruticetum_vue_bassin.jpg) center center no-repeat;
   background-size: contain;
 }
-/* line 25, sass/_index.scss */
-div h1, div h2 {
+/* line 35, sass/_index.scss */
+.main h1, .main h2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1871,8 +1843,8 @@ div h1, div h2 {
   vertical-align: center;
   height: 100%;
 }
-/* line 33, sass/_index.scss */
-div h1 {
+/* line 44, sass/_index.scss */
+.main h1 {
   -webkit-align-self: center;
   -moz-align-self: center;
   -ms-flex-item-align: center;
@@ -1883,45 +1855,17 @@ div h1 {
   margin: 2vh;
   height: 100%;
 }
-/* line 41, sass/_index.scss */
-div h2, div h3 {
+/* line 52, sass/_index.scss */
+.main h2, .main h3 {
   font: 2.8em "serena";
   margin: 0.5em 0 0.1em;
 }
-/* line 45, sass/_index.scss */
-div h3 {
+/* line 56, sass/_index.scss */
+.main h3 {
   font: 2.5em "serena";
 }
-/* line 48, sass/_index.scss */
-div section {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-}
-/* line 55, sass/_index.scss */
-div section .slider {
+/* line 61, sass/_index.scss */
+.main .slider, .main .sliders {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1941,49 +1885,77 @@ div section .slider {
   -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
-  height: 100%;
-}
-/* line 63, sass/_index.scss */
-div .intro {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -moz-box-flex: 1;
-  -moz-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: space-around;
-  -ms-flex-pack: space-around;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
   height: 100%;
 }
 /* line 69, sass/_index.scss */
-div .intro p {
+.main section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+/* line 77, sass/_index.scss */
+.main .intro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  height: 100%;
+}
+/* line 83, sass/_index.scss */
+.main .intro p {
   font-size: 2em;
 }
-/* line 71, sass/_index.scss */
-div .intro p:first-child {
+/* line 85, sass/_index.scss */
+.main .intro p:first-child {
   margin: 0 2em 0 0.2em;
 }
-/* line 74, sass/_index.scss */
-div .intro p:last-child {
+/* line 88, sass/_index.scss */
+.main .intro p:last-child {
   margin: 0 0.2em 0 2em;
 }
-/* line 80, sass/_index.scss */
-div .slider {
+/* line 94, sass/_index.scss */
+.main .slider {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2011,8 +1983,8 @@ div .slider {
   height: 100%;
   min-height: 410px;
 }
-/* line 90, sass/_index.scss */
-div p {
+/* line 104, sass/_index.scss */
+.main p {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2040,8 +2012,8 @@ div p {
   font-size: 1.5em;
   width: 60%;
 }
-/* line 99, sass/_index.scss */
-div p .quote, div p .entPresentation {
+/* line 113, sass/_index.scss */
+.main p .quote, .main p .entPresentation {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2070,12 +2042,12 @@ div p .quote, div p .entPresentation {
   text-align: justify;
   text-justify: inter-word;
 }
-/* line 109, sass/_index.scss */
-div p .quote {
+/* line 123, sass/_index.scss */
+.main p .quote {
   font-style: italic;
 }
-/* line 112, sass/_index.scss */
-div p .signature {
+/* line 126, sass/_index.scss */
+.main p .signature {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2104,8 +2076,8 @@ div p .signature {
   text-align: right;
   font-size: 1.8em;
 }
-/* line 123, sass/_index.scss */
-div p .works {
+/* line 137, sass/_index.scss */
+.main p .works {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -2133,8 +2105,64 @@ div p .works {
   text-align: justify;
   text-justify: inter-word;
 }
+/* line 148, sass/_index.scss */
+.main .presenter-row {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+/* line 152, sass/_index.scss */
+.main .photo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: center center no-repeat;
+  background-size: contain;
+  min-height: 250px;
+  min-width: 30%;
+  margin: 1em;
+}
+/* line 166, sass/_index.scss */
+.main .terrasse1 {
+  background-image: url(../../images/terrasse/terasse.jpg);
+}
+/* line 169, sass/_index.scss */
+.main .terrasse2 {
+  background-image: url(../../images/terrasse/terasse_ronde_macket.jpg);
+}
+/* line 172, sass/_index.scss */
+.main .terrasse3 {
+  background-image: url(../../images/terrasse/terrasse_mc_mopin.jpg);
+}
 
-/* line 136, sass/_index.scss */
+/* line 177, sass/_index.scss */
 #btn-photoswipe, .hidden, .pswp_hide {
   display: none;
 }

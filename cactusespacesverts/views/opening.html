@@ -1,11 +1,12 @@
-<div>
-	<div class="slider">
+
+<div class="main">
+	<div class="sliders">
         <section ng-controller="OpSliderCtrl">
             <div class="slider">
                 <img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
             </div>
         </section>
-		<!-- Slider :) -->
+
 		<section ng-controller="OpSliderCtrl">
 			<div class="slider">
 				<img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
