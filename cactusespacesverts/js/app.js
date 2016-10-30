@@ -7,7 +7,7 @@
 'use strict';
 /*jshint -W097 */
 
-var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'ngAnimate', 'ngPhotoswipe' ]);
+var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'ngAnimate' ]);
 
 // var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'uiGmapgoogle-maps']);
 
@@ -442,3 +442,60 @@ cactusespacesverts.animation('.slide-animation', function () {
 //      alert(marker.email); //Affichera l'email du point sur lequel on a cliqué
 //   };
 // }])
+
+
+$(document).ready(function() {
+
+    var openPhotoSwipe = function() {
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+
+        // build items array
+        var items = [
+            {
+                src: 'images/diapo1.jpg',
+                w: 1024,
+                h: 683
+            },
+            {
+                src: 'images/diapo2.jpg',
+                w: 1024,
+                h: 683
+            },
+            {
+                src: 'images/diapo3.jpg',
+                w: 1024,
+                h: 683
+            },
+            {
+                src: 'images/diapo4.jpg',
+                w: 1024,
+                h: 683
+            },
+            {
+                src: 'images/diapo5.jpg',
+                w: 1024,
+                h: 683
+            }
+        ];
+
+        // define options (if needed)
+        var options = {
+            // history & focus options are disabled on CodePen
+            history: false,
+            focus: false,
+
+            showAnimationDuration: 1,
+            hideAnimationDuration: 1
+
+        };
+
+        var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    };
+
+    var photos = document.getElementsByClassName('photoswipe');
+    for (var i=0; i < photos.length; i++) {
+        photos[i].onclick = openPhotoSwipe;
+    }
+});
+

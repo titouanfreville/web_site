@@ -4,8 +4,9 @@ header {
   @include flex-direction(column);
   @include justify-content(space-around);
   @include flex-shrink(0);
-
   background: #000;
+  background: url("../../images/test_bandeau1.jpg") no-repeat top center;
+  background: cover;
   z-index: 1000;
   position: fixed;
   min-height: 160px;
