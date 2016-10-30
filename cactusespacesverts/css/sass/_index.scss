@@ -1,13 +1,17 @@
 sep {
   height: 110vh;
 }
-
+label {
+  width: 100%;
+}
 div {
   @include display-flex;
   @include flex;
   @include flex-direction(column);
   @include justify-content(space-around);
+  @include align-items(center);
   height: 100%;
+  width: 100%;
   h1, h2 {
     @include display-flex;
     @include flex;
@@ -80,6 +84,7 @@ div {
     @include justify-content(space-around);
     height: 100%;
     font-size: 1.5em;
+    width:60%;
 
     .quote, .entPresentation {
       @include display-flex;

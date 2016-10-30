@@ -1799,7 +1799,12 @@ sep {
   height: 110vh;
 }
 
-/* line 5, sass/_index.scss */
+/* line 4, sass/_index.scss */
+label {
+  width: 100%;
+}
+
+/* line 7, sass/_index.scss */
 div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1824,9 +1829,15 @@ div {
   -webkit-justify-content: space-around;
   -moz-justify-content: space-around;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
   height: 100%;
+  width: 100%;
 }
-/* line 11, sass/_index.scss */
+/* line 15, sass/_index.scss */
 div h1, div h2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1854,7 +1865,7 @@ div h1, div h2 {
   vertical-align: center;
   height: 100%;
 }
-/* line 19, sass/_index.scss */
+/* line 23, sass/_index.scss */
 div h1 {
   -webkit-align-self: center;
   -moz-align-self: center;
@@ -1866,16 +1877,16 @@ div h1 {
   margin: 2vh;
   height: 100%;
 }
-/* line 27, sass/_index.scss */
+/* line 31, sass/_index.scss */
 div h2, div h3 {
   font: 2.8em "serena";
   margin: 0.5em 0 0.1em;
 }
-/* line 31, sass/_index.scss */
+/* line 35, sass/_index.scss */
 div h3 {
   font: 2.5em "serena";
 }
-/* line 34, sass/_index.scss */
+/* line 38, sass/_index.scss */
 div section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1903,7 +1914,7 @@ div section {
   width: 100%;
   height: 100%;
 }
-/* line 41, sass/_index.scss */
+/* line 45, sass/_index.scss */
 div section .slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1926,7 +1937,7 @@ div section .slider {
   width: 100%;
   height: 100%;
 }
-/* line 49, sass/_index.scss */
+/* line 53, sass/_index.scss */
 div .intro {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1953,19 +1964,19 @@ div .intro {
   justify-content: space-around;
   height: 100%;
 }
-/* line 55, sass/_index.scss */
+/* line 59, sass/_index.scss */
 div .intro p {
   font-size: 2em;
 }
-/* line 57, sass/_index.scss */
+/* line 61, sass/_index.scss */
 div .intro p:first-child {
   margin: 0 2em 0 0.2em;
 }
-/* line 60, sass/_index.scss */
+/* line 64, sass/_index.scss */
 div .intro p:last-child {
   margin: 0 0.2em 0 2em;
 }
-/* line 66, sass/_index.scss */
+/* line 70, sass/_index.scss */
 div .slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1994,7 +2005,7 @@ div .slider {
   height: 100%;
   min-height: 410px;
 }
-/* line 76, sass/_index.scss */
+/* line 80, sass/_index.scss */
 div p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2021,8 +2032,9 @@ div p {
   justify-content: space-around;
   height: 100%;
   font-size: 1.5em;
+  width: 60%;
 }
-/* line 84, sass/_index.scss */
+/* line 89, sass/_index.scss */
 div p .quote, div p .entPresentation {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2052,11 +2064,11 @@ div p .quote, div p .entPresentation {
   text-align: justify;
   text-justify: inter-word;
 }
-/* line 94, sass/_index.scss */
+/* line 99, sass/_index.scss */
 div p .quote {
   font-style: italic;
 }
-/* line 97, sass/_index.scss */
+/* line 102, sass/_index.scss */
 div p .signature {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2086,7 +2098,7 @@ div p .signature {
   text-align: right;
   font-size: 1.8em;
 }
-/* line 108, sass/_index.scss */
+/* line 113, sass/_index.scss */
 div p .works {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2116,7 +2128,7 @@ div p .works {
   text-justify: inter-word;
 }
 
-/* line 121, sass/_index.scss */
+/* line 126, sass/_index.scss */
 #btn-photoswipe, .hidden, .pswp_hide {
   display: none;
 }

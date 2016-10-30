@@ -45,11 +45,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_index.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_index.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/sass/_index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+                <state relative-caret-position="994">
+                  <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -85,11 +85,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="creations.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="creations.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/views/creations.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+                <state relative-caret-position="0">
+                  <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
                   <folding />
                 </state>
               </provider>
@@ -165,8 +165,8 @@
         <option value="$PROJECT_DIR$/css/sass/_utilities.scss" />
         <option value="$PROJECT_DIR$/views/terrasses.html" />
         <option value="$PROJECT_DIR$/css/sass/_variables.scss" />
-        <option value="$PROJECT_DIR$/css/sass/_index.scss" />
         <option value="$PROJECT_DIR$/views/creations.html" />
+        <option value="$PROJECT_DIR$/css/sass/_index.scss" />
       </list>
     </option>
   </component>
@@ -451,12 +451,12 @@
       <workItem from="1477773331498" duration="2385000" />
       <workItem from="1477815810909" duration="6814000" />
       <workItem from="1477824495138" duration="1208000" />
-      <workItem from="1477842670944" duration="5858000" />
+      <workItem from="1477842670944" duration="6483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22361000" />
+    <option name="totallyTimeSpent" value="22986000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2048" height="1148" extended-state="6" />
@@ -876,18 +876,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/sass/_index.scss">
+    <entry file="file://$PROJECT_DIR$/views/creations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/creations.html">
+    <entry file="file://$PROJECT_DIR$/css/sass/_index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="994">
+          <caret line="86" column="11" selection-start-line="86" selection-start-column="11" selection-end-line="86" selection-end-column="11" />
           <folding />
         </state>
       </provider>
