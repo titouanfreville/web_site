@@ -12,6 +12,13 @@ div {
   @include align-items(center);
   height: 100%;
   width: 100%;
+
+  .fruticteum_pres_photo {
+    height: 600px;
+    background: $fruti_pres_photo center center no-repeat;
+    background-size: contain;
+  }
+
   h1, h2 {
     @include display-flex;
     @include flex;
