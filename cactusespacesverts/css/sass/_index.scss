@@ -16,6 +16,16 @@ label {
   height: 100%;
   width: 100%;
 
+
+
+  span {
+    @include display-flex;
+    @include flex;
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    font-size: 1.8em;
+  }
+
   div {
     @include display-flex;
     @include flex;
