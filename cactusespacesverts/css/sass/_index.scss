@@ -23,7 +23,7 @@ label {
     @include flex;
     @include flex-direction(row);
     @include justify-content(space-around);
-    font-size: 1.8em;
+    // font-size: 1.8em;
   }
 
   div {
