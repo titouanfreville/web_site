@@ -20,7 +20,8 @@
     "angular-ui-router": "^0.3.1",
     "angularjs-google-maps": "^0.5.0",
     "lodash": "^4.15.0",
-    "angular-animate": "^1.5.8"
+    "angular-animate": "^1.5.8",
+    "ng-photoswipe": "^0.2.0"
   },
   "resolutions": {
     "angular": "^1.5.8"

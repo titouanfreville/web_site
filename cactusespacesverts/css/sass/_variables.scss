@@ -27,34 +27,56 @@
   src: url('../../fonts/aerofoil.ttf') format('truetype');
 }
 
-$fonts:                       'comic', Geneva CE, Helvetica !default;
-$base-font-color:             #509B23;
+$fonts:                       Georgia, !default;
+$base-font-color:             #0B610B;
 
 // Body ----------------------
 $background-img:              url(../../background.png);
-$background-color:            #000;
+$background-color:            #fff;
 
 // Pages --------------------
 // ----- Title --------------
 // ---------- h1 ------------
 $h1-font-color:              #388E3C;
-$h1-font-size:               2rem;
+$h1-font-size:               3.2rem;
 $h1-font-family:            'serena';
 // ---------- h2 ------------
 $h2-font-color:              #4CAF50;
+$h2-font-size:               2.8em;
+$h2-font-family:            'serena';
+// ---------- h3 ------------
+$h3-font-color:              #4CAF50;
+$h3-font-size:               2.5em;
+$h3-font-family:            'serena';
 
 // ----- Contents -----------
 // ----------- quotes -------
 $quote-font-style:           italic;
-$quote-color:                #8BC34A;
+$quote-color:                #0B610B;
+
+$fruti_pres_photo:           url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
 
 // Menu & cie ---------------
 
 // Logo social network ------
 $cie-name-font-size:         3.2rem;
-$cie-name-font-family:       'aerofoil', $fonts;
+$cie-name-font-family:       'serena';
 $moto-font-size:             3.2rem;
-$moto-font-family:           'splendid', $fonts;
+$moto-font-family:           'serena';
 $logo:                       url(../../images/logo.svg);
 $cactus-green:               url(../../images/cactusgreen.svg);
 $cactus-black:               url(../../images/cactusblack.svg);
+$band-background:            url(../../images/bandeau.jpg);
+
+
+
+// PSWP Variables
+$pswp__show-hide-transition-duration: 333ms !default;
+$pswp__controls-transition-duration: 333ms !default;
+$pswp__background-color: #000 !default;
+$pswp__placeholder-color: #222 !default;
+$pswp__box-sizing-border-box: true !default; // disable .pswp * { box-sizing:border-box } (in case you already have it in your site css)
+$pswp__root-z-index: 1500 !default;
+$pswp__assets-path: './sass/default-skin/' !default; // path to skin assets folder (preloader, PNG and SVG sprite)
+$pswp__error-text-color: #CCC !default; // "Image not loaded" text color
+$pswp__include-minimal-style: true !default;

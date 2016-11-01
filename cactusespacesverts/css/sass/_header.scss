@@ -1,28 +1,32 @@
 header {
-	@include display-flex;
-	@include flex;
+  @include display-flex;
+  @include flex;
   @include flex-direction(column);
   @include justify-content(space-around);
   background: #000;
+  background: $band-background no-repeat bottom center;
+  background-size: cover;
   z-index: 1000;
   position: fixed;
-  min-height: 280px;
+  min-height: 160px;
   left: 0;
   top: 0;
   width: 100%;
+	color: #fff;
+
 	band {
-		@include display-flex;
-		@include flex;
+      @include display-flex;
+      @include flex;
 	  @include flex-direction(row);
 	  @include justify-content(space-around);
   	width: 100%;
 
 		logo {
-			@include display-flex;
-			@include flex(0.5);
+          @include display-flex;
+          @include flex(0.5);
 		  @include justify-content(space-around);
-			background: $logo center center no-repeat;
-			background-size: contain;
+          background: $logo center center no-repeat;
+          background-size: contain;
 		}
 
 		textes {
@@ -34,6 +38,7 @@ header {
       h1, h2 {
         @include align-items(center);
         margin: 0 !important;
+		  color: #fff;
       }
 			h1 {
 				font: $cie-name-font-size $cie-name-font-family;
@@ -106,6 +111,8 @@ header {
 		@include flex(0.1);
 	  @include flex-direction(row);
 	  @include justify-content(space-around);
+	  margin-top: 1.5em;
+		color: #fff;
 
     ul {
       @include display-flex;
@@ -129,15 +136,15 @@ header {
 
         ul {
           position: relative;
-	        @include display-flex;
-					@include flex;
+			@include display-flex;
+			@include flex;
           @include flex-direction(column);
           @include justify-content(flex-start);
 
           li {
-		        @include display-flex;
-						@include flex;
-	          @include flex-direction(column);
+			@include display-flex;
+			@include flex;
+		    @include flex-direction(column);
             border: none;
             min-height: 15px;
             height: 30px;
@@ -178,28 +185,14 @@ header {
               ul {
                 display: none;
               }
-
-              li {
-                &:hover {
-                  ul {
-                    @include display-flex();
-                    @include flex-direction(column);
-
-                    li {
-                      &:hover {
-                      }
-                    }
-                  }
-                }
-              }
-            }
           }
         }
       }
     }
-	}
+  }
+}
 }
 
 space {
-	height: 300px;
+	height: 180px;
 }
