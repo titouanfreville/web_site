@@ -932,7 +932,7 @@ header {
   -moz-justify-content: space-around;
   justify-content: space-around;
   background: #000;
-  background: url(../../images/test_bandeau1.jpg) no-repeat bottom center;
+  background: url(../../images/bandeau.jpg) no-repeat bottom center;
   background-size: cover;
   z-index: 1000;
   position: fixed;
@@ -1743,7 +1743,15 @@ label {
   width: 100%;
 }
 
-/* line 10, sass/_index.scss */
+/* line 11, sass/_index.scss */
+.blocmarque {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+
+/* line 18, sass/_index.scss */
 .main {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1776,7 +1784,7 @@ label {
   height: 100%;
   width: 100%;
 }
-/* line 21, sass/_index.scss */
+/* line 27, sass/_index.scss */
 .main span {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1802,7 +1810,7 @@ label {
   -moz-justify-content: space-around;
   justify-content: space-around;
 }
-/* line 29, sass/_index.scss */
+/* line 34, sass/_index.scss */
 .main div {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1835,13 +1843,13 @@ label {
   height: 100%;
   width: 100%;
 }
-/* line 39, sass/_index.scss */
+/* line 44, sass/_index.scss */
 .main .fruticteum_pres_photo {
   height: 600px;
   background: url(../../images/fruticetum/fruticetum_vue_bassin.jpg) center center no-repeat;
   background-size: contain;
 }
-/* line 45, sass/_index.scss */
+/* line 50, sass/_index.scss */
 .main h1, .main h2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1869,7 +1877,7 @@ label {
   vertical-align: center;
   height: 100%;
 }
-/* line 54, sass/_index.scss */
+/* line 59, sass/_index.scss */
 .main h1 {
   -webkit-align-self: center;
   -moz-align-self: center;
@@ -1881,16 +1889,16 @@ label {
   margin: 2vh;
   height: 100%;
 }
-/* line 62, sass/_index.scss */
+/* line 67, sass/_index.scss */
 .main h2, .main h3 {
   font: 2.8em "serena";
   margin: 0.5em 0 0.1em;
 }
-/* line 66, sass/_index.scss */
+/* line 71, sass/_index.scss */
 .main h3 {
   font: 2.5em "serena";
 }
-/* line 71, sass/_index.scss */
+/* line 76, sass/_index.scss */
 .main .slider, .main .sliders {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1913,7 +1921,7 @@ label {
   width: 100%;
   height: 100%;
 }
-/* line 79, sass/_index.scss */
+/* line 84, sass/_index.scss */
 .main section {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1941,7 +1949,7 @@ label {
   width: 100%;
   height: 100%;
 }
-/* line 87, sass/_index.scss */
+/* line 92, sass/_index.scss */
 .main .intro {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1968,19 +1976,19 @@ label {
   justify-content: space-around;
   height: 100%;
 }
-/* line 93, sass/_index.scss */
+/* line 98, sass/_index.scss */
 .main .intro p {
   font-size: 2em;
 }
-/* line 95, sass/_index.scss */
+/* line 100, sass/_index.scss */
 .main .intro p:first-child {
   margin: 0 2em 0 0.2em;
 }
-/* line 98, sass/_index.scss */
+/* line 103, sass/_index.scss */
 .main .intro p:last-child {
   margin: 0 0.2em 0 2em;
 }
-/* line 104, sass/_index.scss */
+/* line 109, sass/_index.scss */
 .main .slider {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2009,7 +2017,7 @@ label {
   height: 100%;
   min-height: 410px;
 }
-/* line 114, sass/_index.scss */
+/* line 119, sass/_index.scss */
 .main p {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2038,7 +2046,7 @@ label {
   font-size: 1.5em;
   width: 60%;
 }
-/* line 123, sass/_index.scss */
+/* line 128, sass/_index.scss */
 .main p .quote, .main p .entPresentation {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2068,11 +2076,11 @@ label {
   text-align: justify;
   text-justify: inter-word;
 }
-/* line 133, sass/_index.scss */
+/* line 138, sass/_index.scss */
 .main p .quote {
   font-style: italic;
 }
-/* line 136, sass/_index.scss */
+/* line 141, sass/_index.scss */
 .main p .signature {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2102,7 +2110,7 @@ label {
   text-align: right;
   font-size: 1.8em;
 }
-/* line 147, sass/_index.scss */
+/* line 152, sass/_index.scss */
 .main p .works {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2131,7 +2139,11 @@ label {
   text-align: justify;
   text-justify: inter-word;
 }
-/* line 158, sass/_index.scss */
+/* line 163, sass/_index.scss */
+.main .work {
+  margin-top: 3em;
+}
+/* line 166, sass/_index.scss */
 .main .presenter-row {
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
@@ -2140,7 +2152,7 @@ label {
   -ms-flex-direction: row;
   flex-direction: row;
 }
-/* line 162, sass/_index.scss */
+/* line 170, sass/_index.scss */
 .main .photo {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2175,20 +2187,296 @@ label {
   min-width: 30%;
   margin: 1em;
 }
-/* line 176, sass/_index.scss */
-.main .terrasse1 {
-  background-image: url(../../images/terrasse/terasse.jpg);
+/* line 185, sass/_index.scss */
+.main .fruti1 {
+  background-image: url(../../images/fruticetum/fruticetum_long.jpg);
 }
-/* line 179, sass/_index.scss */
-.main .terrasse2 {
-  background-image: url(../../images/terrasse/terasse_ronde_macket.jpg);
+/* line 188, sass/_index.scss */
+.main .fruti2 {
+  background-image: url(../../images/fruticetum/fruticetum_abri.jpg);
 }
-/* line 182, sass/_index.scss */
-.main .terrasse3 {
-  background-image: url(../../images/terrasse/terrasse_mc_mopin.jpg);
+/* line 191, sass/_index.scss */
+.main .fruti3 {
+  background-image: url(../../images/fruticetum/fruticetum_egrennoire2.JPG);
+}
+/* line 194, sass/_index.scss */
+.main .fruti4 {
+  background-image: url(../../images/fruticetum/fruticetum.jpg);
+}
+/* line 197, sass/_index.scss */
+.main .fruti5 {
+  background-image: url(../../images/fruticetum/fruticetum_muraille.jpg);
+}
+/* line 200, sass/_index.scss */
+.main .fruti6 {
+  background-image: url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
+}
+/* line 203, sass/_index.scss */
+.main .fruti7 {
+  background-image: url(../../images/fruticetum/fruticetum_cordage.jpg);
+}
+/* line 206, sass/_index.scss */
+.main .fruti8 {
+  background-image: url(../../images/fruticetum/fruticetum_long_bassin.jpg);
+}
+/* line 209, sass/_index.scss */
+.main .fruti9 {
+  background-image: url(../../images/fruticetum/fruticetum_rampe.jpg);
+}
+/* line 214, sass/_index.scss */
+.main .terrassebois1 {
+  background-image: url(../../images/terrasse/terrassebois2.jpg);
+}
+/* line 217, sass/_index.scss */
+.main .terrassebois2 {
+  background-image: url(../../images/terrasse/terrassebois3.jpg);
+}
+/* line 220, sass/_index.scss */
+.main .terrassebois3 {
+  background-image: url(../../images/terrasse/terrassebois4.jpg);
+}
+/* line 223, sass/_index.scss */
+.main .terrassebois4 {
+  background-image: url(../../images/terrasse/terrassebois5.jpg);
+}
+/* line 226, sass/_index.scss */
+.main .terrassebois5 {
+  background-image: url(../../images/terrasse/terrassebois6.jpg);
+}
+/* line 229, sass/_index.scss */
+.main .terrassebois6 {
+  background-image: url(../../images/terrasse/terrassebois7.jpg);
+}
+/* line 232, sass/_index.scss */
+.main .terrassebois7 {
+  background-image: url(../../images/terrasse/terrassebois8.jpg);
+}
+/* line 235, sass/_index.scss */
+.main .terrassebois8 {
+  background-image: url(../../images/terrasse/terrassebois9.jpg);
+}
+/* line 238, sass/_index.scss */
+.main .terrassebois9 {
+  background-image: url(../../images/terrasse/terrasseboiscomposite3.JPG);
+}
+/* line 243, sass/_index.scss */
+.main .terrassepavmin1 {
+  background-image: url(../../images/terrasse/terrassedallage.jpg);
+}
+/* line 246, sass/_index.scss */
+.main .terrassepavmin2 {
+  background-image: url(../../images/terrasse/terrassedallage2.jpg);
+}
+/* line 249, sass/_index.scss */
+.main .terrassepavmin3 {
+  background-image: url(../../images/terrasse/terrassedallage3.jpg);
+}
+/* line 252, sass/_index.scss */
+.main .terrassepavmin4 {
+  background-image: url(../../images/terrasse/terrassedallage7.jpg);
+}
+/* line 255, sass/_index.scss */
+.main .terrassepavmin5 {
+  background-image: url(../../images/terrasse/terrassedallage5.jpg);
+}
+/* line 258, sass/_index.scss */
+.main .terrassepavmin6 {
+  background-image: url(../../images/terrasse/terrassedallage6.jpg);
+}
+/* line 261, sass/_index.scss */
+.main .terrassepavmin7 {
+  background-image: url(../../images/terrasse/terrassegravier1.JPG);
+}
+/* line 264, sass/_index.scss */
+.main .terrassepavmin8 {
+  display: none;
+}
+/* line 267, sass/_index.scss */
+.main .terrassepavmin9 {
+  display: none;
+}
+/* line 272, sass/_index.scss */
+.main .menuiserie1 {
+  background-image: url(../../images/menuiserie/piscine1.jpg);
+}
+/* line 275, sass/_index.scss */
+.main .menuiserie2 {
+  background-image: url(../../images/menuiserie/escalier1.jpg);
+}
+/* line 278, sass/_index.scss */
+.main .menuiserie3 {
+  background-image: url(../../images/menuiserie/chalet2.jpg);
+}
+/* line 281, sass/_index.scss */
+.main .menuiserie4 {
+  background-image: url(../../images/menuiserie/pergola1.jpg);
+}
+/* line 284, sass/_index.scss */
+.main .menuiserie5 {
+  background-image: url(../../images/menuiserie/chalet1.jpg);
+}
+/* line 287, sass/_index.scss */
+.main .menuiserie6 {
+  background-image: url(../../images/menuiserie/pergola3.jpg);
+}
+/* line 290, sass/_index.scss */
+.main .menuiserie7 {
+  background-image: url(../../images/menuiserie/barriere1.jpg);
+}
+/* line 293, sass/_index.scss */
+.main .menuiserie8 {
+  background-image: url(../../images/menuiserie/barriere2.jpg);
+}
+/* line 296, sass/_index.scss */
+.main .menuiserie9 {
+  background-image: url(../../images/menuiserie/barriere3.jpg);
+}
+/* line 301, sass/_index.scss */
+.main .cheminement1 {
+  background-image: url(../../images/cheminement/cheminement1.jpg);
+}
+/* line 304, sass/_index.scss */
+.main .cheminement2 {
+  background-image: url(../../images/cheminement/cheminement2.jpg);
+}
+/* line 307, sass/_index.scss */
+.main .cheminement3 {
+  background-image: url(../../images/cheminement/cheminement3.jpg);
+}
+/* line 310, sass/_index.scss */
+.main .cheminement4 {
+  background-image: url(../../images/cheminement/cheminement4.jpg);
+}
+/* line 313, sass/_index.scss */
+.main .cheminement5 {
+  background-image: url(../../images/cheminement/cheminement5.jpg);
+}
+/* line 316, sass/_index.scss */
+.main .cheminement6 {
+  background-image: url(../../images/cheminement/cheminement6.jpg);
+}
+/* line 319, sass/_index.scss */
+.main .cheminement7 {
+  background-image: url(../../images/cheminement/cheminement7.jpg);
+}
+/* line 322, sass/_index.scss */
+.main .cheminement8 {
+  background-image: url(../../images/cheminement/cheminement8.jpg);
+}
+/* line 325, sass/_index.scss */
+.main .cheminement9 {
+  background-image: url(../../images/cheminement/cheminement9.jpg);
+}
+/* line 330, sass/_index.scss */
+.main .bassin1 {
+  background-image: url(../../images/bassin/bassin1.jpg);
+}
+/* line 333, sass/_index.scss */
+.main .bassin2 {
+  background-image: url(../../images/bassin/bassin2.jpg);
+}
+/* line 336, sass/_index.scss */
+.main .bassin3 {
+  background-image: url(../../images/bassin/bassin3.jpg);
+}
+/* line 339, sass/_index.scss */
+.main .bassin4 {
+  background-image: url(../../images/bassin/bassin4.jpg);
+}
+/* line 342, sass/_index.scss */
+.main .bassin5 {
+  background-image: url(../../images/bassin/bassin5.jpg);
+}
+/* line 345, sass/_index.scss */
+.main .bassin6 {
+  background-image: url(../../images/bassin/bassin6.jpg);
+}
+/* line 348, sass/_index.scss */
+.main .bassin8 {
+  background-image: url(../../images/bassin/bassin7.jpg);
+}
+/* line 351, sass/_index.scss */
+.main .bassin7 {
+  display: none;
+}
+/* line 354, sass/_index.scss */
+.main .bassin9 {
+  display: none;
+}
+/* line 359, sass/_index.scss */
+.main .soutenement1 {
+  background-image: url(../../images/soutenement/soutenement1.jpg);
+}
+/* line 362, sass/_index.scss */
+.main .soutenement2 {
+  background-image: url(../../images/soutenement/soutenement2.jpg);
+}
+/* line 365, sass/_index.scss */
+.main .soutenement3 {
+  background-image: url(../../images/soutenement/soutenement3.jpg);
+}
+/* line 368, sass/_index.scss */
+.main .soutenement4 {
+  background-image: url(../../images/soutenement/soutenement4.jpg);
+}
+/* line 371, sass/_index.scss */
+.main .soutenement5 {
+  background-image: url(../../images/soutenement/soutenement5.jpg);
+}
+/* line 374, sass/_index.scss */
+.main .soutenement6 {
+  visibility: hidden;
+}
+/* line 377, sass/_index.scss */
+.main .soutenement7 {
+  display: none;
+}
+/* line 380, sass/_index.scss */
+.main .soutenement8 {
+  display: none;
+}
+/* line 383, sass/_index.scss */
+.main .soutenement9 {
+  display: none;
+}
+/* line 388, sass/_index.scss */
+.main .vegetal1 {
+  background-image: url(../../images/vegetal/vegetal1.jpg);
+}
+/* line 391, sass/_index.scss */
+.main .vegetal2 {
+  background-image: url(../../images/vegetal/vegetal2.jpg);
+}
+/* line 394, sass/_index.scss */
+.main .vegetal3 {
+  background-image: url(../../images/vegetal/vegetal3.jpg);
+}
+/* line 397, sass/_index.scss */
+.main .vegetal4 {
+  background-image: url(../../images/vegetal/vegetal4.jpg);
+}
+/* line 400, sass/_index.scss */
+.main .vegetal5 {
+  background-image: url(../../images/vegetal/vegetal5.jpg);
+}
+/* line 403, sass/_index.scss */
+.main .vegetal6 {
+  background-image: url(../../images/vegetal/vegetal6.jpg);
+}
+/* line 406, sass/_index.scss */
+.main .vegetal7 {
+  background-image: url(../../images/vegetal/vegetal7.jpg);
+}
+/* line 409, sass/_index.scss */
+.main .vegetal8 {
+  background-image: url(../../images/vegetal/vegetal8.jpg);
+}
+/* line 412, sass/_index.scss */
+.main .vegetal9 {
+  background-image: url(../../images/vegetal/vegetal9.jpg);
 }
 
-/* line 187, sass/_index.scss */
+/* line 417, sass/_index.scss */
 #btn-photoswipe, .hidden, .pswp_hide {
   display: none;
 }

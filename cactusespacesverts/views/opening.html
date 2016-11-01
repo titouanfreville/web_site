@@ -3,19 +3,22 @@
 	<div class="sliders">
         <section ng-controller="OpSliderCtrl">
             <div class="slider">
-                <img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+                <img ng-repeat="slide in slides1" height="400px" ng-hide="!isCurrentSlideIndex($index)"
+                     ng-src="{{slide.image}}">
             </div>
         </section>
 
 		<section ng-controller="OpSliderCtrl">
 			<div class="slider">
-				<img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+				<img ng-repeat="slide in slides2" height="400px" ng-hide="!isCurrentSlideIndex($index)"
+                     ng-src="{{slide.image}}">
 			</div>
 		</section>
 
         <section ng-controller="OpSliderCtrl">
             <div class="slider">
-                <img ng-repeat="slide in slides" height="400px" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+                <img ng-repeat="slide in slides3" height="400px" ng-hide="!isCurrentSlideIndex($index)"
+                     ng-src="{{slide.image}}">
             </div>
         </section>
 	</div>
@@ -37,12 +40,20 @@
         </p>
 
     </div>
-	<p>
+	<p class="work">
 		Ils nous font confiance :
 		<span class="works">
 			<img alt='Communautée de Commune Baie de Somme Sud' height='100px' src='images/partenaires/ccbss.jpg'/>
-			<img alt='Commune de Cayeux sur Mer' height='100px' src='images/partenaires/cayeuxsurmer.png'/>
+			<img alt='Commune de Saint Valery sur Somme' height='100px'
+                 src='images/partenaires/saintvalerysursomme.jpg'/>
 			<img alt='Point P Saint Valéry sur Somme' height='100px' src='images/partenaires/pointp.png'/>
 		</span>
 	</p>
+    <p>
+        <a href="http://www.lesentreprisesdupaysage.fr/membres-unep-nos-engagements" target="_blank"
+           class="blocmarque">
+            <img src="http://www.lesentreprisesdupaysage.fr/nouvelle-marque/unep-blocmarque-base-1.png"
+                 width="380px" alt="Bloc marque adherent Unep">
+        </a>
+    </p>
 </div>

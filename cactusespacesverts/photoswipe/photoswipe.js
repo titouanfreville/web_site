@@ -823,7 +823,6 @@ var publicMethods = {
 		
 		self.scrollWrap = framework.getChildByClass(template, 'pswp__scroll-wrap');
 		self.container = framework.getChildByClass(self.scrollWrap, 'pswp__container');
-		console.log("init ? ");
 		var pswp_elements = document.getElementsByClassName('pswp_hide');
 		for (var i=0; i < pswp_elements.length; i++) {
 			pswp_elements[i].style.display += " block";
