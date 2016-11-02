@@ -174,9 +174,9 @@ label {
     @include flex();
     @include flex-wrap(wrap);
     background: center center no-repeat;
-    background-size: contain;
-    min-height: 250px;
-    min-width: 30%;
+    background-size: cover;
+    height: 250px;
+    max-width: 30%;
     margin: 1em;
     //max-width: 20%;
   }
