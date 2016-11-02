@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="FR-fr">
   <head>
     <meta charset='utf-8' />
     <meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width' />
@@ -9,9 +9,9 @@
     <title>Cactus Espaces Verts, le jardin plus proche de la nature.</title>
     <!-- loading JS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
     <script src="photoswipe/photoswipe.js"></script>
@@ -28,7 +28,34 @@
     <div ui-view="header">
     </div>
     <space></space>
+    <!-- Index view opening the web site -->
+    <div ui-view="opening">
+    </div>
+    <sep></sep>
+    <!-- View for remarquable work (ex : fruticetum) -->
+    <div ui-view="remarquable">
+    </div>
+    <sep></sep>
+    <!-- Creation View, show all creation informations
+          - Index : Resume with a slider.
+          - Others : Particularity selected.
+     -->
+    <div ui-view="creations">
+    </div>
+    <sep></sep>
+    <!-- Entretien View, show information relative to entretien -->
+    <div ui-view="entretien">
+    </div>
+    <sep></sep>
+    <!-- Contact information -->
+    <div ui-view="contact">
+    </div>
+  <!--  <sep></sep>
+    &lt;!&ndash; Others  &ndash;&gt;
+    <div ui-view="others">
+    </div>-->
 
+<!-- Easy way photoswipe -->
     <button id="btn-photoswipe" class="photoswipe">Open PhotoSwipe</button>
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--zoom-allowed
@@ -95,31 +122,5 @@
 
     </div>
 
-    <!-- Index view opening the web site -->
-    <div ui-view="opening">
-    </div>
-    <sep></sep>
-    <!-- View for remarquable work (ex : fruticetum) -->
-    <div ui-view="remarquable">
-    </div>
-    <sep></sep>
-    <!-- Creation View, show all creation informations
-          - Index : Resume with a slider.
-          - Others : Particularity selected.
-     -->
-    <div ui-view="creations">
-    </div>
-    <sep></sep>
-    <!-- Entretien View, show information relative to entretien -->
-    <div ui-view="entretien">
-    </div>
-    <sep></sep>
-    <!-- Contact information -->
-    <div ui-view="contact">
-    </div>
-  <!--  <sep></sep>
-    &lt;!&ndash; Others  &ndash;&gt;
-    <div ui-view="others">
-    </div>-->
   </body>
 </html>

@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /css
+Disallow: /bower_components
+Disallow: /default-skin
+Disallow: fonts
+Disallow: images
+Disallow: js
+Disallow: node_modules
+Disallow: photoswipe
+Disallow: reflexion/shema
+Disallow: utilities
+Sitemap: http://cactusespacescerts.fr/sitemap.xml
