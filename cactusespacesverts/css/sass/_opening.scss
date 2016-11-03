@@ -1,0 +1,95 @@
+.opening .intro {
+  @include display-flex;
+  @include flex(1);
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  height: 100%;
+
+  p {
+    font-size: 1.5em;
+    &:first-child {
+      margin: 0 2em 0 0.2em;
+    }
+    &:last-child {
+      margin: 0 0.2em 0 2em;
+    }
+  }
+
+  .sliders {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    margin: 0.5em 0 2em;
+    height: 410px;
+    max-width: 30%;
+  }
+
+  .quote, .entPresentation {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    height: 100%;
+    color: $quoteColor;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .quote {
+    font-style: $quoteFontStyle;
+  }
+
+  .signature {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    height: 100%;
+    font-family: $h1FontFamily;
+    text-align: right;
+    font-size: 1.8em;
+  }
+
+  .works {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    height: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .work {
+    margin-top: 3em;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}
+@include onSmallScreenAndAbove {
+  .opening {
+    #slider1, #slider2 {
+      display: none;
+    }
+    #slider3 {
+      display: block;
+    }
+  }
+}
+@include aboveLargeScreen {
+  .opening {
+    #slider2 {
+      display: block;
+    }
+  }
+}
+@media (min-width: $breakingPointMultiSliders) {
+  .opening {
+    #slider1 {
+      display: block;
+    }
+  }
+}

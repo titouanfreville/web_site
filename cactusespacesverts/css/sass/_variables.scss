@@ -1,73 +1,62 @@
 // Definition of all the variable style and objects
 
 // Fonts ---------------------
-
-@font-face {
-  font-family: 'splendid';
-  src: url('../../fonts/splendid.ttf') format('truetype');
-}
-
 @font-face {
   font-family: 'serena';
   src: url('../../fonts/serena.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'laine';
-  src: url('../../fonts/laine.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'coneria';
-  src: url('../../fonts/coneriascript.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'aerofoil';
-  src: url('../../fonts/aerofoil.ttf') format('truetype');
-}
-
 $fonts:                       Georgia, !default;
-$base-font-color:             #0B610B;
+$baseFontColor:               #0B610B;
+$baseFontSize:                1.2em;
 
 // Body ----------------------
-$background-img:              url(../../background.png);
+//$background-img:              url(../../background.png);
 $background-color:            #fff;
+
+// Breaking points ----------
+//////  < 540, 541-768, 1024-1199, 1200+ px
+$breakingPointSmall: 33.75em; // 540px/16px 540px
+$breakingPointMedium: 48em; // 768px/16px
+$breakingPointLarge: 64em; // 1024px/16px
+$breakingPointExtraLarge: 75em; // 1200px/16px
+$breakingPointMultiSliders: 120em; //1920px/16px
+
+//$breakingPointMenuHeight: $mainNavButtonHeight * 10;
 
 // Pages --------------------
 // ----- Title --------------
 // ---------- h1 ------------
-$h1-font-color:              #388E3C;
-$h1-font-size:               3.2rem;
-$h1-font-family:            'serena';
+$h1FontColor:                #388E3C;
+$h1FontSize:                 3.2rem;
+$h1FontFamily:               'serena';
 // ---------- h2 ------------
-$h2-font-color:              #4CAF50;
-$h2-font-size:               2.8em;
-$h2-font-family:            'serena';
+$h2FontColor:                #4CAF50;
+$h2FontSize:                 2.8em;
+$h2FontFamily:               'serena';
 // ---------- h3 ------------
-$h3-font-color:              #4CAF50;
-$h3-font-size:               2.5em;
-$h3-font-family:            'serena';
+$h3FontColor:                #4CAF50;
+$h3FontSize:                 2.5em;
+$h3FontFamily:               'serena';
 
 // ----- Contents -----------
 // ----------- quotes -------
-$quote-font-style:           italic;
-$quote-color:                #0B610B;
+$quoteFontStyle:             italic;
+$quoteColor:                 #0B610B;
 
-$fruti_pres_photo:           url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
+$frutiPresPhoto:             url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
 
 // Menu & cie ---------------
 
 // Logo social network ------
-$cie-name-font-size:         3.2rem;
-$cie-name-font-family:       'serena';
-$moto-font-size:             3.2rem;
-$moto-font-family:           'serena';
+$cieNameFontSize:            3.2rem;
+$cieNameFontFamily:         'serena';
+$motoFontSize:               3.2rem;
+$motoFontFamily:            'serena';
 $logo:                       url(../../images/logo.svg);
-$cactus-green:               url(../../images/cactusgreen.svg);
-$cactus-black:               url(../../images/cactusblack.svg);
-$band-background:            url(../../images/bandeau.jpg);
-
+$cactusGreen:                url(../../images/cactusgreen.svg);
+$cactusBlack:                url(../../images/cactusblack.svg);
+$bandBackground:             url(../../images/bandeau.jpg);
 
 
 // PSWP Variables

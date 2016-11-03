@@ -10,14 +10,11 @@ body {
   line-height: 20px;
   -webkit-backface-visibility: hidden;
   -webkit-user-drag: none;
-  padding: 1%;
+  padding-right: 2%;
   margin: 0;
   // configurable properties -------------
-  background: $background-img $background-color no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: $fonts;
-  font-size: 100%;
-  color: $base-font-color;
+  font-size: $baseFontSize;
+  color: $baseFontColor;
   line-height: 1.5;
 }
