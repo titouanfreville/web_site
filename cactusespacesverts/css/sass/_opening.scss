@@ -1,55 +1,57 @@
-.opening .intro {
-  @include display-flex;
-  @include flex(1);
-  @include flex-direction(row);
-  @include justify-content(space-around);
-  height: 100%;
-
-  p {
-    font-size: 1.5em;
-    &:first-child {
-      margin: 0 2em 0 0.2em;
-    }
-    &:last-child {
-      margin: 0 0.2em 0 2em;
-    }
-  }
+.opening {
+  background-color: #284907;
 
   .sliders {
     @include display-flex;
     @include flex(1);
     @include flex-direction(row);
     @include justify-content(space-around);
-    margin: 0.5em 0 2em;
+    background: none;
+    //width: 90%;
+    padding: 0.5em 0 2em;
     height: 410px;
-    max-width: 30%;
   }
-
-  .quote, .entPresentation {
+  .intro {
     @include display-flex;
     @include flex(1);
-    @include flex-direction(column);
+    @include flex-direction(row);
     @include justify-content(space-around);
-    height: 100%;
-    color: $quoteColor;
-    text-align: justify;
-    text-justify: inter-word;
+    p {
+      font-size: 1.5em;
+      &:first-child {
+        padding: 0 2em 0 0.2em;
+      }
+      &:last-child {
+        padding: 0 0.2em 0 2em;
+      }
+    }
+    .quote, .entPresentation {
+      @include display-flex;
+      @include flex(1);
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      height: 100%;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .quote {
+      font-style: $quoteFontStyle;
+    }
+
+    .signature {
+      @include display-flex;
+      @include flex(1);
+      @include flex-direction(column);
+      @include justify-content(space-around);
+      height: 100%;
+      font-family: $h1FontFamily;
+      text-align: right;
+      font-size: 1.8em;
+    }
+
   }
 
-  .quote {
-    font-style: $quoteFontStyle;
-  }
-
-  .signature {
-    @include display-flex;
-    @include flex(1);
-    @include flex-direction(column);
-    @include justify-content(space-around);
-    height: 100%;
-    font-family: $h1FontFamily;
-    text-align: right;
-    font-size: 1.8em;
-  }
 
   .works {
     @include display-flex;

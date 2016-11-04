@@ -1,0 +1,37 @@
+.remarquable {
+  background-color: #2C5EA1;
+
+  .fruticteum_pres_photo {
+    height: 600px;
+    background: $frutiPresPhoto center center no-repeat;
+    background-size: contain;
+  }
+  // Photos Fruticetums.
+  .fruti1 {
+    background-image: url(../../images/fruticetum/fruticetum_long.jpg);
+  }
+  .fruti2 {
+    background-image: url(../../images/fruticetum/fruticetum_abri.jpg);
+  }
+  .fruti3 {
+    background-image: url(../../images/fruticetum/fruticetum_egrennoire2.jpg);
+  }
+  .fruti4 {
+    background-image: url(../../images/fruticetum/fruticetum.jpg);
+  }
+  .fruti5 {
+    background-image: url(../../images/fruticetum/fruticetum_muraille.jpg);
+  }
+  .fruti6 {
+    background-image: url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
+  }
+  .fruti7 {
+    background-image: url(../../images/fruticetum/fruticetum_cordage.jpg);
+  }
+  .fruti8 {
+    background-image: url(../../images/fruticetum/fruticetum_long_bassin.jpg);
+  }
+  .fruti9 {
+    background-image: url(../../images/fruticetum/fruticetum_rampe.jpg);
+  }
+}

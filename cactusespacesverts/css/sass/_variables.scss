@@ -7,8 +7,8 @@
 }
 
 $fonts:                       Georgia, !default;
-$baseFontColor:               #0B610B;
-$baseFontSize:                1.2em;
+$baseFontColor:               #D8CAA8;
+$baseFontSize:                1.3em;
 
 // Body ----------------------
 //$background-img:              url(../../background.png);
@@ -27,15 +27,16 @@ $breakingPointMultiSliders: 120em; //1920px/16px
 // Pages --------------------
 // ----- Title --------------
 // ---------- h1 ------------
-$h1FontColor:                #388E3C;
+//$h1FontColor:                #388E3C;
+$h1FontColor:                #fff;
 $h1FontSize:                 3.2rem;
 $h1FontFamily:               'serena';
 // ---------- h2 ------------
-$h2FontColor:                #4CAF50;
+$h2FontColor:                #fff;
 $h2FontSize:                 2.8em;
 $h2FontFamily:               'serena';
 // ---------- h3 ------------
-$h3FontColor:                #4CAF50;
+$h3FontColor:                #fff;
 $h3FontSize:                 2.5em;
 $h3FontFamily:               'serena';
 
