@@ -1,5 +1,5 @@
 .opening {
-  background-color: #284907;
+  background-color: $openingBackgroundColor;
 
   .sliders {
     @include display-flex;

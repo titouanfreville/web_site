@@ -7,7 +7,7 @@
 }
 
 $fonts:                       Georgia, !default;
-$baseFontColor:               #D8CAA8;
+$baseFontColor:               #fff;
 $baseFontSize:                1.3em;
 
 // Body ----------------------
@@ -25,6 +25,12 @@ $breakingPointMultiSliders: 120em; //1920px/16px
 //$breakingPointMenuHeight: $mainNavButtonHeight * 10;
 
 // Pages --------------------
+// Background Colors --------
+$creationBackgroundColor:    #222222;
+$remarquableBackgroundColor: #2C5EA1;
+$openingBackgroundColor:     #9AA93E;
+$contactBackgroundColor:     #366CA9;
+$entretientBackgroundColor:  #9AA93E;
 // ----- Title --------------
 // ---------- h1 ------------
 //$h1FontColor:                #388E3C;

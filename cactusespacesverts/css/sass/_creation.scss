@@ -1,6 +1,9 @@
 .creation {
-  background: #222222;
+  background: $creationBackgroundColor;
 
+  div {
+    padding-top: 1.5em;
+  }
 
   // Photos Terrases Bois
   .terrassebois1 {
