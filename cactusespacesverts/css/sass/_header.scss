@@ -13,6 +13,7 @@ header {
   top: 0;
 	right: 0;
   width: 100%;
+  color: $h1FontColor;
 
 	band {
       @include display-flex;
