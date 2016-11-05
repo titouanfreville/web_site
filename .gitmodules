@@ -1,0 +1,3 @@
+[submodule "cactusespacesverts/images"]
+	path = cactusespacesverts/images
+	url = git@github.com:titouanfreville/cactus_images.git
