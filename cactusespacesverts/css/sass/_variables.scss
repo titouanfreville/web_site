@@ -7,7 +7,7 @@
 }
 
 $fonts:                       Georgia, !default;
-$baseFontColor:               #fff;
+$baseFontColor:               #222;
 $baseFontSize:                1.1em;
 
 // Body ----------------------
@@ -26,23 +26,31 @@ $breakingPointMultiSliders: 120em; //1920px/16px
 
 // Pages --------------------
 // Background Colors --------
-$creationBackgroundColor:    #222222;
-$remarquableBackgroundColor: #2C5EA1;
-$contactBackgroundColor:     #366CA9;
-$openingBackgroundColor:     #9AA93E;
-$entretientBackgroundColor:  #9AA93E;
+//$creationBackgroundColor:    #222222;
+//$remarquableBackgroundColor: #2C5EA1;
+//$contactBackgroundColor:     #366CA9;
+//$openingBackgroundColor:     #9AA93E;
+//$entretientBackgroundColor:  #9AA93E;
+
+
+$creationBackgroundColor:    #fff;
+$remarquableBackgroundColor: #fff;
+$contactBackgroundColor:     #fff;
+$openingBackgroundColor:     #fff;
+$entretientBackgroundColor:  #fff;
+
 // ----- Title --------------
 // ---------- h1 ------------
 //$h1FontColor:                #388E3C;
-$h1FontColor:                #fff;
+$h1FontColor:                #388E3C;
 $h1FontSize:                 3.2rem;
 $h1FontFamily:               'serena';
 // ---------- h2 ------------
-$h2FontColor:                #fff;
+$h2FontColor:                #388E3C;
 $h2FontSize:                 2.8em;
 $h2FontFamily:               'serena';
 // ---------- h3 ------------
-$h3FontColor:                #fff;
+$h3FontColor:                #388E3C;
 $h3FontSize:                 2.5em;
 $h3FontFamily:               'serena';
 

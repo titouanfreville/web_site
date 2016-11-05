@@ -10,6 +10,13 @@
     //width: 90%;
     padding: 0.5em 0 2em;
     height: 410px;
+    max-width: 100vw;
+    .slider {
+      max-width: 100vw;
+      .img {
+        max-width: 100vw;
+      }
+    }
   }
   .intro {
     @include display-flex;
