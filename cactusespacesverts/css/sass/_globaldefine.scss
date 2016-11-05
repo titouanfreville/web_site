@@ -1,20 +1,121 @@
-/**
- * Global define : make all
- * --------------------------------------------------
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  //@include display-flex;
+// TODO :
+// Refactor code
+// Use a class main for global view instead of breaking div bases
+sep {
+  height: 30px;
+  width: 100%;
+  background: url(../../images/sep.png) transparent center center no-repeat;
+  background-size: contain;
+}
+
+label {
+  width: 100%;
+}
+
+.blocmarque {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.main {
+  @include display-flex;
+  @include flex(1);
+  @include flex-direction(column);
+  @include justify-content(space-around);
+  @include align-items(center);
+  min-height: 95vh;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  span {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+  }
+
+  div {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    @include align-items(center);
+    height: 100%;
+    width: 100%;
+  }
+
+  h1, h2 {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    vertical-align: center;
+    height: 100%;
+    color: $h1FontColor;
+  }
+
+  h1 {
+    @include align-self(center);
+    font: $h1FontSize $h1FontFamily;
+    text-align: center;
+    padding: 2vh;
+    height: 100%;
+  }
+  h2, h3 {
+    font: $h2FontSize $h1FontFamily;
+    padding: 0.5em 0 0.1em;
+  }
+  h3 {
+    color: $h1FontColor;
+    font: $h3FontSize $h1FontFamily;
+  }
+
+  .slider, .sliders {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(row);
+    width: 100%;
+    height: 100%;
+  }
+
+  section {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    width: 100%;
+    height: 100%;
+  }
+
+  p {
+    @include display-flex;
+    @include flex(1);
+    @include flex-direction(column);
+    @include justify-content(space-around);
+    height: 100%;
+    width: 60%;
+  }
+
+  .presenter-row {
+    @include flex-direction(row);
+  }
+
+  .photo {
+    @include display-flex();
+    @include justify-content(space-around);
+    @include flex-direction(row);
+    @include flex(1);
+    @include flex-wrap(wrap);
+    background: center center no-repeat;
+    background-size: cover;
+    height: 250px;
+    max-width: 30%;
+    margin: 1em;
+  }
+}
+#btn-photoswipe, .hidden, .pswp_hide {
+  display: none;
 }
 

@@ -48,9 +48,12 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
+        },
+        'footer':{
+          templateUrl: 'views/footer.html'
         }
       },
-      controller: 'mapCtrl'
+      // controller: 'mapCtrl'
      })
     // Accueil state for navigation requirements.
     .state('accueil', {
