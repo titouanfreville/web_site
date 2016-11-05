@@ -4,8 +4,15 @@
 sep {
   height: 30px;
   width: 100%;
-  background: url(../../images/sep.png) transparent center center no-repeat;
+  background: round space;
   background-size: contain;
+  &:nth-of-type(even) {
+    background-image: url(../../images/cactus_black.svg);
+  }
+  &:nth-of-type(odd) {
+    background-image: url(../../images/cactus_green.svg);
+
+  }
 }
 
 label {
