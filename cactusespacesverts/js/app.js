@@ -49,6 +49,9 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         'header':{
           templateUrl: 'views/header.html'
         },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
         'footer':{
           templateUrl: 'views/footer.html'
         }
@@ -63,6 +66,12 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         'opening': {
           templateUrl: 'views/opening.html',
         },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          },
         'header':{
           templateUrl: 'views/header.html'
         }
@@ -76,7 +85,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('creations', {
@@ -87,7 +102,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('terrasses', {
@@ -98,7 +119,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('t_bois', {
@@ -109,7 +136,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('t_pavees', {
@@ -120,7 +153,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('t_minerales', {
@@ -131,7 +170,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('vegetal', {
@@ -142,7 +187,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('massif', {
@@ -153,7 +204,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('gazon', {
@@ -164,7 +221,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('plantation', {
@@ -175,7 +238,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('menuiserie', {
@@ -186,7 +255,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('banc', {
@@ -197,7 +272,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('bac', {
@@ -208,7 +289,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('pergola', {
@@ -219,7 +306,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('chalet', {
@@ -230,7 +323,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('cheminement', {
@@ -241,7 +340,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('c_pavage', {
@@ -252,7 +357,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('c_bois', {
@@ -263,7 +374,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('c_mineral', {
@@ -274,7 +391,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('bassin', {
@@ -285,7 +408,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('soutenement', {
@@ -296,7 +425,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('entretien', {
@@ -307,7 +442,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
     .state('contact', {
@@ -318,7 +459,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       },
       controller: 'mapCtrl'
      })
@@ -330,7 +477,13 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
         },
         'header':{
           templateUrl: 'views/header.html'
-        }
+        },
+          'work':{
+              templateUrl: 'views/work.html'
+          },
+          'footer':{
+              templateUrl: 'views/footer.html'
+          }
       }
      })
 })
