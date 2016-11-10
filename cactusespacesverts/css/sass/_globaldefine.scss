@@ -32,10 +32,15 @@ label {
   @include flex-direction(column);
   @include justify-content(space-around);
   @include align-items(center);
-  min-height: 95vh;
+  //min-height: 95vh;
   height: 100%;
   width: 100%;
   padding: 1em;
+
+  i, img {
+    margin-right: 10px;
+  }
+
   span {
     @include display-flex;
     @include flex(1);
@@ -57,10 +62,15 @@ label {
     @include display-flex;
     @include flex(1);
     @include flex-direction(row);
-    @include justify-content(space-around);
+    @include justify-content(center);
+    @include align-items(center);
     vertical-align: center;
     height: 100%;
+    width: 100%;
     color: $h1FontColor;
+    i, img {
+      margin-right: 16px;
+    }
   }
 
   h1 {

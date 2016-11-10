@@ -1,3 +1,44 @@
 .entretien {
   background-color: $entretientBackgroundColor;
+
+  .pres_tab {
+    @include display-flex();
+    @include flex-direction(column);
+    width: 60%;
+    .pres_list {
+      @include display-flex();
+      @include flex-direction(row);
+      @include align-items(center);
+      width: 100%;
+      li {
+        @include flex(1);
+        span, .list-icon {
+          background: #222222;
+        }
+        span {
+          @include box-sizing(content-box);
+          @include justify-content(flex-start);
+          text-align: justify;
+          background: #222222;
+          border: 2px white solid;
+          margin: 1em;
+          padding: 0.5em;
+          text-indent: 2em;
+        }
+        .list-icon {
+          position: absolute;
+          z-index: 300;
+          border: 2px white solid;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          padding: 5px;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 40px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
 }
