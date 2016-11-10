@@ -7,7 +7,7 @@
 }
 
 $fonts:                       Georgia, !default;
-$baseFontColor:               #222;
+$baseFontColor:               #fff;
 $baseFontSize:                1.1em;
 
 // Body ----------------------
@@ -26,18 +26,18 @@ $breakingPointMultiSliders: 120em; //1920px/16px
 
 // Pages --------------------
 // Background Colors --------
-//$creationBackgroundColor:    #222222;
-//$remarquableBackgroundColor: #2C5EA1;
-//$contactBackgroundColor:     #366CA9;
-//$openingBackgroundColor:     #9AA93E;
-//$entretientBackgroundColor:  #9AA93E;
+$creationBackgroundColor:    #191C1F;
+$remarquableBackgroundColor: #A6CFE5;
+$contactBackgroundColor:     #A6CFE5;
+$openingBackgroundColor:     #444A28;
+$entretientBackgroundColor:  #444A28;
 
 
-$creationBackgroundColor:    #fff;
-$remarquableBackgroundColor: #fff;
-$contactBackgroundColor:     #fff;
-$openingBackgroundColor:     #fff;
-$entretientBackgroundColor:  #fff;
+//$creationBackgroundColor:    #fff;
+//$remarquableBackgroundColor: #fff;
+//$contactBackgroundColor:     #fff;
+//$openingBackgroundColor:     #fff;
+//$entretientBackgroundColor:  #fff;
 
 // ----- Title --------------
 // ---------- h1 ------------
@@ -69,8 +69,8 @@ $cieNameFontFamily:         'serena';
 $motoFontSize:               3.2rem;
 $motoFontFamily:            'serena';
 $logo:                       url(../../images/logo.svg);
-$cactusGreen:                url(../../images/cactusgreen.svg);
-$cactusBlack:                url(../../images/cactusblack.svg);
+$cactusGreen:                url(../../images/cactus_green.svg);
+$cactusBlack:                url(../../images/cactus_black.svg);
 $bandBackground:             url(../../images/bandeau.jpg);
 
 
