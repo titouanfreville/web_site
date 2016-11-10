@@ -1,0 +1,9 @@
+footer {
+  @include display-flex;
+  @include flex(1);
+  @include flex-direction(row);
+  @include align-items(space-arround);
+  width: 100%;
+  background-color: #222222;
+  padding: 1em;
+}

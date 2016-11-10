@@ -5,19 +5,24 @@ body {
   @include tap-highlight-transparent();
   @include user-select(none);
   @include display-flex;
+  @include flex(1);
   @include flex-direction(column);
+  width: auto;
   word-wrap: break-word;
   line-height: 20px;
   -webkit-backface-visibility: hidden;
   -webkit-user-drag: none;
-  padding: 1%;
   margin: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: auto;
+  margin-right: 25px;
+  overflow-x: hidden;
   // configurable properties -------------
-  background: $background-img $background-color no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: $fonts;
-  font-size: 100%;
-  color: $base-font-color;
+  font-size: $baseFontSize;
+  color: $baseFontColor;
   line-height: 1.5;
+  //width: 1vm;
 }
