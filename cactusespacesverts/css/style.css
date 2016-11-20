@@ -4,7 +4,7 @@
  * --------------------------------------------------
  * Additional resets
  */
-/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,45 +26,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../var/lib/gems/2.3.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -897,18 +897,15 @@ header {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   background: #000;
-  background: url(../../images/bandeau.jpg) no-repeat bottom center;
+  background: url(../../images/bandeau_new.jpg) no-repeat bottom center;
   background-size: cover;
-  z-index: 1000;
-  position: fixed;
-  min-height: 160px;
-  left: 0;
-  top: 0;
-  right: 0;
   width: 100%;
   color: #fff;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
-/* line 18, sass/_header.scss */
+/* line 16, sass/_header.scss */
 header band {
   display: -webkit-flex;
   display: flex;
@@ -920,18 +917,7 @@ header band {
   justify-content: space-around;
   width: 100%;
 }
-/* line 25, sass/_header.scss */
-header band logo {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex: 0.5;
-  flex: 0.5;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  background: url(../../images/logo.svg) center center no-repeat;
-  background-size: contain;
-}
-/* line 33, sass/_header.scss */
+/* line 23, sass/_header.scss */
 header band textes {
   display: -webkit-flex;
   display: flex;
@@ -944,21 +930,21 @@ header band textes {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 39, sass/_header.scss */
+/* line 29, sass/_header.scss */
 header band textes h1, header band textes h2 {
   -webkit-align-items: center;
   align-items: center;
   margin: 0 !important;
 }
-/* line 43, sass/_header.scss */
+/* line 33, sass/_header.scss */
 header band textes h1 {
   font: 3.2rem "serena";
 }
-/* line 46, sass/_header.scss */
+/* line 36, sass/_header.scss */
 header band textes h2 {
   font: 3.2rem "serena";
 }
-/* line 51, sass/_header.scss */
+/* line 41, sass/_header.scss */
 header band scontact {
   display: -webkit-flex;
   display: flex;
@@ -971,7 +957,7 @@ header band scontact {
   -webkit-align-items: center;
   align-items: center;
 }
-/* line 58, sass/_header.scss */
+/* line 48, sass/_header.scss */
 header band scontact tel {
   display: -webkit-flex;
   display: flex;
@@ -984,7 +970,7 @@ header band scontact tel {
   width: 100%;
   padding: 5px;
 }
-/* line 67, sass/_header.scss */
+/* line 57, sass/_header.scss */
 header band scontact address {
   display: -webkit-flex;
   display: flex;
@@ -998,7 +984,7 @@ header band scontact address {
   align-items: center;
   padding: 5px;
 }
-/* line 75, sass/_header.scss */
+/* line 65, sass/_header.scss */
 header band scontact address street {
   display: -webkit-flex;
   display: flex;
@@ -1010,7 +996,7 @@ header band scontact address street {
   align-items: center;
   padding: 5px 0;
 }
-/* line 83, sass/_header.scss */
+/* line 73, sass/_header.scss */
 header band scontact address span {
   display: -webkit-flex;
   display: flex;
@@ -1022,7 +1008,7 @@ header band scontact address span {
   align-items: center;
   width: 100%;
 }
-/* line 90, sass/_header.scss */
+/* line 80, sass/_header.scss */
 header band scontact address span cp {
   display: -webkit-flex;
   display: flex;
@@ -1035,7 +1021,7 @@ header band scontact address span cp {
   -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
-/* line 98, sass/_header.scss */
+/* line 88, sass/_header.scss */
 header band scontact address span city {
   display: -webkit-flex;
   display: flex;
@@ -1048,20 +1034,34 @@ header band scontact address span city {
   -webkit-flex-direction: row;
   flex-direction: row;
 }
-/* line 109, sass/_header.scss */
-header nav {
+
+/* line 101, sass/_header.scss */
+.nav-fixed {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+/* line 111, sass/_header.scss */
+nav {
+  background: #000000;
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 0.1;
   flex: 0.1;
   -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
   -webkit-justify-content: space-around;
   justify-content: space-around;
-  margin-top: 1.5em;
+  height: 50px;
 }
-/* line 116, sass/_header.scss */
-header nav ul {
+/* line 119, sass/_header.scss */
+nav ul {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: normal;
@@ -1070,11 +1070,13 @@ header nav ul {
   flex: 1;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
   width: 100%;
-  min-height: 1ex;
+  height: 100%;
 }
-/* line 124, sass/_header.scss */
-header nav ul li {
+/* line 128, sass/_header.scss */
+nav ul li {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
@@ -1083,86 +1085,41 @@ header nav ul li {
   flex-direction: column;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
   text-align: center;
   min-width: 140px;
   padding: 5px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  min-height: 1ex;
-  max-height: 20px;
+  height: 100%;
 }
-/* line 136, sass/_header.scss */
-header nav ul li ul {
-  position: relative;
+/* line 139, sass/_header.scss */
+nav ul li a {
+  -webkit-align-items: center;
+  align-items: center;
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
   flex: 1;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  display: none;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
 }
-/* line 143, sass/_header.scss */
-header nav ul li ul li {
+/* line 146, sass/_header.scss */
+nav ul li a logo {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1;
   flex: 1;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  border: none;
-  min-height: 15px;
-  height: 30px;
-  padding: 5px;
-  position: relative;
-}
-/* line 153, sass/_header.scss */
-header nav ul li ul li ul {
-  position: absolute;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  left: 15vw;
-  padding: 0 10px;
-  top: 0;
-  display: none;
-}
-/* line 162, sass/_header.scss */
-header nav ul li ul li ul li {
-  position: relative;
-  min-height: 15px;
-}
-/* line 169, sass/_header.scss */
-header nav ul li ul:first-child {
-  padding-top: 30px;
-}
-/* line 176, sass/_header.scss */
-header nav ul li:hover {
-  max-height: 500px;
-}
-@media screen and (min-width: 1030px) {
-  /* line 181, sass/_header.scss */
-  header nav ul li:hover ul {
-    display: -webkit-flex;
-    display: flex;
-  }
-  /* line 184, sass/_header.scss */
-  header nav ul li:hover ul ul {
-    display: none;
-  }
-}
-
-/* line 195, sass/_header.scss */
-space {
-  height: 160px;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  background: url(../../images/logo.svg) center center no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
 }
 
 /* line 1, sass/_footer.scss */
@@ -1209,7 +1166,6 @@ body {
   top: 0;
   right: 0;
   width: auto;
-  margin-right: 25px;
   overflow-x: hidden;
   font-family: Georgia;
   font-size: 1.1em;

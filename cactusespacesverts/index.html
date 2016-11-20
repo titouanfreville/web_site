@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="FR-fr">
-  <head>
+<head>
     <meta charset='utf-8' />
     <meta name='viewport' content='initial-scale=1, maximum-scale=3, user-scalable=yes, width=device-width' />
     <meta name="description" content="Cactus Espaces Verts, Le jardin plus proche de la nature. Entreprise du paysage dans la Baie de Somme.">
@@ -24,11 +24,12 @@
     <!-- Favicons -->
     <link rel=icon href='images/favicon.png' type="image/png">
     <link rel=icon href='iamges/windows.ico' type="image/vnd.microsoft.icon">
-  </head>
-  <body ng-app='cactusespacesverts'>
+</head>
+<body ng-app='cactusespacesverts'>
     <!-- Header for all states. He is unique and will stay at the top of the page, whatever happen :) -->
-    <div ui-view="header">
-    </div>
+    <header ui-view="header">
+    </header>
+    <nav  set-class-when-at-top="nav-fixed" ui-view="nav"></nav>
     <space></space>
     <!-- Index view opening the web site -->
     <div ui-view="opening">
@@ -48,10 +49,10 @@
     <!-- Contact information -->
     <div ui-view="contact">
     </div>
-  <!--
-    &lt;!&ndash; Others  &ndash;&gt;
-    <div ui-view="others">
-    </div>-->
+    <!--
+      &lt;!&ndash; Others  &ndash;&gt;
+      <div ui-view="others">
+      </div>-->
     <!-- Ils nous font confiance -->
     <div ui-view="work">
     </div>
@@ -59,56 +60,55 @@
     <div ui-view="footer">
     </div>
 
-<!-- Easy way photoswipe -->
+    <!-- Easy way photoswipe -->
     <button id="btn-photoswipe" class="photoswipe">Open PhotoSwipe</button>
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp pswp--supports-fs pswp--open pswp--css_animation pswp--svg pswp--zoom-allowed
-    pswp--visible pswp--animated-in pswp--has_mouse pswp_hide" tabindex="-1" role="dialog" aria-hidden="true">
+        pswp--visible pswp--animated-in pswp--has_mouse pswp_hide" tabindex="-1" role="dialog" aria-hidden="true">
 
-      <!-- Background of PhotoSwipe.
-           It's a separate element as animating opacity is faster than rgba(). -->
-      <div class="pswp__bg pswp_hide"></div>
-      <!-- Slides wrapper with overflow:pswp_hide. -->
-      <div class="pswp__scroll-wrap pswp_hide">
-        <!-- Container that holds slides.
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container pswp_hide">
-          <div class="pswp__item pswp_hide"></div>
-          <div class="pswp__item pswp_hide"></div>
-          <div class="pswp__item pswp_hide"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui  pswp__ui--fit pswp__ui--over-close pswp__ui--idle pswp_hide">
-          <div class="pswp__top-bar pswp_hide">
-            <!--  Controls are self-explanatory. Order can be changed. -->
-            <div class="pswp__counter pswp_hide"></div>
-            <button class="pswp__button pswp__button--close pswp_hide" title="Close (Esc)"></button>
-            <button class="pswp__button pswp__button--fs pswp_hide" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom pswp_hide" title="Zoom in/out"></button>
-            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-            <!-- element will get class pswp__preloader--active when preloader is running -->
-            <div class="pswp__preloader pswp_hide">
-              <div class="pswp__preloader__icn pswp_hide">
-                <div class="pswp__preloader__cut pswp_hide">
-                  <div class="pswp__preloader__donut pswp_hide"></div>
-                </div>
-              </div>
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg pswp_hide"></div>
+        <!-- Slides wrapper with overflow:pswp_hide. -->
+        <div class="pswp__scroll-wrap pswp_hide">
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container pswp_hide">
+                <div class="pswp__item pswp_hide"></div>
+                <div class="pswp__item pswp_hide"></div>
+                <div class="pswp__item pswp_hide"></div>
             </div>
-          </div>
-          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap pswp_hide">
-            <div class="pswp__share-tooltip pswp_hide"></div>
-          </div>
-          <button class="pswp__button pswp__button--arrow--left pswp_hide" title="Previous (arrow left)">
-          </button>
-          <button class="pswp__button pswp__button--arrow--right pswp_hide" title="Next (arrow right)">
-          </button>
-          <div class="pswp__caption pswp_hide">
-            <div class="pswp__caption__center"></div>
-          </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui  pswp__ui--fit pswp__ui--over-close pswp__ui--idle pswp_hide">
+                <div class="pswp__top-bar pswp_hide">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter pswp_hide"></div>
+                    <button class="pswp__button pswp__button--close pswp_hide" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--fs pswp_hide" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom pswp_hide" title="Zoom in/out"></button>
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader pswp_hide">
+                        <div class="pswp__preloader__icn pswp_hide">
+                            <div class="pswp__preloader__cut pswp_hide">
+                                <div class="pswp__preloader__donut pswp_hide"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap pswp_hide">
+                    <div class="pswp__share-tooltip pswp_hide"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left pswp_hide" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right pswp_hide" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption pswp_hide">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
-  </body>
+</body>
 </html>
