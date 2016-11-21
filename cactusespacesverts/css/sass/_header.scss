@@ -11,7 +11,6 @@ header {
   height: 100vh;
   padding: 0;
   margin: 0;
-  //max-height: 600px;
 
   band {
     @include display-flex;
@@ -20,13 +19,16 @@ header {
     @include justify-content(space-around);
     width: 100%;
 
-    textes {
+    textes, p {
       @include display-flex;
       @include flex(1);
       @include flex-direction(column);
-      @include justify-content(space-around);
+      @include justify-content(center);
       @include align-items(center);
+      min-width: 400px;
       h1, h2 {
+        @include display-flex;
+        @include flex(1);
         @include align-items(center);
         margin: 0 !important;
       }
@@ -36,6 +38,36 @@ header {
       h2 {
         font: $motoFontSize $motoFontFamily;
       }
+
+      .quote, .entPresentation {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        @include align-items(center);
+        @include align-self(center);
+        width: 50%;
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: 2em;
+      }
+
+      .quote {
+        font-style: $quoteFontStyle;
+      }
+
+      .signature {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        @include align-items(flex-end);
+        @include align-self(center);
+        width: 50%;
+        font-family: $h1FontFamily;
+        text-align: right;
+        font-size: 3em;
+        text-align: right;
+      }
+
     }
 
     scontact {
@@ -98,16 +130,6 @@ header {
   }
 }
 
-.nav-fixed {
-  z-index: 1000;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  width: 100%;
-  //max-width: 90%;
-}
-
 nav {
   background: #000000;
   @include display-flex;
@@ -132,9 +154,6 @@ nav {
       @include justify-content(center);
       @include align-items(center);
       text-align: center;
-      min-width: 140px;
-      padding: 5px;
-      @include border-radius(4px);
       height: 100%;
       a {
         @include align-items(center);
@@ -159,7 +178,14 @@ nav {
   }
 }
 
-
-space {
-  //height: 160px;
+.nav-fixed {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  ~ space {
+    height: 80px;
+  }
 }
+

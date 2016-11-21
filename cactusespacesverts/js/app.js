@@ -11,7 +11,7 @@ var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.rou
 
 // var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'uiGmapgoogle-maps']);
 
-// State navigation for angular.
+// State menu for angular.
 // Config require $stateProvider and $urlRouterProvider
 cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
 
@@ -49,8 +49,8 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
                 'header':{
                     templateUrl: 'views/header.html'
                 },
-                'nav':{
-                    templateUrl: 'views/nav.html'
+                "menu":{
+                    templateUrl: 'views/menu.html'
                 },
                 'work':{
                     templateUrl: 'views/work.html'
@@ -61,7 +61,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
             },
             // controller: 'mapCtrl'
         })
-        // Accueil state for navigation requirements.
+        // Accueil state for menu requirements.
         .state('accueil', {
             url: '/accueil',
             controller: 'mainCtrl',
@@ -79,7 +79,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: 'views/header.html'
                 },
                 'nav':{
-                    templateUrl: 'views/nav.html'
+                    templateUrl: 'views/menu.html'
                 }
             }
         })
@@ -90,7 +90,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: 'views/remarquable.html'
                 },
                 'nav':{
-                    templateUrl: 'views/nav.html'
+                    templateUrl: 'views/menu.html'
                 },
                 'work':{
                     templateUrl: 'views/work.html'
@@ -107,7 +107,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: 'views/creations.html',
                 },
                 'nav':{
-                    templateUrl: 'views/nav.html'
+                    templateUrl: 'views/menu.html'
                 },
                 'work':{
                     templateUrl: 'views/work.html'
@@ -124,7 +124,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: 'views/entretien.html',
                 },
                 'nav':{
-                    templateUrl: 'views/nav.html'
+                    templateUrl: 'views/menu.html'
                 },
                 'work':{
                     templateUrl: 'views/work.html'
@@ -141,7 +141,7 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: 'views/contact.html',
                 },
                 'nav':{
-                    templateUrl: 'views/nav.html'
+                    templateUrl: 'views/menu.html'
                 },
                 'work':{
                     templateUrl: 'views/work.html'
@@ -157,9 +157,6 @@ cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
             views:{
                 'opening': {
                     templateUrl: 'views/other.html',
-                },
-                'nav':{
-                    templateUrl: 'views/nav.html'
                 },
                 'work':{
                     templateUrl: 'views/work.html'
@@ -179,7 +176,6 @@ cactusespacesverts.directive('setClassWhenAtTop', function ($window) {
         link: function (scope, element, attrs) {
             var topClass = attrs.setClassWhenAtTop, // get CSS class from directive's attribute value
                 offsetTop = element.offset().top; // get element's offset top relative to document
-
             $win.on('scroll', function (e) {
                 element[($win.scrollTop() >= offsetTop) ? 'addClass' : 'removeClass'](topClass);
             });
