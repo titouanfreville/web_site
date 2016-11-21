@@ -897,7 +897,7 @@ header {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   background: #000;
-  background: url(../../images/bandeau_new.jpg) no-repeat bottom center;
+  background: url(../images/bandeau_new.jpg) no-repeat bottom center;
   background-size: cover;
   width: 100%;
   color: #fff;
