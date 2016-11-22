@@ -3,7 +3,7 @@
 // Fonts ---------------------
 @font-face {
   font-family: 'serena';
-  src: url('../../fonts/serena.ttf') format('truetype');
+  src: url('/fonts/serena.ttf') format('truetype');
 }
 
 $fonts:                       Georgia, !default;
@@ -12,7 +12,6 @@ $darkFontColor:               #000;
 $baseFontSize:                1.1em;
 
 // Body ----------------------
-//$background-img:              url(../../background.png);
 $background-color:            #fff;
 
 // Breaking points ----------
@@ -55,7 +54,7 @@ $quoteFontStyle:             italic;
 $quoteColor:                 #0B610B;
 
 // ------------ Fruti -------
-$frutiPresPhoto:             url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
+$frutiPresPhoto:             url(/images/fruticetum/fruticetum_vue_bassin.jpg);
 $h1MinHeight:                600px;
 $h1Height:                   80vh;
 
@@ -66,10 +65,10 @@ $cieNameFontSize:            8rem;
 $cieNameFontFamily:         'serena';
 $motoFontSize:               10rem;
 $motoFontFamily:            'serena';
-$logo:                       url(../../images/logo.svg);
-$cactusGreen:                url(../../images/cactus_green.svg);
-$cactusBlack:                url(../../images/cactus_black.svg);
-$bandBackground:             url(../images/bandeau_new.jpg);
+$logo:                       url(/images/logo.svg);
+$cactusGreen:                url(/images/cactus_green.svg);
+$cactusBlack:                url(/images/cactus_black.svg);
+$bandBackground:             url(/images/bandeau_new.jpg);
 
 
 // PSWP Variables

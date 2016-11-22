@@ -76,7 +76,7 @@ button, input, select {
 
 @font-face {
   font-family: 'serena';
-  src: url("../../fonts/serena.ttf") format("truetype");
+  src: url("/fonts/serena.ttf") format("truetype");
 }
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
@@ -897,7 +897,7 @@ header {
   -webkit-justify-content: space-around;
   justify-content: space-around;
   background: #000;
-  background: url(../images/bandeau_new.jpg) no-repeat bottom center;
+  background: url(/images/bandeau_new.jpg) no-repeat bottom center;
   background-size: cover;
   width: 100%;
   color: #fff;
@@ -1057,7 +1057,7 @@ nav ul li a logo {
   flex: 1;
   -webkit-justify-content: space-around;
   justify-content: space-around;
-  background: url(../../images/logo.svg) center center no-repeat;
+  background: url(/images/logo.svg) center center no-repeat;
   background-size: contain;
   height: 100%;
   width: 100%;
@@ -1211,15 +1211,15 @@ a {
   background: linear-gradient(#ffffff, #ffffff 20%, #eeeeee 80%, #dddddd);
   border-radius: 2px 2px 2px 2px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  /* avanced box-shadow 
-   * tutorial @ 
-   * http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow  
+  /* avanced box-shadow
+   * tutorial @
+   * http://www.creativejuiz.fr/blog/les-tutoriels/ombre-avancees-avec-css3-et-box-shadow
   */
   /* gestion des dimensions et débordement du conteneur */
   /* on prévoit un petit espace gris pour la timeline */
-  /*  
-     le conteneur des slides 
-     en largeur il fait 100% x le nombre de slides 
+  /*
+     le conteneur des slides
+     en largeur il fait 100% x le nombre de slides
   */
   /* annulation des marges sur figure */
   /* styles de nos légendes */
@@ -1330,7 +1330,7 @@ a {
   display: inline-block;
   padding: 0;
   margin: 0;
-  /* petit effet de vignette sur les images */
+  /* petit effet de vignette sur les/images */
 }
 /* line 114, sass/_animations.scss */
 .slideshow figure:after {
@@ -1650,7 +1650,7 @@ label {
 /* line 3, sass/_remarquable.scss */
 .remarquable h1 {
   width: 100%;
-  background: url(../../images/fruticetum/fruticetum_vue_bassin.jpg) center center no-repeat;
+  background: url(/images/fruticetum/fruticetum_vue_bassin.jpg) center center no-repeat;
   background-size: cover;
   min-height: 600px;
   height: 80vh;
@@ -1681,39 +1681,39 @@ label {
 }
 /* line 29, sass/_remarquable.scss */
 .remarquable .fruti1 {
-  background-image: url(../../images/fruticetum/fruticetum_long.jpg);
+  background-image: url(/images/fruticetum/fruticetum_long.jpg);
 }
 /* line 32, sass/_remarquable.scss */
 .remarquable .fruti2 {
-  background-image: url(../../images/fruticetum/fruticetum_abri.jpg);
+  background-image: url(/images/fruticetum/fruticetum_abri.jpg);
 }
 /* line 35, sass/_remarquable.scss */
 .remarquable .fruti3 {
-  background-image: url(../../images/fruticetum/fruticetum_egrennoire2.jpg);
+  background-image: url(/images/fruticetum/fruticetum_egrennoire2.jpg);
 }
 /* line 38, sass/_remarquable.scss */
 .remarquable .fruti4 {
-  background-image: url(../../images/fruticetum/fruticetum.jpg);
+  background-image: url(/images/fruticetum/fruticetum.jpg);
 }
 /* line 41, sass/_remarquable.scss */
 .remarquable .fruti5 {
-  background-image: url(../../images/fruticetum/fruticetum_muraille.jpg);
+  background-image: url(/images/fruticetum/fruticetum_muraille.jpg);
 }
 /* line 44, sass/_remarquable.scss */
 .remarquable .fruti6 {
-  background-image: url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
+  background-image: url(/images/fruticetum/fruticetum_vue_bassin.jpg);
 }
 /* line 47, sass/_remarquable.scss */
 .remarquable .fruti7 {
-  background-image: url(../../images/fruticetum/fruticetum_cordage.jpg);
+  background-image: url(/images/fruticetum/fruticetum_cordage.jpg);
 }
 /* line 50, sass/_remarquable.scss */
 .remarquable .fruti8 {
-  background-image: url(../../images/fruticetum/fruticetum_long_bassin.jpg);
+  background-image: url(/images/fruticetum/fruticetum_long_bassin.jpg);
 }
 /* line 53, sass/_remarquable.scss */
 .remarquable .fruti9 {
-  background-image: url(../../images/fruticetum/fruticetum_rampe.jpg);
+  background-image: url(/images/fruticetum/fruticetum_rampe.jpg);
 }
 
 /* line 1, sass/_creation.scss */
@@ -1751,11 +1751,11 @@ label {
 }
 /* line 21, sass/_creation.scss */
 .creation .title .creation_title {
-  background: url(../../images/menuiserie/piscine1.jpg) center center;
+  background: url(/images/menuiserie/piscine1.jpg) center center;
 }
 /* line 24, sass/_creation.scss */
 .creation .title .vegetal_title {
-  background: url(../../images/vegetal/vegetal1.jpg) center center;
+  background: url(/images/vegetal/vegetal1.jpg) center center;
 }
 /* line 27, sass/_creation.scss */
 .creation .title .textes {
@@ -1792,67 +1792,67 @@ label {
 }
 /* line 51, sass/_creation.scss */
 .creation .terrassebois1 {
-  background-image: url(../../images/terrasse/terrassebois2.jpg);
+  background-image: url(/images/terrasse/terrassebois2.jpg);
 }
 /* line 54, sass/_creation.scss */
 .creation .terrassebois2 {
-  background-image: url(../../images/terrasse/terrassebois3.jpg);
+  background-image: url(/images/terrasse/terrassebois3.jpg);
 }
 /* line 57, sass/_creation.scss */
 .creation .terrassebois3 {
-  background-image: url(../../images/terrasse/terrassebois4.jpg);
+  background-image: url(/images/terrasse/terrassebois4.jpg);
 }
 /* line 60, sass/_creation.scss */
 .creation .terrassebois4 {
-  background-image: url(../../images/terrasse/terrassebois5.jpg);
+  background-image: url(/images/terrasse/terrassebois5.jpg);
 }
 /* line 63, sass/_creation.scss */
 .creation .terrassebois5 {
-  background-image: url(../../images/terrasse/terrassebois6.jpg);
+  background-image: url(/images/terrasse/terrassebois6.jpg);
 }
 /* line 66, sass/_creation.scss */
 .creation .terrassebois6 {
-  background-image: url(../../images/terrasse/terrassebois7.jpg);
+  background-image: url(/images/terrasse/terrassebois7.jpg);
 }
 /* line 69, sass/_creation.scss */
 .creation .terrassebois7 {
-  background-image: url(../../images/terrasse/terrassebois8.jpg);
+  background-image: url(/images/terrasse/terrassebois8.jpg);
 }
 /* line 72, sass/_creation.scss */
 .creation .terrassebois8 {
-  background-image: url(../../images/terrasse/terrassebois9.jpg);
+  background-image: url(/images/terrasse/terrassebois9.jpg);
 }
 /* line 75, sass/_creation.scss */
 .creation .terrassebois9 {
-  background-image: url(../../images/terrasse/terrasseboiscomposite3.jpg);
+  background-image: url(/images/terrasse/terrasseboiscomposite3.jpg);
 }
 /* line 80, sass/_creation.scss */
 .creation .terrassepavmin1 {
-  background-image: url(../../images/terrasse/terrassedallage.jpg);
+  background-image: url(/images/terrasse/terrassedallage.jpg);
 }
 /* line 83, sass/_creation.scss */
 .creation .terrassepavmin2 {
-  background-image: url(../../images/terrasse/terrassedallage2.jpg);
+  background-image: url(/images/terrasse/terrassedallage2.jpg);
 }
 /* line 86, sass/_creation.scss */
 .creation .terrassepavmin3 {
-  background-image: url(../../images/terrasse/terrassedallage3.jpg);
+  background-image: url(/images/terrasse/terrassedallage3.jpg);
 }
 /* line 89, sass/_creation.scss */
 .creation .terrassepavmin4 {
-  background-image: url(../../images/terrasse/terrassedallage7.jpg);
+  background-image: url(/images/terrasse/terrassedallage7.jpg);
 }
 /* line 92, sass/_creation.scss */
 .creation .terrassepavmin5 {
-  background-image: url(../../images/terrasse/terrassedallage5.jpg);
+  background-image: url(/images/terrasse/terrassedallage5.jpg);
 }
 /* line 95, sass/_creation.scss */
 .creation .terrassepavmin6 {
-  background-image: url(../../images/terrasse/terrassedallage6.jpg);
+  background-image: url(/images/terrasse/terrassedallage6.jpg);
 }
 /* line 98, sass/_creation.scss */
 .creation .terrassepavmin7 {
-  background-image: url(../../images/terrasse/terrassegravier1.jpg);
+  background-image: url(/images/terrasse/terrassegravier1.jpg);
 }
 /* line 101, sass/_creation.scss */
 .creation .terrassepavmin8 {
@@ -1864,103 +1864,103 @@ label {
 }
 /* line 109, sass/_creation.scss */
 .creation .menuiserie1 {
-  background-image: url(../../images/menuiserie/piscine1.jpg);
+  background-image: url(/images/menuiserie/piscine1.jpg);
 }
 /* line 112, sass/_creation.scss */
 .creation .menuiserie2 {
-  background-image: url(../../images/menuiserie/escalier1.jpg);
+  background-image: url(/images/menuiserie/escalier1.jpg);
 }
 /* line 115, sass/_creation.scss */
 .creation .menuiserie3 {
-  background-image: url(../../images/menuiserie/chalet2.jpg);
+  background-image: url(/images/menuiserie/chalet2.jpg);
 }
 /* line 118, sass/_creation.scss */
 .creation .menuiserie4 {
-  background-image: url(../../images/menuiserie/pergola1.jpg);
+  background-image: url(/images/menuiserie/pergola1.jpg);
 }
 /* line 121, sass/_creation.scss */
 .creation .menuiserie5 {
-  background-image: url(../../images/menuiserie/chalet1.jpg);
+  background-image: url(/images/menuiserie/chalet1.jpg);
 }
 /* line 124, sass/_creation.scss */
 .creation .menuiserie6 {
-  background-image: url(../../images/menuiserie/pergola3.jpg);
+  background-image: url(/images/menuiserie/pergola3.jpg);
 }
 /* line 127, sass/_creation.scss */
 .creation .menuiserie7 {
-  background-image: url(../../images/menuiserie/barriere1.jpg);
+  background-image: url(/images/menuiserie/barriere1.jpg);
 }
 /* line 130, sass/_creation.scss */
 .creation .menuiserie8 {
-  background-image: url(../../images/menuiserie/barriere2.jpg);
+  background-image: url(/images/menuiserie/barriere2.jpg);
 }
 /* line 133, sass/_creation.scss */
 .creation .menuiserie9 {
-  background-image: url(../../images/menuiserie/barriere3.jpg);
+  background-image: url(/images/menuiserie/barriere3.jpg);
 }
 /* line 138, sass/_creation.scss */
 .creation .cheminement1 {
-  background-image: url(../../images/cheminement/cheminement1.jpg);
+  background-image: url(/images/cheminement/cheminement1.jpg);
 }
 /* line 141, sass/_creation.scss */
 .creation .cheminement2 {
-  background-image: url(../../images/cheminement/cheminement2.jpg);
+  background-image: url(/images/cheminement/cheminement2.jpg);
 }
 /* line 144, sass/_creation.scss */
 .creation .cheminement3 {
-  background-image: url(../../images/cheminement/cheminement3.jpg);
+  background-image: url(/images/cheminement/cheminement3.jpg);
 }
 /* line 147, sass/_creation.scss */
 .creation .cheminement4 {
-  background-image: url(../../images/cheminement/cheminement4.jpg);
+  background-image: url(/images/cheminement/cheminement4.jpg);
 }
 /* line 150, sass/_creation.scss */
 .creation .cheminement5 {
-  background-image: url(../../images/cheminement/cheminement5.jpg);
+  background-image: url(/images/cheminement/cheminement5.jpg);
 }
 /* line 153, sass/_creation.scss */
 .creation .cheminement6 {
-  background-image: url(../../images/cheminement/cheminement6.jpg);
+  background-image: url(/images/cheminement/cheminement6.jpg);
 }
 /* line 156, sass/_creation.scss */
 .creation .cheminement7 {
-  background-image: url(../../images/cheminement/cheminement7.jpg);
+  background-image: url(/images/cheminement/cheminement7.jpg);
 }
 /* line 159, sass/_creation.scss */
 .creation .cheminement8 {
-  background-image: url(../../images/cheminement/cheminement8.jpg);
+  background-image: url(/images/cheminement/cheminement8.jpg);
 }
 /* line 162, sass/_creation.scss */
 .creation .cheminement9 {
-  background-image: url(../../images/cheminement/cheminement9.jpg);
+  background-image: url(/images/cheminement/cheminement9.jpg);
 }
 /* line 167, sass/_creation.scss */
 .creation .bassin1 {
-  background-image: url(../../images/bassin/bassin1.jpg);
+  background-image: url(/images/bassin/bassin1.jpg);
 }
 /* line 170, sass/_creation.scss */
 .creation .bassin2 {
-  background-image: url(../../images/bassin/bassin2.jpg);
+  background-image: url(/images/bassin/bassin2.jpg);
 }
 /* line 173, sass/_creation.scss */
 .creation .bassin3 {
-  background-image: url(../../images/bassin/bassin3.jpg);
+  background-image: url(/images/bassin/bassin3.jpg);
 }
 /* line 176, sass/_creation.scss */
 .creation .bassin4 {
-  background-image: url(../../images/bassin/bassin4.jpg);
+  background-image: url(/images/bassin/bassin4.jpg);
 }
 /* line 179, sass/_creation.scss */
 .creation .bassin5 {
-  background-image: url(../../images/bassin/bassin5.jpg);
+  background-image: url(/images/bassin/bassin5.jpg);
 }
 /* line 182, sass/_creation.scss */
 .creation .bassin6 {
-  background-image: url(../../images/bassin/bassin6.jpg);
+  background-image: url(/images/bassin/bassin6.jpg);
 }
 /* line 185, sass/_creation.scss */
 .creation .bassin8 {
-  background-image: url(../../images/bassin/bassin7.jpg);
+  background-image: url(/images/bassin/bassin7.jpg);
 }
 /* line 188, sass/_creation.scss */
 .creation .bassin7 {
@@ -1972,23 +1972,23 @@ label {
 }
 /* line 196, sass/_creation.scss */
 .creation .soutenement1 {
-  background-image: url(../../images/soutenement/soutenement1.jpg);
+  background-image: url(/images/soutenement/soutenement1.jpg);
 }
 /* line 199, sass/_creation.scss */
 .creation .soutenement2 {
-  background-image: url(../../images/soutenement/soutenement2.jpg);
+  background-image: url(/images/soutenement/soutenement2.jpg);
 }
 /* line 202, sass/_creation.scss */
 .creation .soutenement3 {
-  background-image: url(../../images/soutenement/soutenement3.jpg);
+  background-image: url(/images/soutenement/soutenement3.jpg);
 }
 /* line 205, sass/_creation.scss */
 .creation .soutenement4 {
-  background-image: url(../../images/soutenement/soutenement4.jpg);
+  background-image: url(/images/soutenement/soutenement4.jpg);
 }
 /* line 208, sass/_creation.scss */
 .creation .soutenement5 {
-  background-image: url(../../images/soutenement/soutenement5.jpg);
+  background-image: url(/images/soutenement/soutenement5.jpg);
 }
 /* line 211, sass/_creation.scss */
 .creation .soutenement6 {
@@ -2008,39 +2008,39 @@ label {
 }
 /* line 225, sass/_creation.scss */
 .creation .vegetal1 {
-  background-image: url(../../images/vegetal/vegetal1.jpg);
+  background-image: url(/images/vegetal/vegetal1.jpg);
 }
 /* line 228, sass/_creation.scss */
 .creation .vegetal2 {
-  background-image: url(../../images/vegetal/vegetal2.jpg);
+  background-image: url(/images/vegetal/vegetal2.jpg);
 }
 /* line 231, sass/_creation.scss */
 .creation .vegetal3 {
-  background-image: url(../../images/vegetal/vegetal3.jpg);
+  background-image: url(/images/vegetal/vegetal3.jpg);
 }
 /* line 234, sass/_creation.scss */
 .creation .vegetal4 {
-  background-image: url(../../images/vegetal/vegetal4.jpg);
+  background-image: url(/images/vegetal/vegetal4.jpg);
 }
 /* line 237, sass/_creation.scss */
 .creation .vegetal5 {
-  background-image: url(../../images/vegetal/vegetal5.jpg);
+  background-image: url(/images/vegetal/vegetal5.jpg);
 }
 /* line 240, sass/_creation.scss */
 .creation .vegetal6 {
-  background-image: url(../../images/vegetal/vegetal6.jpg);
+  background-image: url(/images/vegetal/vegetal6.jpg);
 }
 /* line 243, sass/_creation.scss */
 .creation .vegetal7 {
-  background-image: url(../../images/vegetal/vegetal7.jpg);
+  background-image: url(/images/vegetal/vegetal7.jpg);
 }
 /* line 246, sass/_creation.scss */
 .creation .vegetal8 {
-  background-image: url(../../images/vegetal/vegetal8.jpg);
+  background-image: url(/images/vegetal/vegetal8.jpg);
 }
 /* line 249, sass/_creation.scss */
 .creation .vegetal9 {
-  background-image: url(../../images/vegetal/vegetal9.jpg);
+  background-image: url(/images/vegetal/vegetal9.jpg);
 }
 
 /* line 1, sass/_entretien.scss */
