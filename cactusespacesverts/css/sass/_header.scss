@@ -34,6 +34,7 @@ header {
       }
       h1 {
         font: $cieNameFontSize $cieNameFontFamily;
+        text-align: center;
       }
       h2 {
         font: $motoFontSize $motoFontFamily;
@@ -48,7 +49,7 @@ header {
         width: 50%;
         text-align: justify;
         text-justify: inter-word;
-        font-size: 2em;
+        font-size: 3em;
       }
 
       .quote {
@@ -64,68 +65,10 @@ header {
         width: 50%;
         font-family: $h1FontFamily;
         text-align: right;
-        font-size: 3em;
+        font-size: 2.5em;
         text-align: right;
       }
 
-    }
-
-    scontact {
-      @include display-flex;
-      @include flex(0.5);
-      @include flex-direction(column);
-      @include justify-content(center);
-      @include align-items(center);
-
-      tel {
-        @include display-flex;
-        @include flex(1);
-        @include justify-content(space-around);
-        @include align-items(flex-end);
-        width: 100%;
-        padding: 5px;
-
-      }
-      address {
-        @include display-flex;
-        @include flex(1);
-        @include flex-direction(column);
-        @include justify-content(flex-start);
-        @include align-items(center);
-        padding: 5px;
-
-        street {
-          @include display-flex;
-          @include flex-direction(column);
-          @include justify-content(center);
-          @include align-items(center);
-          padding: 5px 0;
-        }
-
-        span {
-          @include display-flex;
-          @include flex-direction(row);
-          @include justify-content(space-between);
-          @include align-items(center);
-          width: 100%;
-
-          cp {
-            @include display-flex;
-            @include flex(0.5);
-            @include align-items(center);
-            @include flex-direction(row);
-            @include justify-content(flex-start);
-          }
-
-          city {
-            @include display-flex;
-            @include flex(1);
-            @include align-items(center);
-            @include justify-content(flex-end);
-            @include flex-direction(row);
-          }
-        }
-      }
     }
   }
 }
@@ -137,16 +80,16 @@ nav {
   @include flex-direction(row);
   @include align-items(center);
   @include justify-content(space-around);
+  width: 100%;
   height: 50px;
   ul {
     @include display-flex;
     @include flex-direction(normal);
-    @include flex(1);
     @include justify-content(space-around);
     @include align-items(center);
-    width: 100%;
+    min-width: 840px;
+    width: 80%;
     height: 100%;
-
     li {
       @include display-flex;
       @include flex(1);
@@ -162,6 +105,7 @@ nav {
         @include justify-content(space-around);
         height: 100%;
         width: 100%;
+        padding: 0;
         logo {
           @include display-flex;
           @include flex(1);

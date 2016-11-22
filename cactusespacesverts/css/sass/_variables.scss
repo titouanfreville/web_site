@@ -8,6 +8,7 @@
 
 $fonts:                       Georgia, !default;
 $baseFontColor:               #fff;
+$darkFontColor:               #000;
 $baseFontSize:                1.1em;
 
 // Body ----------------------
@@ -29,7 +30,7 @@ $breakingPointMultiSliders: 120em; //1920px/16px
 $creationBackgroundColor:    #191C1F;
 $remarquableBackgroundColor: #9EA09F;
 $contactBackgroundColor:     #9EA09F;
-$openingBackgroundColor:     #9f8bc6;
+$openingBackgroundColor:     #fff;
 $entretientBackgroundColor:  #9f8bc6;
 
 
@@ -37,7 +38,7 @@ $entretientBackgroundColor:  #9f8bc6;
 // ---------- h1 ------------
 //$h1FontColor:                #388E3C;
 $h1FontColor:                #fff;
-$h1FontSize:                 3.2rem;
+$h1FontSize:                 10rem;
 $h1FontFamily:               'serena';
 // ---------- h2 ------------
 $h2FontColor:                #fff;
@@ -53,14 +54,17 @@ $h3FontFamily:               'serena';
 $quoteFontStyle:             italic;
 $quoteColor:                 #0B610B;
 
+// ------------ Fruti -------
 $frutiPresPhoto:             url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
+$h1MinHeight:                600px;
+$h1Height:                   80vh;
 
 // Menu & cie ---------------
 
 // Logo social network ------
-$cieNameFontSize:            3.2rem;
+$cieNameFontSize:            8rem;
 $cieNameFontFamily:         'serena';
-$motoFontSize:               3.2rem;
+$motoFontSize:               10rem;
 $motoFontFamily:            'serena';
 $logo:                       url(../../images/logo.svg);
 $cactusGreen:                url(../../images/cactus_green.svg);

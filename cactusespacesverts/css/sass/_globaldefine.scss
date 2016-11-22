@@ -3,16 +3,6 @@
 // Use a class main for global view instead of breaking div bases
 sep {
   height: 30px;
-  width: 100%;
-  background: round space;
-  background-size: contain;
-  //&:nth-of-type(even) {
-  //  background-image: url(../../images/cactus_black.svg);
-  //}
-  //&:nth-of-type(odd) {
-  //  background-image: url(../../images/cactus_green.svg);
-  //
-  //}
 }
 
 label {
@@ -32,11 +22,9 @@ label {
   @include flex-direction(column);
   @include justify-content(space-around);
   @include align-items(center);
-  //min-height: 95vh;
   height: 100%;
+  min-width: 480px;
   width: 100%;
-  padding: 1em;
-
   i, img {
     margin-right: 10px;
   }
@@ -45,7 +33,8 @@ label {
     @include display-flex;
     @include flex(1);
     @include flex-direction(row);
-    @include justify-content(space-around);
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   div {

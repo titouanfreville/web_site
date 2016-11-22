@@ -1,10 +1,29 @@
 .remarquable {
   background-color: $remarquableBackgroundColor;
-
-  .fruticteum_pres_photo {
-    height: 600px;
+  h1 {
+    width: 100%;
     background: $frutiPresPhoto center center no-repeat;
-    background-size: contain;
+    background-size: cover;
+    min-height: $h1MinHeight;
+    height: $h1Height;
+  }
+
+  a {
+    padding: 0;
+  }
+
+  label {
+    @include display-flex();
+    @include flex-direction(column);
+    @include flex(1);
+    @include justify-content(space-around);
+  }
+
+  span {
+    margin: 1em 0;
+    &:first-child {
+      @include justify-content(space-around);
+    }
   }
   // Photos Fruticetums.
   .fruti1 {

@@ -1,3 +1,61 @@
 .contact {
   background: $contactBackgroundColor;
+
+  scontact {
+    @include display-flex;
+    @include flex(0.5);
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+
+    tel {
+      @include display-flex;
+      @include flex(1);
+      @include justify-content(space-around);
+      @include align-items(flex-end);
+      width: 100%;
+      padding: 5px;
+
+    }
+    address {
+      @include display-flex;
+      @include flex(1);
+      @include flex-direction(column);
+      @include justify-content(flex-start);
+      @include align-items(center);
+      padding: 5px;
+
+      street {
+        @include display-flex;
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include align-items(center);
+        padding: 5px 0;
+      }
+
+      span {
+        @include display-flex;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+        width: 100%;
+
+        cp {
+          @include display-flex;
+          @include flex(0.5);
+          @include align-items(center);
+          @include flex-direction(row);
+          @include justify-content(flex-start);
+        }
+
+        city {
+          @include display-flex;
+          @include flex(1);
+          @include align-items(center);
+          @include justify-content(flex-end);
+          @include flex-direction(row);
+        }
+      }
+    }
+  }
 }
