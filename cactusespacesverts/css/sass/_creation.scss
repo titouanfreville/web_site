@@ -1,8 +1,45 @@
 .creation {
-  background: $creationBackgroundColor;
-
+  height: 100%;
   div {
     padding-top: 1.5em;
+  }
+  .title {
+    background: $creationBackgroundColor;
+    @include display-flex();
+    @include flex(1);
+    @include flex-direction(row);
+    @include justify-content(center);
+    height: 100%;
+    padding: 0em;
+    .image {
+      @include display-flex();
+      @include flex(1);
+      @include justify-content(center);
+      height: 500px;
+      background: url(../../images/menuiserie/piscine1.jpg)  center center;
+      background-size: cover;
+    }
+    .textes {
+      @include display-flex();
+      @include flex(1);
+      @include flex-direction(column);
+      @include justify-content(center);
+      height: 100%;
+      h1 {
+        font-size: 8em;
+      }
+    }
+  }
+  .element {
+    @include display-flex();
+    @include flex(1);
+    @include flex-direction(row);
+    @include justify-content(center);
+    color: $darkFontColor;
+    width: 80%;
+    h1, h2, h3 {
+      color: $darkFontColor;
+    }
   }
 
   // Photos Terrases Bois
