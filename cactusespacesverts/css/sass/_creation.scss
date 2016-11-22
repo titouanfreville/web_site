@@ -16,8 +16,13 @@
       @include flex(1);
       @include justify-content(center);
       height: 500px;
-      background: url(../../images/menuiserie/piscine1.jpg)  center center;
       background-size: cover;
+    }
+    .creation_title {
+      background: url(../../images/menuiserie/piscine1.jpg)  center center;
+    }
+    .vegetal_title {
+      background: url(../../images/vegetal/vegetal1.jpg)  center center;
     }
     .textes {
       @include display-flex();
