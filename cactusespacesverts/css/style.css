@@ -993,7 +993,6 @@ header band textes .signature, header band p .signature {
 
 /* line 76, sass/_header.scss */
 nav {
-  background: #000000;
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 0.1;
@@ -1004,10 +1003,12 @@ nav {
   align-items: center;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  position: relative;
+  background: #000000;
   width: 100%;
   height: 50px;
 }
-/* line 85, sass/_header.scss */
+/* line 86, sass/_header.scss */
 nav ul {
   display: -webkit-flex;
   display: flex;
@@ -1021,7 +1022,7 @@ nav ul {
   width: 80%;
   height: 100%;
 }
-/* line 93, sass/_header.scss */
+/* line 94, sass/_header.scss */
 nav ul li {
   display: -webkit-flex;
   display: flex;
@@ -1036,7 +1037,7 @@ nav ul li {
   text-align: center;
   height: 100%;
 }
-/* line 101, sass/_header.scss */
+/* line 102, sass/_header.scss */
 nav ul li a {
   -webkit-align-items: center;
   align-items: center;
@@ -1050,7 +1051,7 @@ nav ul li a {
   width: 100%;
   padding: 0;
 }
-/* line 109, sass/_header.scss */
+/* line 110, sass/_header.scss */
 nav ul li a logo {
   display: -webkit-flex;
   display: flex;
@@ -1064,7 +1065,7 @@ nav ul li a logo {
   width: 100%;
 }
 
-/* line 125, sass/_header.scss */
+/* line 126, sass/_header.scss */
 .nav-fixed {
   z-index: 1000;
   position: fixed;
@@ -1072,7 +1073,7 @@ nav ul li a logo {
   top: 0;
   right: 0;
 }
-/* line 131, sass/_header.scss */
+/* line 132, sass/_header.scss */
 .nav-fixed ~ space {
   height: 50px;
 }

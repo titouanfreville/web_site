@@ -174,8 +174,10 @@ cactusespacesverts.directive('setClassWhenAtTop', function ($window) {
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
+            console.log(element);
             var topClass = attrs.setClassWhenAtTop, // get CSS class from directive's attribute value
                 offsetTop = element.offset().top; // get element's offset top relative to document
+                offsetTop = (offsetTop !== 0 ? offsetTop : ($win.height()));
             $win.on('scroll', function (e) {
                 element[($win.scrollTop() >= offsetTop) ? 'addClass' : 'removeClass'](topClass);
             });
