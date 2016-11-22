@@ -901,11 +901,15 @@ header {
   background-size: cover;
   width: 100%;
   color: #fff;
-  height: 100vh;
   padding: 0;
   margin: 0;
+  height: 100vh;
 }
-/* line 15, sass/_header.scss */
+/* line 14, sass/_header.scss */
+header:empty {
+  display: none;
+}
+/* line 18, sass/_header.scss */
 header band {
   display: -webkit-flex;
   display: flex;
@@ -917,7 +921,7 @@ header band {
   justify-content: space-around;
   width: 100%;
 }
-/* line 22, sass/_header.scss */
+/* line 25, sass/_header.scss */
 header band textes, header band p {
   display: -webkit-flex;
   display: flex;
@@ -931,7 +935,7 @@ header band textes, header band p {
   align-items: center;
   min-width: 400px;
 }
-/* line 29, sass/_header.scss */
+/* line 32, sass/_header.scss */
 header band textes h1, header band textes h2, header band p h1, header band p h2 {
   display: -webkit-flex;
   display: flex;
@@ -941,17 +945,17 @@ header band textes h1, header band textes h2, header band p h1, header band p h2
   align-items: center;
   margin: 0 !important;
 }
-/* line 35, sass/_header.scss */
+/* line 38, sass/_header.scss */
 header band textes h1, header band p h1 {
   font: 8rem "serena";
   text-align: center;
 }
-/* line 39, sass/_header.scss */
+/* line 42, sass/_header.scss */
 header band textes h2, header band p h2 {
   font: 10rem "serena";
 }
-/* line 43, sass/_header.scss */
-header band textes .quote, header band textes .entPresentation, header band p .quote, header band p .entPresentation {
+/* line 46, sass/_header.scss */
+header band textes .quote, header band p .quote {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -965,10 +969,7 @@ header band textes .quote, header band textes .entPresentation, header band p .q
   width: 50%;
   text-align: justify;
   text-justify: inter-word;
-  font-size: 3em;
-}
-/* line 55, sass/_header.scss */
-header band textes .quote, header band p .quote {
+  font-size: 2.5em;
   font-style: italic;
 }
 /* line 59, sass/_header.scss */
@@ -1073,7 +1074,7 @@ nav ul li a logo {
 }
 /* line 131, sass/_header.scss */
 .nav-fixed ~ space {
-  height: 80px;
+  height: 50px;
 }
 
 /* line 1, sass/_footer.scss */
