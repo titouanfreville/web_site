@@ -1,9 +1,9 @@
 /**
-* @ngdoc overview
-* @author Titouan Freville <titouanfreville@hotmail.fr>
-* @description Main module for Cactus Espaces Vertsweb site
+ * @ngdoc overview
+ * @author Titouan Freville <titouanfreville@hotmail.fr>
+ * @description Main module for Cactus Espaces Vertsweb site
 
-/* jshint +W097 */
+ /* jshint +W097 */
 'use strict';
 /*jshint -W097 */
 
@@ -11,493 +11,190 @@ var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.rou
 
 // var cactusespacesverts=angular.module('cactusespacesverts', [ 'ngRoute', 'ui.router', 'uiGmapgoogle-maps']);
 
-// State navigation for angular.
+// State menu for angular.
 // Config require $stateProvider and $urlRouterProvider
 cactusespacesverts.config(function ($stateProvider, $urlRouterProvider) {
 
-  // uiGmapGoogleMapApiProvider.configure({
-  //   key: "AIzaSyDvv4BBsnlxliMeVKOOFvanEnDrkX3B3y0", //Clé pour utiliser l'API
-  //   v: '3.17', //Par défaut la version la plus récente disponible
-  //   libraries: 'geometry,visualization' //Librairies supplémentaires
-  // });
+    // uiGmapGoogleMapApiProvider.configure({
+    //   key: "AIzaSyDvv4BBsnlxliMeVKOOFvanEnDrkX3B3y0", //Clé pour utiliser l'API
+    //   v: '3.17', //Par défaut la version la plus récente disponible
+    //   libraries: 'geometry,visualization' //Librairies supplémentaires
+    // });
 
-  $stateProvider
+    $stateProvider
     // Opening State. The base state when you access the web site.
-    .state('cactusespacesverts', {
-      url: '',
-      controller: 'mainCtrl',
-      data: {loc_state: 'index'},
-      views:{
-        'opening': {
-          templateUrl: 'views/opening.html',
-        },
-        'remarquable': {
-          templateUrl: 'views/remarquable.html'
-        },
-        'creations': {
-          templateUrl: 'views/creations.html'
-        },
-        'entretien': {
-          templateUrl: 'views/entretien.html'
-        },
-        'contact': {
-          templateUrl: 'views/contact.html'
-        },
-        'others': {
-          templateUrl: 'views/others.html'
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-        'footer':{
-          templateUrl: 'views/footer.html'
-        }
-      },
-      // controller: 'mapCtrl'
-     })
-    // Accueil state for navigation requirements.
-    .state('accueil', {
-      url: '/accueil',
-      controller: 'mainCtrl',
-      views:{
-        'opening': {
-          templateUrl: 'views/opening.html',
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          },
-        'header':{
-          templateUrl: 'views/header.html'
-        }
-      }
-     })
-    .state('fruticetum', {
-      url: '/fruticetum',
-      views:{
-        'opening': {
-          templateUrl: 'views/remarquable.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('creations', {
-      url: '/creations',
-      views:{
-        'opening': {
-          templateUrl: 'views/creations.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('terrasses', {
-      url: '/terrasses',
-      views:{
-        'opening': {
-          templateUrl: 'views/terrasses.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('t_bois', {
-      url: '/t_bois',
-      views:{
-        'opening': {
-          templateUrl: 'views/terrasses/bois.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('t_pavees', {
-      url: '/t_pavees',
-      views:{
-        'opening': {
-          templateUrl: 'views/terrasses/pave.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('t_minerales', {
-      url: '/t_minerales',
-      views:{
-        'opening': {
-          templateUrl: 'views/terrasses/mineral.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('vegetal', {
-      url: '/vegetal',
-      views:{
-        'opening': {
-          templateUrl: 'views/vegetal.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('massif', {
-      url: '/massif',
-      views:{
-        'opening': {
-          templateUrl: 'views/vegetal/massif.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('gazon', {
-      url: '/gazon',
-      views:{
-        'opening': {
-          templateUrl: 'views/vegetal/gazon.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('plantation', {
-      url: '/plantation',
-      views:{
-        'opening': {
-          templateUrl: 'views/vegetal/plantation.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('menuiserie', {
-      url: '/menuiserie',
-      views:{
-        'opening': {
-          templateUrl: 'views/menuiserie.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('banc', {
-      url: '/banc',
-      views:{
-        'opening': {
-          templateUrl: 'views/menuiserie/banc.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('bac', {
-      url: '/bac',
-      views:{
-        'opening': {
-          templateUrl: 'views/menuiserie/bac.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('pergola', {
-      url: '/pergola',
-      views:{
-        'opening': {
-          templateUrl: 'views/menuiserie/pergola.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('chalet', {
-      url: '/chalet',
-      views:{
-        'opening': {
-          templateUrl: 'views/menuiserie/chalet.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('cheminement', {
-      url: '/cheminement',
-      views:{
-        'opening': {
-          templateUrl: 'views/cheminement.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('c_pavage', {
-      url: '/c_pavage',
-      views:{
-        'opening': {
-          templateUrl: 'views/cheminement/pave.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('c_bois', {
-      url: '/c_bois',
-      views:{
-        'opening': {
-          templateUrl: 'views/cheminement/bois.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('c_mineral', {
-      url: '/c_mineral',
-      views:{
-        'opening': {
-          templateUrl: 'views/cheminement/mineral.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('bassin', {
-      url: '/bassin',
-      views:{
-        'opening': {
-          templateUrl: 'views/bassin.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('soutenement', {
-      url: '/soutenement',
-      views:{
-        'opening': {
-          templateUrl: 'views/soutenement.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('entretien', {
-      url: '/entretien',
-      views:{
-        'opening': {
-          templateUrl: 'views/entretien.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
-    .state('contact', {
-      url: '/contact',
-      views:{
-        'opening': {
-          templateUrl: 'views/contact.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      },
-      controller: 'mapCtrl'
-     })
-    .state('other', {
-      url: '/other',
-      views:{
-        'opening': {
-          templateUrl: 'views/other.html',
-        },
-        'header':{
-          templateUrl: 'views/header.html'
-        },
-          'work':{
-              templateUrl: 'views/work.html'
-          },
-          'footer':{
-              templateUrl: 'views/footer.html'
-          }
-      }
-     })
+        .state('cactusespacesverts', {
+            url: '',
+            controller: 'mainCtrl',
+            data: {loc_state: 'index'},
+            views:{
+                'opening': {
+                    templateUrl: 'views/opening.html',
+                },
+                'remarquable': {
+                    templateUrl: 'views/remarquable.html'
+                },
+                'creations': {
+                    templateUrl: 'views/creations.html'
+                },
+                'entretien': {
+                    templateUrl: 'views/entretien.html'
+                },
+                'contact': {
+                    templateUrl: 'views/contact.html'
+                },
+                'others': {
+                    templateUrl: 'views/others.html'
+                },
+                'header':{
+                    templateUrl: 'views/header.html'
+                },
+                "menu":{
+                    templateUrl: 'views/menu.html'
+                },
+                'work':{
+                    templateUrl: 'views/work.html'
+                },
+                'footer':{
+                    templateUrl: 'views/footer.html'
+                }
+            },
+            // controller: 'mapCtrl'
+        })
+        // Accueil state for menu requirements.
+        .state('accueil', {
+            url: '/accueil',
+            controller: 'mainCtrl',
+            views:{
+                'opening': {
+                    templateUrl: 'views/opening.html'
+                },
+                'work':{
+                    templateUrl: 'views/work.html'
+                },
+                'footer':{
+                    templateUrl: 'views/footer.html'
+                },
+                'header':{
+                    templateUrl: 'views/header.html'
+                },
+                'nav':{
+                    templateUrl: 'views/menu.html'
+                }
+            }
+        })
+        .state('fruticetum', {
+            url: '/fruticetum',
+            views:{
+                'opening': {
+                    templateUrl: 'views/remarquable.html'
+                },
+                'nav':{
+                    templateUrl: 'views/menu.html'
+                },
+                'work':{
+                    templateUrl: 'views/work.html'
+                },
+                'footer':{
+                    templateUrl: 'views/footer.html'
+                }
+            }
+        })
+        .state('creations', {
+            url: '/creations',
+            views:{
+                'opening': {
+                    templateUrl: 'views/creations.html',
+                },
+                'nav':{
+                    templateUrl: 'views/menu.html'
+                },
+                'work':{
+                    templateUrl: 'views/work.html'
+                },
+                'footer':{
+                    templateUrl: 'views/footer.html'
+                }
+            }
+        })
+        .state('entretien', {
+            url: '/entretien',
+            views:{
+                'opening': {
+                    templateUrl: 'views/entretien.html',
+                },
+                'nav':{
+                    templateUrl: 'views/menu.html'
+                },
+                'work':{
+                    templateUrl: 'views/work.html'
+                },
+                'footer':{
+                    templateUrl: 'views/footer.html'
+                }
+            }
+        })
+        .state('contact', {
+            url: '/contact',
+            views:{
+                'opening': {
+                    templateUrl: 'views/contact.html',
+                },
+                'nav':{
+                    templateUrl: 'views/menu.html'
+                },
+                'work':{
+                    templateUrl: 'views/work.html'
+                },
+                'footer':{
+                    templateUrl: 'views/footer.html'
+                }
+            },
+            controller: 'mapCtrl'
+        })
+        .state('other', {
+            url: '/other',
+            views:{
+                'opening': {
+                    templateUrl: 'views/other.html',
+                },
+                'work':{
+                    templateUrl: 'views/work.html'
+                },
+                'footer':{
+                    templateUrl: 'views/footer.html'
+                }
+            }
+        })
 })
 
+cactusespacesverts.directive('setClassWhenAtTop', function ($window) {
+    var $win = angular.element($window); // wrap window object as jQuery object
+
+    return {
+        restrict: 'A',
+        link: function (scope, element, attrs) {
+            console.log(element);
+            var topClass = attrs.setClassWhenAtTop, // get CSS class from directive's attribute value
+                offsetTop = element.offset().top; // get element's offset top relative to document
+                offsetTop = (offsetTop !== 0 ? offsetTop : ($win.height()));
+            $win.on('scroll', function (e) {
+                element[($win.scrollTop() >= offsetTop) ? 'addClass' : 'removeClass'](topClass);
+            });
+        }
+    };
+});
+
 cactusespacesverts.controller('OpSliderCtrl', function($scope, $timeout) {
-  var INTERVAL = 5000;
-  var diapo_root='images/diapo/';
-  $scope.slides1 = [
-    {image: diapo_root+'diapo1.jpg', description: 'Image 00'},
-    {image: diapo_root+'diapo2.jpg', description: 'Image 01'},
-    {image: diapo_root+'diapo3.jpg', description: 'Image 02'},
-    {image: diapo_root+'diapo4.jpg', description: 'Image 03'},
-    {image: diapo_root+'diapo5.jpg', description: 'Image 04'}
-  ];
+    var INTERVAL = 5000;
+    var diapo_root='images/diapo/';
+    $scope.slides1 = [
+        {image: diapo_root+'diapo1.jpg', description: 'Image 00'},
+        {image: diapo_root+'diapo2.jpg', description: 'Image 01'},
+        {image: diapo_root+'diapo3.jpg', description: 'Image 02'},
+        {image: diapo_root+'diapo4.jpg', description: 'Image 03'},
+        {image: diapo_root+'diapo5.jpg', description: 'Image 04'}
+    ];
     $scope.slides2 = [
         {image: diapo_root+'diapo6.jpg', description: 'Image 00'},
         {image: diapo_root+'diapo7.jpg', description: 'Image 01'},
@@ -513,47 +210,47 @@ cactusespacesverts.controller('OpSliderCtrl', function($scope, $timeout) {
         {image: diapo_root+'diapo15.jpg', description: 'Image 04'}
     ];
 
-  function setCurrentSlideIndex(index) {
-      $scope.currentIndex = index;
-  }
-  function isCurrentSlideIndex(index) {
-      return $scope.currentIndex === index;
-  }
-  function nextSlide() {
-      $scope.currentIndex = ($scope.currentIndex < $scope.slides1.length - 1) ? ++$scope.currentIndex : 0;
-      $timeout(nextSlide, INTERVAL);
-  }
-  function loadSlides() {
-      $timeout(nextSlide, INTERVAL);
-  }
+    function setCurrentSlideIndex(index) {
+        $scope.currentIndex = index;
+    }
+    function isCurrentSlideIndex(index) {
+        return $scope.currentIndex === index;
+    }
+    function nextSlide() {
+        $scope.currentIndex = ($scope.currentIndex < $scope.slides1.length - 1) ? ++$scope.currentIndex : 0;
+        $timeout(nextSlide, INTERVAL);
+    }
+    function loadSlides() {
+        $timeout(nextSlide, INTERVAL);
+    }
 
-  $scope.currentIndex = 0;
-  $scope.setCurrentSlideIndex = setCurrentSlideIndex;
-  $scope.isCurrentSlideIndex = isCurrentSlideIndex;
-  loadSlides();
+    $scope.currentIndex = 0;
+    $scope.setCurrentSlideIndex = setCurrentSlideIndex;
+    $scope.isCurrentSlideIndex = isCurrentSlideIndex;
+    loadSlides();
 });
 
 cactusespacesverts.animation('.slide-animation', function () {
-  return {
-    addClass: function (element, className, done) {
-      if (className == 'ng-hide') {
-         TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
-      }
-      else {
-        done();
-      }
-    },
-    removeClass: function (element, className, done) {
-      if (className == 'ng-hide') {
-        element.removeClass('ng-hide');
-        TweenMax.set(element, { left: element.parent().width() });
-        TweenMax.to(element, 0.5, {left: 0, onComplete: done });
-      }
-      else {
-        done();
-      }
-    }
-  };
+    return {
+        addClass: function (element, className, done) {
+            if (className == 'ng-hide') {
+                TweenMax.to(element, 0.5, {left: -element.parent().width(), onComplete: done });
+            }
+            else {
+                done();
+            }
+        },
+        removeClass: function (element, className, done) {
+            if (className == 'ng-hide') {
+                element.removeClass('ng-hide');
+                TweenMax.set(element, { left: element.parent().width() });
+                TweenMax.to(element, 0.5, {left: 0, onComplete: done });
+            }
+            else {
+                done();
+            }
+        }
+    };
 });
 // Main Controller
 // Used on all view to check if user is define && if user is ProductOwner

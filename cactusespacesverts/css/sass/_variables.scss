@@ -3,15 +3,15 @@
 // Fonts ---------------------
 @font-face {
   font-family: 'serena';
-  src: url('../../fonts/serena.ttf') format('truetype');
+  src: url('/fonts/serena.ttf') format('truetype');
 }
 
 $fonts:                       Georgia, !default;
-$baseFontColor:               #222;
+$baseFontColor:               #fff;
+$darkFontColor:               #000;
 $baseFontSize:                1.1em;
 
 // Body ----------------------
-//$background-img:              url(../../background.png);
 $background-color:            #fff;
 
 // Breaking points ----------
@@ -26,31 +26,25 @@ $breakingPointMultiSliders: 120em; //1920px/16px
 
 // Pages --------------------
 // Background Colors --------
-//$creationBackgroundColor:    #222222;
-//$remarquableBackgroundColor: #2C5EA1;
-//$contactBackgroundColor:     #366CA9;
-//$openingBackgroundColor:     #9AA93E;
-//$entretientBackgroundColor:  #9AA93E;
-
-
-$creationBackgroundColor:    #fff;
-$remarquableBackgroundColor: #fff;
-$contactBackgroundColor:     #fff;
+$creationBackgroundColor:    #191C1F;
+$remarquableBackgroundColor: #9EA09F;
+$contactBackgroundColor:     #9EA09F;
 $openingBackgroundColor:     #fff;
-$entretientBackgroundColor:  #fff;
+$entretientBackgroundColor:  #9f8bc6;
+
 
 // ----- Title --------------
 // ---------- h1 ------------
 //$h1FontColor:                #388E3C;
-$h1FontColor:                #388E3C;
-$h1FontSize:                 3.2rem;
+$h1FontColor:                #fff;
+$h1FontSize:                 10rem;
 $h1FontFamily:               'serena';
 // ---------- h2 ------------
-$h2FontColor:                #388E3C;
+$h2FontColor:                #fff;
 $h2FontSize:                 2.8em;
 $h2FontFamily:               'serena';
 // ---------- h3 ------------
-$h3FontColor:                #388E3C;
+$h3FontColor:                #fff;
 $h3FontSize:                 2.5em;
 $h3FontFamily:               'serena';
 
@@ -59,19 +53,22 @@ $h3FontFamily:               'serena';
 $quoteFontStyle:             italic;
 $quoteColor:                 #0B610B;
 
-$frutiPresPhoto:             url(../../images/fruticetum/fruticetum_vue_bassin.jpg);
+// ------------ Fruti -------
+$frutiPresPhoto:             url(/images/fruticetum/fruticetum_vue_bassin.jpg);
+$h1MinHeight:                600px;
+$h1Height:                   80vh;
 
 // Menu & cie ---------------
 
 // Logo social network ------
-$cieNameFontSize:            3.2rem;
+$cieNameFontSize:            8rem;
 $cieNameFontFamily:         'serena';
-$motoFontSize:               3.2rem;
+$motoFontSize:               10rem;
 $motoFontFamily:            'serena';
-$logo:                       url(../../images/logo.svg);
-$cactusGreen:                url(../../images/cactusgreen.svg);
-$cactusBlack:                url(../../images/cactusblack.svg);
-$bandBackground:             url(../../images/bandeau.jpg);
+$logo:                       url(/images/logo.svg);
+$cactusGreen:                url(/images/cactus_green.svg);
+$cactusBlack:                url(/images/cactus_black.svg);
+$bandBackground:             url(/images/bandeau_new.jpg);
 
 
 // PSWP Variables

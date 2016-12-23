@@ -1,3 +1,92 @@
 .entretien {
   background-color: $entretientBackgroundColor;
+
+  .pres_tab {
+    @include display-flex();
+    @include flex-direction(column);
+    width: 60%;
+    height: 100%;
+    .pres_list {
+      @include display-flex();
+      @include flex-direction(row);
+      width: 100%;
+      height: 100%;
+      li {
+        @include display-flex();
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        @include flex(1);
+        height: 100%;
+        h3 {
+          @include display-flex();
+          @include align-self(center);
+          @include justify-content(center);
+          font-size: 1.6em;
+          text-align: center;
+        }
+        span {
+          @include box-sizing(content-box);
+          //@include justify-content(flex-start);
+          @include display-flex();
+          @include flex(1);
+          //height: 100%;
+          text-align: justify;
+          margin: 1em;
+          padding: 0.5em;
+        }
+        .list-icon {
+          @include display-flex();
+          @include align-self(center);
+          z-index: 300;
+          width: 40px;
+          height: 40px;
+          padding: 5px;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 40px;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .contactlink {
+    width: 100%;
+    font-size: 1.5em;
+    margin: 1em 0;
+  }
+  .services {
+    @include display-flex();
+    @include flex-direction(row);
+    @include align-items(stretch);
+    @include justify-content(space-around);
+    height: 100%;
+    width: 98%;
+    div {
+      @include display-flex();
+      @include justify-content(flex-start);
+      height: 100%;
+      width: 100%;
+      padding: 0.5em;
+      margin: 1em;
+      i, img {
+        @include display-flex();
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+        font-size: 50px;
+      }
+      p, h2 {
+        width: 100%;
+      }
+      h2 {
+        text-align: center;
+        font-size: 2.4em;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
 }
