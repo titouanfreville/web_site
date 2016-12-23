@@ -1,6 +1,6 @@
 .contact {
   background: $contactBackgroundColor;
-
+  @include align-items(center);
   scontact {
     @include display-flex;
     @include flex(0.5);
